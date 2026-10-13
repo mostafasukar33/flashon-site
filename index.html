@@ -179,8 +179,12 @@ h2{font-size:clamp(30px,3.8vw,48px);line-height:1.25;margin-top:14px}
 .rows strong.num{direction:ltr;text-align:right}
 .contact .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .pending{color:var(--muted);font-size:14px;margin-top:16px}
-.map{border-radius:28px;overflow:hidden;background:var(--panel);min-height:380px;border:1px solid var(--line)}
-.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:grayscale(1) contrast(1.05) brightness(1.03)}
+.map{border-radius:28px;background:linear-gradient(160deg,#F4F0E8,#E9E2D4);border:1px solid var(--line);min-height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;padding:32px;transition:border-color .3s}
+.map:hover{border-color:#CFC6B5}
+.map svg{width:56px;height:56px;color:var(--gold);margin-bottom:12px}
+.map b{font-size:26px}
+.map span{color:var(--muted)}
+.map em{font-style:normal;font-weight:700;margin-top:18px;padding:12px 26px;border-radius:12px;background:var(--ink);color:#fff;font-size:15px}
 
 /* ===== الفوتر ===== */
 footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
@@ -380,13 +384,16 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
         <div class="ctas">
           <a class="btn wa" id="waBtm" href="#" hidden><svg viewBox="0 0 24 24" fill="currentColor"><use href="#icWa"/></svg>راسلنا على واتساب</a>
           <a class="btn ghost" id="callBtm" href="#" hidden>اتصل بنا</a>
-          <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D9%88%D8%B3+%D8%A7%D9%84%D9%82%D9%84%D9%8A%D9%88%D8%A8%D9%8A%D8%A9">افتح على الخريطة</a>
+          <a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6">افتح على الخريطة</a>
         </div>
         <p class="pending" id="pending" hidden>رقم التواصل هيتضاف هنا قريباً.</p>
       </div>
-      <div class="map rv d1">
-        <iframe title="موقع مصنع فلاش أون على الخريطة" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%D8%A8%D8%A7%D8%B3%D9%88%D8%B3%D8%8C%20%D8%A7%D9%84%D9%82%D9%84%D9%8A%D9%88%D8%A8%D9%8A%D8%A9&z=14&output=embed"></iframe>
-      </div>
+      <a class="map rv d1" target="_blank" rel="noopener" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" aria-label="افتح موقع المصنع على خرائط جوجل">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <b>موقع المصنع</b>
+        <span>باسوس، القليوبية، طريق القناطر الخيرية</span>
+        <em>افتح على خرائط جوجل</em>
+      </a>
     </div>
   </section>
 
