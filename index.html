@@ -4,178 +4,222 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>فلاش أون | مصنع الخراطيم والكابلات الكهربائية</title>
-<meta name="description" content="فلاش أون لصناعة الخراطيم والكابلات الكهربائية. مصنع في باسوس، القليوبية. تواصل معنا للاستفسار عن الأصناف والأسعار.">
-<meta name="theme-color" content="#1C1A15">
+<meta name="description" content="فلاش أون لصناعة الخراطيم والكابلات الكهربائية. مصنع في باسوس، القليوبية. كلمنا واتساب واطلب عرض سعر.">
+<meta name="theme-color" content="#D9AE57">
 <link rel="icon" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
 :root{
-  --gold:#D9AE57; --gold-d:#B98F38; --ink:#1C1A15; --sub:#6B6557;
-  --bg:#FBF8F1; --card:#FFFFFF; --line:#E8E1D0; --dark:#12110E; --green:#1F9D55;
+  --gold:#D9AE57;      /* ذهبي اللوجو */
+  --gold-d:#B58B2E;
+  --ink:#14110B;       /* أسود اللوجو */
+  --ink-2:#221E14;
+  --paper:#FFFFFF;
+  --mist:#EFEBE0;
+  --steel:#8C8470;
+  --wire:#D2432B;
+  --wa:#1F9D55;
+  --gutter:clamp(20px,5vw,56px);
+  --max:1120px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;font-size:17px;-webkit-text-size-adjust:100%}
+body{font-family:'Cairo',system-ui,sans-serif;background:var(--paper);color:var(--ink);font-size:18px;line-height:1.85;-webkit-text-size-adjust:100%}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
-section{padding:56px 0}
-h2{font-size:28px;font-weight:800;margin-bottom:6px}
-h2::after{content:"";display:block;width:56px;height:4px;border-radius:2px;background:var(--gold);margin-top:8px}
-.lead{color:var(--sub);margin:14px 0 28px;max-width:640px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.on-ink :focus-visible{outline-color:var(--gold)}
+.frame{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+[hidden]{display:none!important}
 
-/* شريط علوي */
-.top{position:sticky;top:0;z-index:10;background:rgba(251,248,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}
-.brand img{width:40px;height:40px;border-radius:8px;object-fit:cover}
-.nav{display:flex;gap:18px;font-weight:600;font-size:15px;color:var(--sub)}
-.nav a:hover{color:var(--ink)}
-
-/* البداية */
-.hero{padding:44px 0 56px;text-align:center;background:#fff;border-bottom:1px solid var(--line)}
-.hero img.logo{width:168px;height:168px;object-fit:contain;margin:0 auto 8px;display:block}
-.hero h1{font-size:40px;font-weight:800;line-height:1.3}
-.hero p.sub{color:var(--sub);font-size:19px;margin:10px auto 26px;max-width:520px}
-.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:12px;font-weight:700;font-size:17px;border:2px solid transparent;cursor:pointer;font-family:inherit}
-.btn.gold{background:var(--gold);color:#1b150a}
-.btn.gold:hover{background:var(--gold-d)}
-.btn.green{background:var(--green);color:#fff}
-.btn.line{border-color:var(--ink);color:var(--ink);background:transparent}
-.btn[hidden]{display:none}
-
-/* الكروت */
-.grid{display:grid;gap:16px;grid-template-columns:1fr}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
-.card h3{font-size:20px;font-weight:700;margin-bottom:6px}
-.card p{color:var(--sub);font-size:16px}
-.ico{width:46px;height:46px;border-radius:12px;background:#F7EDD2;display:grid;place-items:center;margin-bottom:12px}
-.ico svg{width:26px;height:26px;stroke:#8A6A1F;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.alt{background:#F4EFE2}
-
-/* التواصل */
-.contact-list{display:grid;gap:12px;margin-bottom:24px}
-.row{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.row b{display:block;font-size:15px;color:var(--sub);font-weight:600}
-.row span{font-size:18px;font-weight:700}
-.row[hidden]{display:none}
-.note{color:var(--sub);font-size:15px}
-
-footer{background:var(--dark);color:#CFC8B4;padding:30px 0;text-align:center;font-size:15px}
-footer b{color:var(--gold)}
-
-@media(min-width:720px){
-  .grid.c3{grid-template-columns:repeat(3,1fr)}
-  .grid.c2{grid-template-columns:repeat(2,1fr)}
-  .hero h1{font-size:52px}
-  .hero img.logo{width:200px;height:200px}
+/* ===== البداية: ذهبي كامل + الخرطوم ===== */
+.hero{background:var(--gold);color:var(--ink);overflow:hidden;position:relative}
+.bar{display:flex;align-items:center;justify-content:space-between;padding-block:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px}
+.brand img{width:46px;height:46px;border-radius:10px;object-fit:cover;background:#fff}
+.bar nav{display:flex;gap:26px;font-weight:700;font-size:16px}
+.bar nav a{border-bottom:2px solid transparent;padding-block:2px}
+.bar nav a:hover{border-bottom-color:var(--ink)}
+.brand span{white-space:nowrap}
+@media(max-width:640px){
+  .bar nav{display:none}
+  .hose{width:135%;max-width:none}
 }
-@media(max-width:560px){.nav{display:none}}
+
+.hero-body{padding-block:clamp(28px,6vw,72px) 0}
+h1{font-weight:800;font-size:clamp(46px,10.5vw,118px);line-height:1.12;max-width:16ch}
+h1 span{display:block}
+.hero p.sub{font-size:clamp(18px,2.2vw,22px);font-weight:600;max-width:34ch;margin-top:22px;color:#3a2f12}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:10px 30px;border-radius:999px;font-family:inherit;font-weight:800;font-size:18px;border:0;cursor:pointer}
+.btn.ink{background:var(--ink);color:var(--gold)}
+.btn.ink:hover{background:var(--ink-2)}
+.btn.wa{background:var(--wa);color:#fff}
+.textlink{font-weight:800;border-bottom:3px solid var(--ink);padding-bottom:2px}
+
+/* الخرطوم */
+.hose{display:block;width:100%;height:auto;margin-top:clamp(8px,3vw,28px);margin-bottom:-4px}
+.hose .reveal{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.4s cubic-bezier(.5,.1,.25,1) .25s forwards}
+.hose .wires{opacity:0;animation:fade .6s ease 2.4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .hose .reveal{animation:none;stroke-dashoffset:0}
+  .hose .wires{animation:none;opacity:1}
+}
+
+/* ===== المنتجات: أسود ===== */
+.on-ink{background:var(--ink);color:#F3EEDD}
+.make{padding-block:clamp(56px,9vw,110px)}
+h2{font-weight:800;font-size:clamp(32px,5.4vw,56px);line-height:1.25}
+.make h2{color:var(--gold);margin-bottom:12px}
+.lead{color:#B9B198;max-width:46ch;margin-bottom:clamp(28px,5vw,56px)}
+.item{display:grid;gap:10px 40px;padding-block:30px;border-top:1px solid rgba(217,174,87,.35)}
+.item:last-child{border-bottom:1px solid rgba(217,174,87,.35)}
+.item h3{font-weight:800;font-size:clamp(26px,4vw,40px);line-height:1.3;color:#fff}
+.item p{color:#B9B198;max-width:46ch}
+.ask{align-self:center;justify-self:start;font-weight:800;color:var(--gold);border-bottom:2px solid var(--gold);padding-bottom:2px}
+.ask:hover{color:#fff;border-bottom-color:#fff}
+@media(min-width:800px){.item{grid-template-columns:1.1fr 1.2fr auto;align-items:center}}
+
+/* ===== إزاي تطلب: خطوات فعلاً ===== */
+.how{padding-block:clamp(56px,9vw,110px);background:var(--paper)}
+.how h2{margin-bottom:clamp(28px,5vw,52px)}
+.steps{list-style:none;display:grid;gap:30px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-inline-start:84px}
+.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:-6px;font-weight:800;font-size:64px;line-height:1;color:transparent;-webkit-text-stroke:2px var(--gold-d)}
+.steps b{display:block;font-size:22px;font-weight:800}
+.steps span{color:#5b553f}
+@media(min-width:800px){
+  .steps{grid-template-columns:repeat(3,1fr);gap:48px}
+  .steps li{padding-inline-start:0;padding-top:78px}
+  .steps li::before{top:0;font-size:78px}
+}
+
+/* ===== معلومات المصنع ===== */
+.facts{background:var(--mist);padding-block:clamp(36px,6vw,64px)}
+.facts dl{display:grid;gap:22px}
+.facts dt{font-weight:700;color:var(--steel);font-size:16px}
+.facts dd{font-weight:800;font-size:clamp(20px,2.6vw,26px);line-height:1.5}
+@media(min-width:800px){.facts dl{grid-template-columns:repeat(3,1fr);gap:40px}}
+
+/* ===== التواصل: ذهبي ===== */
+.talk{background:var(--gold);padding-block:clamp(56px,9vw,100px)}
+.talk h2{max-width:14ch;margin-bottom:18px}
+.talk p{font-weight:600;color:#3a2f12;max-width:40ch}
+.nums{margin-top:22px;font-weight:800;font-size:clamp(24px,4vw,40px);direction:ltr;text-align:right;unicode-bidi:plaintext}
+.talk .cta-row{margin-top:26px}
+.pending{margin-top:18px;font-weight:700;border-inline-start:4px solid var(--ink);padding-inline-start:12px}
+
+footer{background:var(--ink);color:#B9B198;padding-block:30px;font-size:16px}
+footer .frame{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;align-items:center}
+footer b{color:var(--gold)}
 </style>
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#top"><img src="assets/logo.jpg" alt="فلاش أون"><span>فلاش أون</span></a>
-    <nav class="nav">
-      <a href="#products">المنتجات</a>
-      <a href="#why">لماذا نحن</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
+<header class="hero" id="top">
+  <div class="frame">
+    <div class="bar">
+      <a class="brand" href="#top"><img src="assets/logo.jpg" alt=""><span>فلاش أون</span></a>
+      <nav aria-label="أقسام الموقع">
+        <a href="#make">المنتجات</a>
+        <a href="#how">إزاي تطلب</a>
+        <a href="#talk">تواصل معنا</a>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <h1><span>الخرطوم الكهربائي</span><span>من المصنع مباشرة</span></h1>
+      <p class="sub">فلاش أون لصناعة الخراطيم والكابلات الكهربائية. مصنعنا في باسوس، القليوبية.</p>
+      <div class="cta-row">
+        <a class="btn ink" id="waTop" href="#talk">كلمنا على واتساب</a>
+        <a class="textlink" href="#make">شوف اللي بنصنعه</a>
+      </div>
+    </div>
   </div>
+
+  <!-- خرطوم مموّج بيترسم عند فتح الصفحة، وأسلاك خارجة من آخره -->
+  <svg class="hose" viewBox="0 0 640 300" role="img" aria-label="رسم لخرطوم كهربائي مموّج تخرج منه أسلاك" preserveAspectRatio="xMidYMax meet">
+    <defs>
+      <mask id="draw" maskUnits="userSpaceOnUse" x="-60" y="-20" width="760" height="340">
+        <path class="reveal" pathLength="1" d="M-30 238 C 90 238 120 70 260 70 C 390 70 390 226 510 226 C 575 226 592 168 566 118" fill="none" stroke="#fff" stroke-width="80" stroke-linecap="butt"/>
+      </mask>
+    </defs>
+    <g mask="url(#draw)">
+      <path d="M-30 238 C 90 238 120 70 260 70 C 390 70 390 226 510 226 C 575 226 592 168 566 118" fill="none" stroke="#14110B" stroke-width="50"/>
+      <path d="M-30 238 C 90 238 120 70 260 70 C 390 70 390 226 510 226 C 575 226 592 168 566 118" fill="none" stroke="rgba(217,174,87,.55)" stroke-width="50" stroke-dasharray="2.5 9"/>
+      <path d="M-30 238 C 90 238 120 70 260 70 C 390 70 390 226 510 226 C 575 226 592 168 566 118" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="8" transform="translate(0,-14)"/>
+    </g>
+    <g class="wires" fill="none" stroke-linecap="round">
+      <path d="M566 118 C 556 92 568 66 604 54 C 622 48 630 40 636 28" stroke="#D2432B" stroke-width="6"/>
+      <path d="M568 120 C 566 96 590 84 612 86 C 626 88 634 96 638 106" stroke="#14110B" stroke-width="6"/>
+      <path d="M564 120 C 548 98 538 78 546 52 C 550 40 548 30 542 20" stroke="#2D6CC0" stroke-width="6"/>
+    </g>
+  </svg>
 </header>
 
-<main id="top">
+<main>
 
-  <section class="hero">
-    <div class="wrap">
-      <img class="logo" src="assets/logo.jpg" alt="شعار فلاش أون">
-      <h1>فلاش أون</h1>
-      <p class="sub">لصناعة الخراطيم والكابلات الكهربائية</p>
-      <div class="btns">
-        <a class="btn green" id="waTop" href="#contact" hidden>واتساب</a>
-        <a class="btn gold" id="callTop" href="#contact" hidden>اتصل بنا</a>
-        <a class="btn line" href="#products">شوف منتجاتنا</a>
+  <section class="make on-ink" id="make">
+    <div class="frame">
+      <h2>اللي بنصنعه</h2>
+      <p class="lead">نصنّع ونوفّر للمقاولين وأصحاب مواقع التنفيذ وتجار الكهرباء.</p>
+
+      <div class="item">
+        <h3>خراطيم بلاستيك كهربائية</h3>
+        <p>لحماية الأسلاك وتمريرها داخل المباني والمشروعات.</p>
+        <a class="ask" data-ask="عايز أعرف المقاسات المتاحة للخراطيم الكهربائية" href="#talk">اسأل عن المقاسات</a>
+      </div>
+      <div class="item">
+        <h3>كابلات كهربائية</h3>
+        <p>اسألنا عن الأنواع المتاحة حالياً.</p>
+        <a class="ask" data-ask="عايز أعرف الأنواع المتاحة من الكابلات الكهربائية" href="#talk">اسأل عن الأنواع</a>
       </div>
     </div>
   </section>
 
-  <section id="products" class="alt">
-    <div class="wrap">
-      <h2>منتجاتنا</h2>
-      <p class="lead">نصنّع الخراطيم البلاستيك الكهربائية، ونوفّرها للمقاولين وأصحاب مواقع التنفيذ وتجار الكهرباء.</p>
-      <div class="grid c2">
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
-          <h3>خراطيم بلاستيك كهربائية</h3>
-          <p>خراطيم لحماية وتمرير الأسلاك الكهربائية في المباني والمشروعات. تواصل معنا لمعرفة المقاسات والكميات المتاحة.</p>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12h6M14 12h6"/><circle cx="12" cy="12" r="2"/><path d="M3 7h4M17 17h4"/></svg></div>
-          <h3>كابلات كهربائية</h3>
-          <p>ضمن نشاط الشركة. للاستفسار عن الأنواع والمتاح حالياً تواصل معنا مباشرة.</p>
-        </div>
-      </div>
+  <section class="how" id="how">
+    <div class="frame">
+      <h2>إزاي تطلب</h2>
+      <ol class="steps">
+        <li><b>كلمنا</b><span>قولنا الصنف والمقاس والكمية على واتساب.</span></li>
+        <li><b>عرض سعر مكتوب</b><span>بنبعتلك عرض سعر PDF بأسعار واضحة.</span></li>
+        <li><b>تسليم بإذن</b><span>الشحنة تتسلم ومعاها إذن تسليم.</span></li>
+      </ol>
     </div>
   </section>
 
-  <section id="why">
-    <div class="wrap">
-      <h2>لماذا فلاش أون؟</h2>
-      <div class="grid c3" style="margin-top:22px">
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></div>
-          <h3>تصنيع مباشر</h3>
-          <p>نصنّع بأنفسنا في مصنعنا، فتتعامل مع المصنع مباشرة من غير وسطاء.</p>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-          <h3>تشغيل مستمر</h3>
-          <p>خطوط الإنتاج شغّالة على مدار اليوم، لتلبية الطلبات في وقتها.</p>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></div>
-          <h3>تعامل بسيط وواضح</h3>
-          <p>عرض سعر مكتوب وإذن تسليم لكل شحنة، لنتعامل معاً بوضوح.</p>
-        </div>
-      </div>
+  <section class="facts">
+    <div class="frame">
+      <dl>
+        <div><dt>العنوان</dt><dd>باسوس، القليوبية<br>طريق القناطر الخيرية</dd></div>
+        <div><dt>أيام العمل</dt><dd>من السبت إلى الخميس<br>الجمعة إجازة</dd></div>
+        <div><dt>التصنيع</dt><dd>ماكينتان شغّالتان<br>طول اليوم</dd></div>
+      </dl>
     </div>
   </section>
 
-  <section id="contact" class="alt">
-    <div class="wrap">
-      <h2>تواصل معنا</h2>
-      <p class="lead">للاستفسار أو طلب عرض سعر، كلمنا أو ابعتلنا على واتساب.</p>
-
-      <div class="contact-list">
-        <div class="row" id="rowPhone" hidden>
-          <div><b>تليفون</b><span id="phoneTxt" dir="ltr"></span></div>
-        </div>
-        <div class="row">
-          <div><b>العنوان</b><span>باسوس، القليوبية — طريق القناطر الخيرية</span></div>
-        </div>
-        <div class="row">
-          <div><b>مواعيد العمل</b><span>من السبت إلى الخميس. الجمعة إجازة.</span></div>
-        </div>
+  <section class="talk" id="talk">
+    <div class="frame">
+      <h2>عايز عرض سعر؟</h2>
+      <p>ابعتلنا الصنف والكمية وهنرد عليك.</p>
+      <div class="nums" id="nums" hidden></div>
+      <div class="cta-row">
+        <a class="btn wa" id="waBtm" href="#" hidden>ابعت واتساب</a>
+        <a class="btn ink" id="callBtm" href="#" hidden>اتصل بنا</a>
+        <a class="textlink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D9%88%D8%B3+%D8%A7%D9%84%D9%82%D9%84%D9%8A%D9%88%D8%A8%D9%8A%D8%A9">الموقع على الخريطة</a>
       </div>
-
-      <div class="btns" style="justify-content:flex-start">
-        <a class="btn green" id="waBtm" href="#" hidden>راسلنا على واتساب</a>
-        <a class="btn gold" id="callBtm" href="#" hidden>اتصل بنا</a>
-        <a class="btn line" id="mapBtn" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D9%88%D8%B3+%D8%A7%D9%84%D9%82%D9%84%D9%8A%D9%88%D8%A8%D9%8A%D8%A9" target="_blank" rel="noopener">الموقع على الخريطة</a>
-      </div>
-      <p class="note" id="noPhone" style="margin-top:16px" hidden>أرقام التواصل هتتضاف هنا قريباً.</p>
+      <p class="pending" id="pending" hidden>رقم التواصل هيتضاف هنا قريباً.</p>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <p><b>فلاش أون</b> — لصناعة الخراطيم والكابلات الكهربائية</p>
-    <p style="margin-top:4px">باسوس، القليوبية، مصر</p>
+<footer class="on-ink">
+  <div class="frame">
+    <span><b>فلاش أون</b> لصناعة الخراطيم والكابلات الكهربائية</span>
+    <span>باسوس، القليوبية، مصر</span>
   </div>
 </footer>
 
@@ -183,20 +227,27 @@ footer b{color:var(--gold)}
 /* بيانات التواصل: غيّر الرقم هنا بس. الصيغة الدولية من غير + ولا أصفار (مثال: 201012345678) */
 var SITE = {
   whatsapp: "",   /* رقم الواتساب */
-  phone: ""       /* رقم التليفون للمكالمات، ولو نفس الواتساب سيبه فاضي */
+  phone: ""       /* رقم المكالمات، ولو هو نفسه الواتساب سيبه فاضي */
 };
 (function(){
   var wa = (SITE.whatsapp||"").replace(/\D/g,"");
   var ph = (SITE.phone||SITE.whatsapp||"").replace(/\D/g,"");
-  var msg = encodeURIComponent("السلام عليكم، عايز أستفسر عن منتجات فلاش أون");
-  function show(id,href){var e=document.getElementById(id); if(!e)return; e.hidden=false; e.href=href;}
-  if(wa){ show("waTop","https://wa.me/"+wa+"?text="+msg); show("waBtm","https://wa.me/"+wa+"?text="+msg); }
-  if(ph){
-    show("callTop","tel:+"+ph); show("callBtm","tel:+"+ph);
-    var r=document.getElementById("rowPhone"); r.hidden=false;
-    document.getElementById("phoneTxt").textContent="+"+ph;
+  function link(text){ return "https://wa.me/"+wa+"?text="+encodeURIComponent(text); }
+  function $(id){ return document.getElementById(id); }
+
+  if(wa){
+    var def = "السلام عليكم، عايز عرض سعر من فلاش أون";
+    $("waTop").href = link(def);
+    $("waBtm").href = link(def); $("waBtm").hidden = false;
+    document.querySelectorAll("[data-ask]").forEach(function(a){
+      a.href = link("السلام عليكم، " + a.getAttribute("data-ask")); a.target = "_blank"; a.rel = "noopener";
+    });
   }
-  if(!wa && !ph) document.getElementById("noPhone").hidden=false;
+  if(ph){
+    $("callBtm").href = "tel:+"+ph; $("callBtm").hidden = false;
+    var n = $("nums"); n.textContent = "+"+ph; n.hidden = false;
+  }
+  if(!wa && !ph) $("pending").hidden = false;
 })();
 </script>
 </body>
