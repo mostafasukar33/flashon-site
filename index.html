@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>فلاش أون | خراطيم ومواسير وعلب وكابلات كهربائية</title>
-<meta name="description" content="فلاش أون مصنع مصري في باسوس، القليوبية. خراطيم كهربائية، مواسير PVC، علب ماجيك، وكابلات كهربائية نحاس 99.9% من المصنع مباشرة للمقاولين والتجار.">
+<title>فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية</title>
+<meta name="description" content="فلاش أون شركة مصرية لصناعة وتوريد الأدوات الكهربائية: خراطيم كهربائية، مواسير PVC، علب ماجيك، وكابلات نحاس 99.9%. معاً لعالم متكامل من احتياجاتك الكهربائية.">
 <meta name="theme-color" content="#FAF8F4">
 <meta property="og:type" content="website">
-<meta property="og:title" content="فلاش أون | مستلزمات التمديدات الكهربائية">
-<meta property="og:description" content="خراطيم، مواسير PVC، علب ماجيك، وكابلات. صناعة مصرية من المصنع مباشرة.">
+<meta property="og:title" content="فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية">
+<meta property="og:description" content="معاً لعالم متكامل من احتياجاتك الكهربائية.">
 <meta property="og:image" content="https://flashoneg.com/assets/img/share.jpg">
 <meta property="og:url" content="https://flashoneg.com/">
 <link rel="canonical" href="https://flashoneg.com/">
@@ -35,7 +35,7 @@
   --ease:cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
 body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.8;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
@@ -69,16 +69,20 @@ h2{font-size:clamp(30px,3.8vw,48px);line-height:1.25;margin-top:14px}
 .util .frame{display:flex;justify-content:space-between;align-items:center;gap:16px;height:40px}
 .util span{display:inline-flex;align-items:center;gap:8px}
 .util svg{width:15px;height:15px;color:var(--gold)}
-.util .r{display:flex;gap:26px}
+.util .r{display:flex;align-items:center;gap:22px}
+.util .slogan{font-weight:600;color:var(--ink-2);letter-spacing:.01em}
+.util .pin{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:inline-grid;place-items:center}
+.util .pin svg{width:14px;height:14px}
 @media(max-width:700px){.util{display:none}}
 
 /* ===== الهيدر ===== */
 .hdr{position:sticky;top:0;z-index:40;background:rgba(250,248,244,.86);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);transition:box-shadow .3s}
 .hdr.on{box-shadow:0 1px 0 var(--line)}
-.hdr .frame{display:flex;align-items:center;justify-content:space-between;gap:24px;height:80px}
+.hdr .frame{display:flex;align-items:center;justify-content:space-between;gap:24px;height:96px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{width:44px;height:44px;border-radius:10px;object-fit:cover;box-shadow:0 0 0 1px var(--line)}
-.brand b{display:block;font-size:19px;line-height:1.2}
+.brand{gap:16px}
+.brand img{width:68px;height:68px;border-radius:16px;object-fit:cover;box-shadow:0 0 0 1px var(--line),0 8px 20px -10px rgba(40,30,15,.25)}
+.brand b{display:block;font-size:22px;line-height:1.2}
 .brand small{display:block;font-size:12px;color:var(--muted);font-weight:600;line-height:1.3}
 .nav{display:flex;align-items:center;gap:34px;font-size:15px;font-weight:600;color:var(--ink-2)}
 .nav a:not(.btn){position:relative;padding-block:6px}
@@ -86,7 +90,7 @@ h2{font-size:clamp(30px,3.8vw,48px);line-height:1.25;margin-top:14px}
 .nav a:not(.btn):hover::after{transform:scaleX(1)}
 .nav .btn{height:44px;padding:0 20px;font-size:14px;border-radius:10px}
 @media(max-width:900px){.nav a:not(.btn){display:none}}
-@media(max-width:520px){.brand small{display:none}.nav .btn{height:40px;padding:0 14px;font-size:13px}.stage .txt{padding:32px 24px 8px}.stage .ctas .btn{flex:1}}
+@media(max-width:520px){.stage .kicker::before{display:none}.stage .kicker{font-size:12px}.brand img{width:56px;height:56px;border-radius:14px}.hdr .frame{height:84px}.brand small{display:none}.nav .btn{height:40px;padding:0 14px;font-size:13px}.stage .txt{padding:32px 24px 8px}.stage .ctas .btn{flex:1}}
 
 /* ===== البداية ===== */
 .hero{padding-top:clamp(12px,2vw,24px)}
@@ -167,30 +171,29 @@ h2{font-size:clamp(30px,3.8vw,48px);line-height:1.25;margin-top:14px}
 .steps span{display:block;color:var(--muted);margin-top:8px}
 
 /* ===== التواصل ===== */
-.contact{display:grid;gap:clamp(28px,4vw,56px);align-items:stretch}
-@media(min-width:960px){.contact{grid-template-columns:1fr 1fr}}
-.contact .info{display:flex;flex-direction:column}
-.rows{margin-top:30px;border-top:1px solid var(--line)}
-.rows div{display:flex;gap:16px;align-items:flex-start;padding-block:18px;border-bottom:1px solid var(--line)}
-.rows .ic{width:44px;height:44px;border-radius:12px;background:var(--panel);display:grid;place-items:center;flex:none;color:var(--gold)}
-.rows .ic svg{width:20px;height:20px}
-.rows small{display:block;color:var(--muted);font-size:13px;font-weight:600}
-.rows strong{display:block;font-size:17px}
+.contact{background:var(--white);border:1px solid var(--line);border-radius:32px;padding:clamp(32px,5vw,72px);display:grid;gap:clamp(32px,4vw,64px);align-items:center}
+@media(min-width:960px){.contact{grid-template-columns:1.1fr .9fr}}
+.contact .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:32px}
+.pin{width:54px;height:54px;border-radius:12px;border:1px solid #CFC6B5;display:inline-grid;place-items:center;color:var(--gold);transition:border-color .25s,color .25s}
+.pin:hover{border-color:var(--ink);color:var(--ink)}
+.pin svg{width:22px;height:22px}
+.rows{border-top:1px solid var(--line)}
+.rows>div{display:flex;gap:16px;align-items:center;padding-block:18px;border-bottom:1px solid var(--line)}
+.rows .ic{width:46px;height:46px;border-radius:12px;background:var(--panel);display:grid;place-items:center;flex:none;color:var(--gold)}
+.rows .ic svg{width:21px;height:21px}
+.rows small{display:block;color:var(--muted);font-size:13px;font-weight:600;line-height:1.5}
+.rows strong{display:block;font-size:17px;line-height:1.6}
 .rows strong.num{direction:ltr;text-align:right}
-.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .pending{color:var(--muted);font-size:14px;margin-top:16px}
-.map{border-radius:28px;background:linear-gradient(160deg,#F4F0E8,#E9E2D4);border:1px solid var(--line);min-height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;padding:32px;transition:border-color .3s}
-.map:hover{border-color:#CFC6B5}
-.map svg{width:56px;height:56px;color:var(--gold);margin-bottom:12px}
-.map b{font-size:26px}
-.map span{color:var(--muted)}
-.map em{font-style:normal;font-weight:700;margin-top:18px;padding:12px 26px;border-radius:12px;background:var(--ink);color:#fff;font-size:15px}
 
 /* ===== الفوتر ===== */
 footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
 .foot{display:grid;gap:36px;padding-block:56px}
 @media(min-width:900px){.foot{grid-template-columns:1.4fr 1fr 1fr}}
-.foot p{color:var(--muted);margin-top:16px;max-width:38ch;font-size:15px}
+.foot p{color:var(--muted);margin-top:18px;max-width:34ch;font-size:15px}
+.foot .brand img{width:60px;height:60px}
+.foot .pin{width:38px;height:38px;border-radius:50%;border-color:var(--line)}
+.foot .pin svg{width:17px;height:17px}
 .foot h4{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:14px}
 .foot li{margin-bottom:8px;font-size:15px;font-weight:600}
 .foot li a:hover{color:var(--gold)}
@@ -211,10 +214,10 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
 
 <div class="util">
   <div class="frame">
-    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>باسوس، القليوبية، طريق القناطر الخيرية</span>
+    <span class="slogan">معاً لعالم متكامل من احتياجاتك الكهربائية</span>
     <div class="r">
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>السبت – الخميس</span>
-      <span>صناعة مصرية</span>
+      <a class="pin" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener" aria-label="الموقع على الخريطة" title="الموقع على الخريطة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></a>
     </div>
   </div>
 </div>
@@ -222,8 +225,8 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
 <header class="hdr" id="hdr">
   <div class="frame">
     <a class="brand" href="#" aria-label="فلاش أون">
-      <img src="assets/logo.jpg" alt="">
-      <span><b>فلاش أون</b><small>للخراطيم والكابلات الكهربائية</small></span>
+      <img src="assets/logo.jpg" alt="شعار فلاش أون">
+      <span><b>فلاش أون</b><small>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</small></span>
     </a>
     <nav class="nav" aria-label="أقسام الموقع">
       <a href="#products">المنتجات</a>
@@ -242,9 +245,9 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
     <div class="frame">
       <div class="stage">
         <div class="txt rv">
-          <span class="kicker">مصنع فلاش أون</span>
-          <h1>مستلزمات التمديدات الكهربائية <span>من مصنع واحد</span></h1>
-          <p>خراطيم كهربائية، مواسير PVC، علب ماجيك، وكابلات نحاس. إنتاجنا بيوصل للمقاول والتاجر بسعر المصنع.</p>
+          <span class="kicker">شركة مصرية لصناعة وتوريد الأدوات الكهربائية</span>
+          <h1>معاً لعالم متكامل <span>من احتياجاتك الكهربائية</span></h1>
+          <p>نصنّع ونورّد الخراطيم والمواسير وعلب الماجيك والكابلات الكهربائية للمقاولين والتجار، بجودة ثابتة وبأسعار المصنع.</p>
           <div class="ctas">
             <a class="btn primary" id="waTop" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#icWa"/></svg>اطلب عرض سعر</a>
             <a class="btn ghost" href="#products">تصفّح المنتجات</a>
@@ -256,9 +259,9 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
       </div>
 
       <div class="stats rv d2">
-        <div><b>4</b><span>خطوط منتجات</span></div>
+        <div><b>4</b><span>خطوط إنتاج</span></div>
         <div><b><bdi dir="ltr">99.9</bdi><small>%</small></b><span>نقاء النحاس في الكابلات</span></div>
-        <div><b>6</b><span>مقاسات سلك من 1 لـ 6 مم</span></div>
+        <div><b>6</b><span>مقاسات من 1 إلى 6 مم</span></div>
         <div><b>100<small>م</small></b><span>طول بكرة السلك</span></div>
       </div>
     </div>
@@ -268,8 +271,8 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
   <section class="sec" id="products">
     <div class="frame">
       <div class="sec-head rv">
-        <div><span class="kicker">المنتجات</span><h2>أربع خطوط إنتاج،<br>جودة واحدة</h2></div>
-        <p class="lead">كل اللي المقاول محتاجه في تأسيس الكهرباء، من الخرطوم للعلبة للسلك.</p>
+        <div><span class="kicker">المنتجات</span><h2>أربعة خطوط إنتاج،<br>مستوى جودة واحد</h2></div>
+        <p class="lead">كل ما يحتاجه المقاول في تأسيس الكهرباء: من الخرطوم إلى العلبة إلى السلك.</p>
       </div>
 
       <article class="prod rv">
@@ -277,13 +280,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
         <div>
           <span class="kicker">تأسيس</span>
           <h3>خراطيم كهربائية</h3>
-          <p class="desc">خرطوم مموج مرن بيحمي الأسلاك ويسهّل تمريرها جوه الحيطان والأسقف، وبيتثني من غير ما يتكسر.</p>
+          <p class="desc">خرطوم مموّج مرن يحمي الأسلاك ويسهّل تمريرها داخل الحوائط والأسقف، ويتحمّل الثني دون أن يتكسر.</p>
           <dl class="spec">
-            <div><dt>الشكل</dt><dd>مموج مرن</dd></div>
-            <div><dt>الاستخدام</dt><dd>تمديدات داخل الحيطان والأسقف</dd></div>
+            <div><dt>الشكل</dt><dd>مموّج مرن</dd></div>
+            <div><dt>الاستخدام</dt><dd>تمديدات داخل الحوائط والأسقف</dd></div>
             <div><dt>الألوان</dt><dd><span class="dots"><i style="background:#F2C200"></i><i style="background:#C3272B"></i></span></dd></div>
           </dl>
-          <div class="acts"><a class="link" data-ask="عايز أعرف المقاسات والأسعار للخراطيم الكهربائية" href="#contact">اسأل عن المقاسات والسعر <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
+          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن مقاسات وأسعار الخراطيم الكهربائية" href="#contact">اطلب المقاسات والأسعار <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
         </div>
       </article>
 
@@ -294,13 +297,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
         <div>
           <span class="kicker">تأسيس</span>
           <h3>مواسير PVC</h3>
-          <p class="desc">مواسير ناعمة متينة في لفات، بألوان مختلفة علشان تفرّق بين خطوط الكهرباء في نفس المشروع.</p>
+          <p class="desc">مواسير ناعمة ومتينة تُورَّد في لفات، بألوان متعددة للتفريق بين خطوط التمديدات داخل المشروع الواحد.</p>
           <dl class="spec">
             <div><dt>الخامة</dt><dd>PVC</dd></div>
             <div><dt>التعبئة</dt><dd>لفات</dd></div>
             <div><dt>الألوان</dt><dd><span class="dots"><i style="background:#F5D90A"></i><i style="background:#F2541B"></i></span></dd></div>
           </dl>
-          <div class="acts"><a class="link" data-ask="عايز أعرف المقاسات والأسعار لمواسير PVC" href="#contact">اسأل عن المقاسات والسعر <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
+          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن مقاسات وأسعار مواسير PVC" href="#contact">اطلب المقاسات والأسعار <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
         </div>
       </article>
 
@@ -311,13 +314,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
         <div>
           <span class="kicker">تشطيب</span>
           <h3>علب ماجيك</h3>
-          <p class="desc">علب للمفاتيح والبرايز بمسامير معدن للتثبيت، وبتتركب لوحدها أو جنب بعض أو فوق بعض حسب التصميم.</p>
+          <p class="desc">علب مخصّصة للمفاتيح والبرايز، مزوّدة بمسامير معدنية للتثبيت، وتُركَّب مفردة أو متجاورة أو فوق بعضها حسب التصميم.</p>
           <dl class="spec">
-            <div><dt>التركيب</dt><dd>مفرد · جنب بعض · فوق بعض</dd></div>
-            <div><dt>التثبيت</dt><dd>مسامير معدن</dd></div>
+            <div><dt>التركيب</dt><dd>مفردة · متجاورة · فوق بعضها</dd></div>
+            <div><dt>التثبيت</dt><dd>مسامير معدنية</dd></div>
             <div><dt>اللون</dt><dd><span class="dots"><i style="background:#F7D000"></i></span></dd></div>
           </dl>
-          <div class="acts"><a class="link" data-ask="عايز أعرف الأنواع والأسعار لعلب الماجيك" href="#contact">اسأل عن الأنواع والسعر <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
+          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن أنواع وأسعار علب الماجيك" href="#contact">اطلب الأنواع والأسعار <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
         </div>
       </article>
 
@@ -328,7 +331,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
         <div>
           <span class="kicker">كابلات</span>
           <h3>كابلات كهربائية</h3>
-          <p class="desc">سلك نحاس مجدول معزول PVC، طبقاً للمواصفات القياسية، في بكرة 100 متر.</p>
+          <p class="desc">سلك نحاس مجدول معزول بـ PVC، مطابق للمواصفات القياسية، ويُورَّد في بكرات بطول 100 متر.</p>
           <dl class="spec">
             <div><dt>النوع</dt><dd>H07V-R مجدول</dd></div>
             <div><dt>الموصّل</dt><dd>نحاس <bdi dir="ltr">99.9%</bdi></dd></div>
@@ -336,7 +339,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
             <div><dt>الألوان</dt><dd><span class="dots"><i style="background:#C8302B"></i><i style="background:#2B5FC4"></i><i style="background:#1E1E1E"></i></span></dd></div>
           </dl>
           <div class="sizes" aria-label="المقاسات بالمللي مربع"><span>1.0</span><span>1.5</span><span>2.0</span><span>3.0</span><span>4.0</span><span>6.0</span></div>
-          <div class="acts"><a class="link" data-ask="عايز أعرف أسعار الكابلات الكهربائية" href="#contact">اسأل عن السعر <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
+          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن أسعار الكابلات الكهربائية" href="#contact">اطلب الأسعار <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a></div>
         </div>
       </article>
     </div>
@@ -345,11 +348,11 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
   <!-- ===== الجملة ===== -->
   <section class="frame rv">
     <div class="statement">
-      <p class="big">بنصنّع في مصر، <span>وبنبيع من المصنع للموقع</span> من غير وسيط.</p>
+      <p class="big">نصنّع في مصر، <span>ونورّد مباشرة</span> إلى موقع العمل.</p>
       <div class="pillars">
-        <div><b>صناعة مصرية</b><span>إنتاجنا من مصنعنا في باسوس، القليوبية.</span></div>
-        <div><b>مواصفات قياسية</b><span>منتجات مطابقة للمواصفات وعليها اسم فلاش أون.</span></div>
-        <div><b>تعامل واضح</b><span>عرض سعر مكتوب، وإذن تسليم مع كل شحنة.</span></div>
+        <div><b>صناعة مصرية</b><span>منتجات تُصنَّع في مصر وتحمل اسم فلاش أون.</span></div>
+        <div><b>مواصفات قياسية</b><span>جودة مطابقة للمواصفات القياسية في كل منتج.</span></div>
+        <div><b>تعامل واضح</b><span>عرض سعر مكتوب وإذن تسليم مع كل شحنة.</span></div>
       </div>
     </div>
   </section>
@@ -358,42 +361,39 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
   <section class="sec" id="order">
     <div class="frame">
       <div class="sec-head rv">
-        <div><span class="kicker">طريقة الطلب</span><h2>تلات خطوات<br>والشحنة عندك</h2></div>
-        <p class="lead">من غير تعقيد: كلمنا، خد السعر مكتوب، واستلم.</p>
+        <div><span class="kicker">طريقة الطلب</span><h2>ثلاث خطوات<br>وتصلك الشحنة</h2></div>
+        <p class="lead">بدون تعقيد: تواصل معنا، استلم عرض السعر، ثم استلم الشحنة.</p>
       </div>
       <ol class="steps">
-        <li class="rv"><b>ابعت طلبك</b><span>قولنا الصنف والمقاس والكمية على واتساب أو بالتليفون.</span></li>
-        <li class="rv d1"><b>عرض سعر مكتوب</b><span>بنبعتلك عرض سعر PDF بالأصناف والأسعار.</span></li>
-        <li class="rv d2"><b>تسليم بإذن</b><span>الشحنة بتوصل ومعاها إذن تسليم بالأصناف والكميات.</span></li>
+        <li class="rv"><b>أرسل طلبك</b><span>حدّد الصنف والمقاس والكمية وأرسلها عبر واتساب أو الهاتف.</span></li>
+        <li class="rv d1"><b>عرض سعر مكتوب</b><span>نرسل لك عرض سعر بصيغة PDF بالأصناف والأسعار.</span></li>
+        <li class="rv d2"><b>استلام بإذن تسليم</b><span>تصل الشحنة ومعها إذن تسليم بالأصناف والكميات.</span></li>
       </ol>
     </div>
   </section>
 
   <!-- ===== التواصل ===== -->
   <section id="contact">
-    <div class="frame contact">
-      <div class="info rv">
-        <span class="kicker">تواصل معنا</span>
-        <h2>اطلب عرض سعر</h2>
-        <p class="lead">ابعتلنا الصنف والمقاس والكمية، وهنرد عليك بالسعر.</p>
+    <div class="frame">
+      <div class="contact rv">
+        <div>
+          <span class="kicker">تواصل معنا</span>
+          <h2>اطلب عرض سعر</h2>
+          <p class="lead">أرسل لنا الصنف والمقاس والكمية، وسنرد عليك بالسعر في أقرب وقت.</p>
+          <div class="ctas">
+            <a class="btn wa" id="waBtm" href="#" hidden><svg viewBox="0 0 24 24" fill="currentColor"><use href="#icWa"/></svg>راسلنا على واتساب</a>
+            <a class="btn ghost" id="callBtm" href="#" hidden>اتصل بنا</a>
+            <a class="pin" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener" aria-label="الموقع على الخريطة" title="الموقع على الخريطة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></a>
+          </div>
+          <p class="pending" id="pending" hidden>سيتم إضافة رقم التواصل قريباً.</p>
+        </div>
         <div class="rows">
-          <div id="rowPhone" hidden><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><p><small>التليفون</small><strong class="num" id="nums"></strong></p></div>
-          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><p><small>العنوان</small><strong>باسوس، القليوبية، طريق القناطر الخيرية</strong></p></div>
+          <div id="rowPhone" hidden><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><p><small>الهاتف</small><strong class="num" id="nums"></strong></p></div>
           <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><p><small>مواعيد العمل</small><strong>السبت – الخميس · الجمعة إجازة</strong></p></div>
+          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><p><small>عرض السعر</small><strong>مكتوب بصيغة PDF</strong></p></div>
+          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><p><small>التسليم</small><strong>بإذن تسليم مع كل شحنة</strong></p></div>
         </div>
-        <div class="ctas">
-          <a class="btn wa" id="waBtm" href="#" hidden><svg viewBox="0 0 24 24" fill="currentColor"><use href="#icWa"/></svg>راسلنا على واتساب</a>
-          <a class="btn ghost" id="callBtm" href="#" hidden>اتصل بنا</a>
-          <a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6">افتح على الخريطة</a>
-        </div>
-        <p class="pending" id="pending" hidden>رقم التواصل هيتضاف هنا قريباً.</p>
       </div>
-      <a class="map rv d1" target="_blank" rel="noopener" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" aria-label="افتح موقع المصنع على خرائط جوجل">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
-        <b>موقع المصنع</b>
-        <span>باسوس، القليوبية، طريق القناطر الخيرية</span>
-        <em>افتح على خرائط جوجل</em>
-      </a>
     </div>
   </section>
 
@@ -403,8 +403,8 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
   <div class="frame">
     <div class="foot">
       <div>
-        <a class="brand" href="#"><img src="assets/logo.jpg" alt=""><span><b>فلاش أون</b><small>للخراطيم والكابلات الكهربائية</small></span></a>
-        <p>مصنع مصري لمستلزمات التمديدات الكهربائية في باسوس، القليوبية.</p>
+        <a class="brand" href="#"><img src="assets/logo.jpg" alt="شعار فلاش أون"><span><b>فلاش أون</b><small>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</small></span></a>
+        <p>معاً لعالم متكامل من احتياجاتك الكهربائية.</p>
       </div>
       <div>
         <h4>المنتجات</h4>
@@ -412,10 +412,10 @@ footer{border-top:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
       </div>
       <div>
         <h4>تواصل</h4>
-        <ul><li>باسوس، القليوبية</li><li>السبت – الخميس</li><li><a href="#contact">اطلب عرض سعر</a></li></ul>
+        <ul><li>السبت – الخميس</li><li><a href="#contact">اطلب عرض سعر</a></li><li><a class="pin" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener" aria-label="الموقع على الخريطة" title="الموقع على الخريطة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></a></li></ul>
       </div>
     </div>
-    <div class="copy"><span>© <span id="yr">2026</span> فلاش أون. كل الحقوق محفوظة.</span><span>صُنع في مصر</span></div>
+    <div class="copy"><span>© <span id="yr">2026</span> فلاش أون. جميع الحقوق محفوظة.</span><span>صُنع في مصر</span></div>
   </div>
 </footer>
 
@@ -438,7 +438,7 @@ var SITE = {
   function link(text){ return "https://wa.me/"+wa+"?text="+encodeURIComponent(text); }
 
   if(wa){
-    var def = "السلام عليكم، عايز عرض سعر من فلاش أون";
+    var def = "السلام عليكم، أرغب في الحصول على عرض سعر من فلاش أون";
     [$("waTop"),$("waBtm"),$("fab")].forEach(function(a){ a.href = link(def); a.target = "_blank"; a.rel = "noopener"; a.hidden = false; });
     document.querySelectorAll("[data-ask]").forEach(function(a){
       a.href = link("السلام عليكم، " + a.getAttribute("data-ask")); a.target = "_blank"; a.rel = "noopener";
