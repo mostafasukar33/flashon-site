@@ -7,13 +7,23 @@
 <meta property="og:image" content="https://flashoneg.com/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="فلاش أون"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://flashoneg.com/assets/og.jpg"><meta property="og:url" content="https://flashoneg.com/"><meta property="og:locale" content="ar_EG">
 <link rel="canonical" href="https://flashoneg.com/">
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg"><link rel="icon" type="image/png" href="assets/icon-192.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="preload" href="assets/fonts/f11.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/fonts/f5.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/fonts/f3.woff2" as="font" type="font/woff2" crossorigin><meta property="og:image:alt" content="شعار فلاش أون مع عبارة: كل احتياجاتك الكهربائية في مكان واحد"><meta name="twitter:title" content="فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية"><meta name="twitter:description" content="فلاش أون… كل احتياجاتك الكهربائية في مكان واحد"><meta name="format-detection" content="telephone=no">
-<noscript><style>.reveal,.rv,.lbl,.part,.fit{opacity:1!important;transform:none!important}.drw{stroke-dashoffset:0!important}</style></noscript><link rel="manifest" href="site.webmanifest">
+<noscript><style>.wall-wrap,.steps-b li,.reveal,.rv,.lbl,.part,.fit{opacity:1!important;transform:none!important}.drw{stroke-dashoffset:0!important}
+/* wall: static image + one-shot reveal (opacity/transform only) */
+img.wall{display:block;width:100%;height:auto;border-radius:inherit}
+.wall-wrap{opacity:0;transform:translateY(24px) scale(.985);transition:opacity .8s var(--ease),transform .9s var(--ease)}
+.steps-b li{opacity:0!important;transform:translateY(16px)!important;background:#fff!important;border-color:#E5E0D5!important;transition:opacity .6s var(--ease),transform .7s var(--ease)!important}
+.build.in .wall-wrap{opacity:1;transform:none}
+.build.in .steps-b li{opacity:1!important;transform:none!important}
+.build.in .steps-b li:nth-child(2){transition-delay:.12s!important}.build.in .steps-b li:nth-child(3){transition-delay:.24s!important}.build.in .steps-b li:nth-child(4){transition-delay:.36s!important}
+@media(prefers-reduced-motion:reduce){.wall-wrap,.steps-b li{transition:none!important;opacity:1!important;transform:none!important}}
+@media(max-width:900px){.hdr{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(246,243,236,.97)}}
+</style></noscript><link rel="manifest" href="site.webmanifest">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"name":"فلاش أون","alternateName":"Flash On","url":"https://flashoneg.com/","logo":"https://flashoneg.com/assets/icon-512.png","slogan":"فلاش أون… كل احتياجاتك الكهربائية في مكان واحد","description":"شركة مصرية لصناعة وتوريد الأدوات الكهربائية","knowsAbout":["خراطيم كهربائية","سوستة فلكسبل","مواسير PVC","علب ماجيك","الكابلات الكهربائية"],"hasMap":"https://maps.app.goo.gl/vbUYCvFpYyoybS6L6"}</script>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
 :root{--g:#14171C;--g2:#1B1F26;--y:#F2B705;--y2:#FFD34D;--paper:#F6F3EC;--steel:#5E6670;--ease:cubic-bezier(.2,.7,.2,1);--max:1240px;--pad:clamp(20px,4.5vw,56px)}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--paper);color:var(--g);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--paper);color:var(--g);-webkit-font-smoothing:antialiased;overflow-x:clip}
 a{color:inherit;text-decoration:none}svg{display:block}
 .frame{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
 /* header */
@@ -159,8 +169,8 @@ h3{font-family:Alexandria;font-weight:700}
 .cur-bar i{display:block;height:100%;width:100%;transform-origin:right;transform:scaleX(var(--p,0));background:linear-gradient(270deg,#E3A000,var(--y),#FFE58A);box-shadow:0 0 10px rgba(242,183,5,.8)}
 /* build section */
 #products{padding-bottom:clamp(60px,7vw,100px)}
-.build{height:380vh;position:relative}
-.build-in{position:sticky;top:84px;height:calc(100vh - 84px);display:flex;flex-direction:column;justify-content:center}
+.build{position:relative;padding-block:10px clamp(30px,4vw,60px)}
+.build-in{display:block}
 .build-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:center;width:100%}
 .wall-wrap{background:var(--g);border-radius:28px;padding:clamp(14px,2vw,24px);box-shadow:0 40px 80px -40px rgba(20,23,28,.55)}
 .wall{width:100%;height:auto;max-height:calc(100vh - 220px);border-radius:16px;overflow:hidden}
@@ -182,12 +192,8 @@ h3{font-family:Alexandria;font-weight:700}
 .bprog{position:relative}.bprog::before{content:"";position:absolute;inset-inline:var(--pad);top:0;height:4px;border-radius:4px;background:#E5E0D5;z-index:-1}
 .static .build{height:auto}.static .build-in{position:static;height:auto;padding-block:10px 40px}.static .steps-b li{opacity:1;background:#fff;border-color:#E5E0D5;transform:none}.static .bprog{display:none}.static .wall .lbl{opacity:1;transform:none}
 @media(max-width:900px){
- .build{height:420vh}
- .build-in{top:70px;height:calc(100svh - 70px);justify-content:flex-start;padding-top:14px}
  .build-grid{grid-template-columns:1fr;gap:14px}
  .wall{max-height:52svh}
- .steps-b{display:block;min-height:150px}
- .steps-b li{position:absolute;inset:0 0 auto 0;opacity:0;transform:translateY(10px)}
  .steps-b li.on{opacity:1;transform:none}
  .static .steps-b{display:grid;min-height:0}.static .steps-b li{position:static}
 }
@@ -324,6 +330,7 @@ body{font-weight:500}
 .types .tbtn{font-family:"IBM Plex Sans Arabic",sans-serif;font-weight:600;font-size:14.5px;line-height:1;padding:10px 15px;border-radius:999px;border:0;cursor:pointer;background:#FFF6D6;color:#5A4300;box-shadow:inset 0 0 0 1px rgba(201,143,0,.35);transition:background .25s,color .25s,transform .2s}
 .types .tbtn:hover{transform:translateY(-1px)}.types .tbtn.on{background:#14171C;color:#F2B705;box-shadow:none}
 @media(max-width:600px){.mini{justify-content:center;flex-wrap:wrap;gap:8px 16px}}
+@media(max-width:900px){.hdr{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(246,243,236,.97)}}
 </style></head><body>
 <a class="skip" href="#products">تخطَّ إلى المحتوى</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -463,101 +470,15 @@ body{font-weight:500}
   <div class="build-in">
    <div class="frame build-grid">
     <div class="wall-wrap">
-     <svg class="wall" viewBox="0 0 600 640" aria-label="مقطع توضيحي لحائط أثناء التأسيس الكهربائي" role="img">
-      <defs>
-       <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .5  0 0 0 0 .4  0 0 0 0 .35  0 0 0 .55 0" result="g"/><feComposite in="g" in2="SourceGraphic" operator="in" result="gi"/><feBlend in="SourceGraphic" in2="gi" mode="multiply"/></filter>
-       <filter id="relief" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".045 .09" numOctaves="4" seed="9" result="t"/><feDiffuseLighting in="t" surfaceScale="2.2" lighting-color="#fff" result="l"><feDistantLight azimuth="235" elevation="52"/></feDiffuseLighting><feComposite in="l" in2="SourceGraphic" operator="in" result="lc"/><feBlend in="SourceGraphic" in2="lc" mode="multiply"/></filter>
-       <filter id="concrete" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="4" seed="2" result="t"/><feDiffuseLighting in="t" surfaceScale="1.4" lighting-color="#d8d8d8"><feDistantLight azimuth="240" elevation="58"/></feDiffuseLighting><feComposite in2="SourceGraphic" operator="in"/></filter>
-       <filter id="ao" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
-       <filter id="psh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="6" stdDeviation="5" flood-color="#1a0d05" flood-opacity=".55"/></filter>
-       <filter id="psh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000" flood-opacity=".5"/></filter>
-       <linearGradient id="boxW" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE27A"/><stop offset=".5" stop-color="#F2B705"/><stop offset="1" stop-color="#C99000"/></linearGradient>
-       <linearGradient id="boxIn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A5600"/><stop offset=".25" stop-color="#C89300"/><stop offset="1" stop-color="#E2AA00"/></linearGradient>
-       <radialGradient id="screw" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#FAFBFC"/><stop offset=".5" stop-color="#B8BEC6"/><stop offset="1" stop-color="#6E757E"/></radialGradient>
-       <linearGradient id="cu" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8C4A1C"/><stop offset=".45" stop-color="#F0A36A"/><stop offset="1" stop-color="#9E5524"/></linearGradient>
-       <path id="wHose" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420"/>
-       <path id="wPvc" d="M500 46 V540 H40"/>
-      </defs>
-      <!-- slab / floor (concrete) -->
-      <rect x="0" y="0" width="600" height="46" fill="#8E9196"/><rect x="0" y="0" width="600" height="46" fill="#8E9196" filter="url(#concrete)" opacity=".9"/>
-      <rect x="0" y="40" width="600" height="8" fill="#000" opacity=".25" filter="url(#ao)"/>
-      <!-- bricks (generated) -->
-      <g id="bricks" filter="url(#relief)"><rect x="0" y="46" width="600" height="560" fill="#C9C1B4"/></g>
-      <rect x="0" y="46" width="600" height="560" fill="#7a3a22" opacity=".001" filter="url(#grain)"/>
-      <rect x="0" y="606" width="600" height="34" fill="#8E9196"/><rect x="0" y="606" width="600" height="34" fill="#8E9196" filter="url(#concrete)" opacity=".9"/>
-      <rect x="0" y="600" width="600" height="8" fill="#000" opacity=".22" filter="url(#ao)"/>
-      <!-- chases: rough cement grooves -->
-      <g class="chase">
-       <use href="#wHose" fill="none" stroke="#6E6A64" stroke-width="48" stroke-linecap="square"/>
-       <use href="#wHose" fill="none" stroke="#9B958C" stroke-width="40" stroke-linecap="square" filter="url(#concrete)"/>
-       <use href="#wPvc" fill="none" stroke="#6E6A64" stroke-width="50"/>
-       <use href="#wPvc" fill="none" stroke="#9B958C" stroke-width="42" filter="url(#concrete)"/>
-       <use href="#wHose" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="40" filter="url(#ao)"/>
-       <use href="#wPvc" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="42" filter="url(#ao)"/>
-      </g>
-      <!-- 4 cables: insulated + copper -->
-      <g class="part p4" filter="url(#psh2)">
-       <path class="drw" pathLength="1" d="M124 46 V250 Q124 284 170 284 H360 Q394 284 394 330 V470 q0 22 -18 36" fill="none" stroke="#B71C1C" stroke-width="5.5" stroke-linecap="round"/>
-       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V470 q0 26 0 46" fill="none" stroke="#1450A8" stroke-width="5.5" stroke-linecap="round"/>
-       <path class="drw" pathLength="1" d="M136 46 V250 Q136 296 170 296 H360 Q406 296 406 330 V470 q0 22 18 36" fill="none" stroke="#1C1E22" stroke-width="5.5" stroke-linecap="round"/>
-       <path class="drw" pathLength="1" d="M123 46 V250 Q123 283 170 283 H360 Q393 283 393 330 V470 q0 22 -18 36" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round"/>
-       <path class="drw" pathLength="1" d="M129 46 V250 Q129 289 170 289 H360 Q399 289 399 330 V470 q0 26 0 46" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round"/>
-       <g class="cuends" style="display:none"><path d="M376 506 l-7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M400 516 v9" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M424 506 l7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/></g>
-      </g>
-      <!-- 1 smooth electrical hose -->
-      <g class="part p1" filter="url(#psh)">
-       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#8E1E08" stroke-width="30"/>
-       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#F0461C" stroke-width="25"/>
-       <path class="drw" pathLength="1" d="M128 46 V250 Q128 288 170 288 H360 Q398 288 398 330 V420" fill="none" stroke="#FF7A4E" stroke-width="9" transform="translate(-4 -4)"/>
-       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#FFE2D6" stroke-opacity=".9" stroke-width="2.5" transform="translate(-6 -6)"/>
-      </g>
-      <!-- 2 PVC pipe -->
-      <g class="part p2" filter="url(#psh)">
-       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#8C9097" stroke-width="32"/>
-       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#E9EBEE" stroke-width="27"/>
-       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#F7F8FA" stroke-width="12" transform="translate(-5 -5)"/>
-       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="3" transform="translate(-8 -8)"/>
-       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#3A3F47" stroke-opacity=".35" stroke-width="5" transform="translate(9 9)"/>
-<g class="fit"><rect x="476" y="236" width="48" height="34" rx="4" fill="#D5D8DD"/><rect x="476" y="236" width="48" height="34" rx="4" fill="none" stroke="#8C9097" stroke-width="2"/><rect x="483" y="240" width="10" height="26" rx="3" fill="#FFFFFF" opacity=".7"/>
-<path d="M474 500 H520 Q536 500 536 516 V562 H474 Z" fill="#DDE0E4" stroke="#8C9097" stroke-width="2"/><path d="M474 500 V562 M474 562 H536" stroke="#8C9097" stroke-width="2"/><rect x="474" y="496" width="52" height="10" rx="3" fill="#C9CCD2" stroke="#8C9097" stroke-width="1.5"/><rect x="468" y="514" width="10" height="52" rx="3" fill="#C9CCD2" stroke="#8C9097" stroke-width="1.5"/><path d="M484 508 H516 Q524 508 524 516" fill="none" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="4"/>
-<rect x="236" y="522" width="34" height="36" rx="4" fill="#D5D8DD" stroke="#8C9097" stroke-width="2"/><rect x="240" y="526" width="26" height="8" rx="3" fill="#FFFFFF" opacity=".7"/></g>
-      </g>
-      <!-- 3 magic box -->
-      <g class="part p3 box">
-       <rect x="330" y="418" width="140" height="104" rx="8" fill="#000" opacity=".45" filter="url(#ao)" transform="translate(3 6)"/>
-       <rect x="334" y="420" width="132" height="98" rx="7" fill="url(#boxW)"/>
-       <rect x="334.8" y="420.8" width="130.4" height="96.4" rx="6.5" fill="none" stroke="#FFF2B8" stroke-opacity=".75" stroke-width="1.6"/>
-       <rect x="344" y="430" width="112" height="78" rx="4" fill="url(#boxIn)"/>
-       <rect x="344" y="430" width="112" height="9" rx="4" fill="#000" opacity=".2"/>
-       <rect x="372" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="372" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="372" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/>
-       <path d="M352 440 h10 a5 5 0 0 1 0 10 h-10 M352 488 h10 a5 5 0 0 1 0 10 h-10" fill="none" stroke="#8A6200" stroke-opacity=".5" stroke-width="1.6"/>
-       <rect x="345" y="462" width="12" height="16" rx="2" fill="#C99400"/><rect x="443" y="462" width="12" height="16" rx="2" fill="#C99400"/>
-       <circle cx="351" cy="470" r="5.5" fill="url(#screw)" stroke="#59606A" stroke-width=".8"/><path d="M347.5 470h7M351 466.5v7" stroke="#59606A" stroke-width="1.4"/>
-       <circle cx="449" cy="470" r="5.5" fill="url(#screw)" stroke="#59606A" stroke-width=".8"/><path d="M445.5 470h7M449 466.5v7" stroke="#59606A" stroke-width="1.4"/>
-      </g>
-      <!-- cable tails out of the box -->
-      <g class="part p4 p4t" filter="url(#psh2)">
-       <path class="drw" pathLength="1" d="M394 452 V470 q0 22 -18 36" fill="none" stroke="#B71C1C" stroke-width="5.5" stroke-linecap="round"/>
-       <path class="drw" pathLength="1" d="M400 452 V470 q0 26 0 46" fill="none" stroke="#1450A8" stroke-width="5.5" stroke-linecap="round"/>
-       <path class="drw" pathLength="1" d="M406 452 V470 q0 22 18 36" fill="none" stroke="#1C1E22" stroke-width="5.5" stroke-linecap="round"/>
-       <g class="cuends"><path d="M376 506 l-7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M400 516 v9" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M424 506 l7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/></g>
-      </g>
-      <g class="part p4 p4s"><path class="drw" pathLength="1" d="M124 0 V48" stroke="#B71C1C" stroke-width="5" fill="none"/><path class="drw" pathLength="1" d="M130 0 V48" stroke="#1450A8" stroke-width="5" fill="none"/><path class="drw" pathLength="1" d="M136 0 V48" stroke="#1C1E22" stroke-width="5" fill="none"/></g>
-      <!-- labels -->
-      <g class="lbl l1"><rect x="150" y="150" width="148" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="224" y="176" text-anchor="middle">خرطوم كهربائي</text></g>
-      <g class="lbl l2"><rect x="60" y="562" width="132" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="126" y="588" text-anchor="middle">ماسورة PVC</text></g>
-      <g class="lbl l3"><rect x="214" y="398" width="104" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="266" y="424" text-anchor="middle">علبة ماجيك</text></g>
-      <g class="lbl l4"><rect x="250" y="484" width="96" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="298" y="510" text-anchor="middle">كابلات</text></g>
-     </svg>
+     <picture><source media="(max-width:700px)" srcset="assets/wall-m.webp"><img class="wall" src="assets/wall-640.webp" srcset="assets/wall-640.webp 640w, assets/wall.webp 1000w" sizes="(max-width:1100px) 90vw, 520px" width="1000" height="1067" loading="lazy" decoding="async" alt="مقطع توضيحي لحائط أثناء التأسيس الكهربائي: خرطوم كهربائي وماسورة PVC وعلبة ماجيك وكابلات"></picture>
     </div>
     <ol class="steps-b" id="bsteps">
-     <li class="on"><span class="n">01</span><h3>خراطيم كهربائية</h3><p>خراطيم ملساء مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p></li>
+     <li><span class="n">01</span><h3>خراطيم كهربائية</h3><p>خراطيم ملساء مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p></li>
      <li><span class="n">02</span><h3>مواسير PVC</h3><p>مواسير PVC صلبة بأطوال مستقيمة، تُوصَل بالأكواع والجُلَب، بألوان تساعد على التمييز بين خطوط التأسيس.</p></li>
      <li><span class="n">03</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p></li>
      <li><span class="n">04</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p></li>
     </ol>
    </div>
-   <div class="bprog" aria-hidden="true"><i id="bbar"></i></div>
   </div>
  </div>
 
@@ -650,11 +571,6 @@ body{font-weight:500}
 <a class="fab" id="fab" href="#" hidden target="_blank" rel="noopener" aria-label="راسلنا على واتساب"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg></a>
 
 <script>
-(function(){var p=document.getElementById('hp'),g=document.getElementById('ribs')||document.createElementNS('http://www.w3.org/2000/svg','g'),L=p.getTotalLength(),o='',NS='http://www.w3.org/2000/svg';
- for(var d=4;d<L-2;d+=10){var a=p.getPointAtLength(d),b=p.getPointAtLength(d+.5),tx=b.x-a.x,ty=b.y-a.y,m=Math.hypot(tx,ty)||1,nx=-ty/m*25,ny=tx/m*25;
-  o+='<line x1="'+(a.x-nx).toFixed(1)+'" y1="'+(a.y-ny).toFixed(1)+'" x2="'+(a.x+nx).toFixed(1)+'" y2="'+(a.y+ny).toFixed(1)+'" stroke="#8A6200" stroke-opacity=".55" stroke-width="3.2" stroke-linecap="round"/>';
-  var c=p.getPointAtLength(d+3.6);o+='<line x1="'+(c.x-nx*.82).toFixed(1)+'" y1="'+(c.y-ny*.82).toFixed(1)+'" x2="'+(c.x+nx*.82).toFixed(1)+'" y2="'+(c.y+ny*.82).toFixed(1)+'" stroke="#FFE68A" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/>';}
- g.innerHTML=o;})();
 (function(){var hr=document.getElementById('hero'),r0=matchMedia('(prefers-reduced-motion: reduce)').matches;
  if(r0){hr.classList.add('on')}else{requestAnimationFrame(function(){hr.classList.add('go')});setTimeout(function(){hr.classList.add('on')},1650)}})();
 (function(){
@@ -701,31 +617,11 @@ var APPROVALS=[];
    o+='<rect x="'+(x+3)+'" y="'+(y+3)+'" width="86" height="4" fill="#fff" opacity=".08"/><rect x="'+(x+3)+'" y="'+(y+21)+'" width="86" height="4" fill="#000" opacity=".14"/>'}}
   g.insertAdjacentHTML("beforeend",o)})();
  /* wall hose ribs */
- document.querySelectorAll(".wribs").forEach(function(g){var p=document.getElementById(g.dataset.path),L=p.getTotalLength(),o="";
-  for(var d=3;d<L-2;d+=7){var a=p.getPointAtLength(d),b=p.getPointAtLength(d+.5),tx=b.x-a.x,ty=b.y-a.y,m=Math.hypot(tx,ty)||1,nx=-ty/m*12.5,ny=tx/m*12.5;
-   o+='<line x1="'+(a.x-nx).toFixed(1)+'" y1="'+(a.y-ny).toFixed(1)+'" x2="'+(a.x+nx).toFixed(1)+'" y2="'+(a.y+ny).toFixed(1)+'" stroke="#8A6200" stroke-opacity=".55" stroke-width="2.4"/>';var c=p.getPointAtLength(d+3);o+='<line x1="'+(c.x-nx*.8).toFixed(1)+'" y1="'+(c.y-ny*.8).toFixed(1)+'" x2="'+(c.x+nx*.8).toFixed(1)+'" y2="'+(c.y+ny*.8).toFixed(1)+'" stroke="#FFE88A" stroke-opacity=".7" stroke-width="1.2"/>'}
-  g.innerHTML=o});
- /* build scroll */
- var B=$("build"),parts=[".p1",".p2",".p3",".p4"].map(function(s){return B.querySelector(s)}),lbls=B.querySelectorAll(".lbl"),steps=$("bsteps").children,chase=B.querySelectorAll(".chase");
- function setP(p){
-  var seg=function(i){return Math.min(1,Math.max(0,(p*4-i)/0.85))};
-  var t1=seg(0),t2=seg(1),t3=seg(2),t4=seg(3);
-  parts[0].style.setProperty("--o",1-t1);parts[0].style.setProperty("--r",t1>.98?1:0);
-  parts[1].style.setProperty("--o",1-t2);
-  parts[2].style.setProperty("--b",t3);
-  B.querySelectorAll(".p4").forEach(function(e){e.style.setProperty("--o",1-t4)});
-  chase.forEach(function(c){c.style.opacity=p>0.02?1:0});
-  var act=Math.min(3,Math.floor(p*4));
-  [t1,t2,t3,t4].forEach(function(t,i){lbls[i].classList.toggle("on",t>.6);steps[i].classList.toggle("on",i===act)});
-  B.style.setProperty("--bp",p);
- }
- if(rm){document.documentElement.classList.add("static");setP(1)}
- else{
-  var tick=false;function onS(){if(tick)return;tick=true;requestAnimationFrame(function(){tick=false;
-   var r=B.getBoundingClientRect(),h=B.offsetHeight-innerHeight;setP(Math.min(1,Math.max(0,-r.top/(h||1))));
-   var dh=document.documentElement.scrollHeight-innerHeight;document.documentElement.style.setProperty("--p",dh>0?scrollY/dh:0)})}
-  addEventListener("scroll",onS,{passive:true});addEventListener("resize",onS);onS();
- }
+ /* header scroll progress: transform only, cached height */
+ var de=document.documentElement,dh=1,tk=false;function mh(){dh=Math.max(1,de.scrollHeight-innerHeight)}mh();addEventListener("resize",mh);addEventListener("load",mh);
+ if(!rm)addEventListener("scroll",function(){if(tk)return;tk=true;requestAnimationFrame(function(){tk=false;de.style.setProperty("--p",scrollY/dh)})},{passive:true});
+ /* wall reveal: one-shot */
+ var B=$("build");if(rm||!("IntersectionObserver" in window))B.classList.add("in");else{var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){B.classList.add("in");io.disconnect()}},{threshold:.25});io.observe(B)}
 })();
 </script>
 
