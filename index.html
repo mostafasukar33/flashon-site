@@ -1,13 +1,13 @@
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية</title>
-<meta name="description" content="فلاش أون شركة مصرية لصناعة وتوريد الأدوات الكهربائية: خراطيم كهربائية، مواسير PVC، علب ماجيك، وجميع أنواع الكابلات الكهربائية.">
+<meta name="description" content="فلاش أون شركة مصرية لصناعة وتوريد الأدوات الكهربائية: خراطيم كهربائية، سوستة فلكسبل، مواسير PVC، علب ماجيك، وجميع أنواع الكابلات الكهربائية.">
 <meta name="theme-color" content="#14171C">
 <meta property="og:type" content="website"><meta property="og:title" content="فلاش أون | كل احتياجاتك الكهربائية في مكان واحد">
 <meta property="og:description" content="شركة مصرية لصناعة وتوريد الأدوات الكهربائية.">
 <meta property="og:image" content="https://flashoneg.com/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="فلاش أون"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://flashoneg.com/assets/og.jpg"><meta property="og:url" content="https://flashoneg.com/"><meta property="og:locale" content="ar_EG">
 <link rel="canonical" href="https://flashoneg.com/">
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg"><link rel="icon" type="image/png" href="assets/icon-192.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"فلاش أون","alternateName":"Flash On","url":"https://flashoneg.com/","logo":"https://flashoneg.com/assets/icon-512.png","slogan":"فلاش أون… كل احتياجاتك الكهربائية في مكان واحد","description":"شركة مصرية لصناعة وتوريد الأدوات الكهربائية","hasMap":"https://maps.app.goo.gl/vbUYCvFpYyoybS6L6"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"فلاش أون","alternateName":"Flash On","url":"https://flashoneg.com/","logo":"https://flashoneg.com/assets/icon-512.png","slogan":"فلاش أون… كل احتياجاتك الكهربائية في مكان واحد","description":"شركة مصرية لصناعة وتوريد الأدوات الكهربائية","knowsAbout":["خراطيم كهربائية","سوستة فلكسبل","مواسير PVC","علب ماجيك","الكابلات الكهربائية"],"hasMap":"https://maps.app.goo.gl/vbUYCvFpYyoybS6L6"}</script>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
 :root{--g:#14171C;--g2:#1B1F26;--y:#F2B705;--y2:#FFD34D;--paper:#F6F3EC;--steel:#5E6670;--ease:cubic-bezier(.2,.7,.2,1);--max:1240px;--pad:clamp(20px,4.5vw,56px)}
@@ -163,7 +163,7 @@ h3{font-family:Alexandria;font-weight:700}
 .build-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:center;width:100%}
 .wall-wrap{background:var(--g);border-radius:28px;padding:clamp(14px,2vw,24px);box-shadow:0 40px 80px -40px rgba(20,23,28,.55)}
 .wall{width:100%;height:auto;max-height:calc(100vh - 220px);border-radius:16px;overflow:hidden}
-.wall .chase{opacity:0;transition:opacity .6s}
+.wall .fit{opacity:calc((.35 - var(--o,0))*3)}.wall .chase{opacity:0;transition:opacity .6s}
 .wall .drw{stroke-dasharray:1;stroke-dashoffset:var(--o,1)}
 .wall .wribs{opacity:var(--r,0)}.wall .cuends{opacity:calc(1 - var(--o,1))}
 .wall .box{transform-box:fill-box;transform-origin:center;opacity:var(--b,0);transform:scale(calc(.6 + .4*var(--b,0)))}
@@ -191,11 +191,11 @@ h3{font-family:Alexandria;font-weight:700}
  .static .steps-b{display:grid;min-height:0}.static .steps-b li{position:static}
 }
 /* cards */
-.cards{display:grid;gap:20px;grid-template-columns:repeat(4,1fr);margin-top:clamp(50px,6vw,90px)}
+.cards{display:grid;gap:20px;grid-template-columns:repeat(6,1fr);margin-top:clamp(50px,6vw,90px)}
 .card{background:#fff;border:1px solid #E5E0D5;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .3s}
 .card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -34px rgba(20,23,28,.45);border-color:#D8D0BF}
-.art2{aspect-ratio:4/3;background:radial-gradient(90% 90% at 50% 40%,#fff,#EFEADF);display:grid;place-items:center;padding:22px}
-.art2 img{height:100%;width:auto;max-width:100%;object-fit:contain;transition:transform .8s var(--ease)}
+.art2{aspect-ratio:4/3;background:radial-gradient(80% 90% at 50% 30%,#3A4048,#14171C);display:grid;place-items:center;overflow:hidden}.art2 img[src$=".svg"]{padding:22px;box-sizing:border-box}
+.art2 img{height:100%;width:100%;object-fit:contain;transition:transform .8s var(--ease)}
 .card:hover .art2 img{transform:scale(1.06)}
 .cb{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
 .cat{font-size:13px;font-weight:600;color:var(--steel)}
@@ -204,8 +204,9 @@ h3{font-family:Alexandria;font-weight:700}
 .more{margin-top:auto;padding-top:16px;display:inline-flex;align-items:center;gap:8px;font-family:Alexandria;font-weight:700;font-size:14px}
 .more svg{width:18px;height:18px;color:#C99400;transition:transform .3s var(--ease)}
 .card:hover .more svg{transform:translateX(-5px)}
-@media(max-width:1100px){.cards{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.cards>.card{grid-column:span 2}.cards>.card:nth-child(-n+2){grid-column:span 3}
+@media(max-width:1100px){.cards{grid-template-columns:repeat(2,1fr)}.cards>.card,.cards>.card:nth-child(-n+2){grid-column:auto}.cards>.card:first-child{grid-column:1/-1}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.cards>.card:first-child{grid-column:auto}}
 /* about */
 .about{background:var(--g);color:#fff;position:relative;overflow:hidden;isolation:isolate}
 .about::before{content:"";position:absolute;z-index:-1;width:700px;height:700px;border-radius:50%;background:radial-gradient(rgba(242,183,5,.14),transparent 65%);inset-inline-end:-200px;top:-200px}
@@ -221,12 +222,7 @@ h3{font-family:Alexandria;font-weight:700}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}.pts{grid-template-columns:1fr}.seal-wrap{order:-1;width:220px}}
 /* steps */
-.steps3{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
-.steps3 li{background:#fff;border:1px solid #E5E0D5;border-radius:22px;padding:30px 28px;position:relative;transition:transform .4s var(--ease),box-shadow .4s}
-.steps3 li:hover{transform:translateY(-4px);box-shadow:0 26px 50px -32px rgba(20,23,28,.4)}
 .sn{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--g);color:var(--y);font-family:Alexandria;font-weight:800;font-size:17px;margin-bottom:22px}
-.steps3 h3{font-size:21px}.steps3 p{color:#4A5059;margin-top:6px;font-size:16px}
-@media(max-width:900px){.steps3{grid-template-columns:1fr}}
 .appr{list-style:none;display:flex;flex-wrap:wrap;gap:14px}
 .appr li{padding:16px 22px;border-radius:16px;background:#fff;border:1px solid #E5E0D5;font-family:Alexandria;font-weight:700}
 /* contact */
@@ -290,6 +286,20 @@ nav{font-weight:600}
 @media(max-width:600px){.gov-in{flex-direction:column;text-align:center;padding:24px 20px}.gbadge{font-size:14px}}
 .skip{position:fixed;top:-60px;inset-inline-start:16px;z-index:100;background:var(--y);color:var(--g);padding:10px 16px;border-radius:10px;font-weight:700;transition:top .2s}.skip:focus{top:12px}
 :focus-visible{outline:2px solid var(--y);outline-offset:3px;border-radius:8px}
+.why{background:linear-gradient(180deg,#14171C,#1B1F26);color:#fff;padding:clamp(72px,8vw,112px) 0;position:relative;overflow:hidden;isolation:isolate}
+.why::before{content:"";position:absolute;inset:-20% 10% auto;height:70%;z-index:-1;background:radial-gradient(50% 60% at 50% 0,rgba(242,183,5,.16),transparent 70%)}
+.why-h{text-align:center;margin-bottom:clamp(36px,4vw,56px)}.why-h h2{color:#fff;margin:12px 0 0}
+.wg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.wc{--mx:50%;--my:0%;position:relative;padding:30px 26px 32px;border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.wc::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(242,183,5,.18),transparent 65%);opacity:0;transition:opacity .4s;pointer-events:none}
+.wc:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1px rgba(242,183,5,.45),0 30px 60px -30px rgba(0,0,0,.8)}.wc:hover::before{opacity:1}
+.wn{position:absolute;top:22px;inset-inline-end:24px;font-family:Montserrat;font-weight:800;font-size:15px;color:rgba(255,255,255,.35);letter-spacing:.1em}
+.wi{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;color:var(--y);background:radial-gradient(circle at 30% 25%,rgba(242,183,5,.28),rgba(242,183,5,.06));box-shadow:inset 0 0 0 1px rgba(242,183,5,.35),0 0 30px -8px rgba(242,183,5,.5);margin-bottom:22px;transition:transform .5s}
+.wc:hover .wi{transform:scale(1.06) rotate(-4deg)}.wi svg{width:30px;height:30px}
+.wc h3{font-family:Alexandria;font-weight:700;font-size:19px;line-height:1.5;margin:0 0 10px;color:#fff}
+.wc p{margin:0;font-size:15px;font-weight:600;line-height:1.7;color:rgba(255,255,255,.72)}
+@media(max-width:1000px){.wg{grid-template-columns:1fr 1fr}}@media(max-width:560px){.wg{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.wc,.wi{transition:none}.wc:hover{transform:none}}
 </style></head><body>
 <a class="skip" href="#products">تخطَّ إلى المحتوى</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -303,7 +313,7 @@ nav{font-weight:600}
   <span class="div"></span>
   <span class="nm">فلاش أون<small>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</small></span>
  </a>
- <nav><a class="l" href="#top">الرئيسية</a><a class="l" href="#products">منتجاتنا</a><a class="l" href="#about">من نحن</a><a class="l" href="#order">آلية الطلب</a><a class="l" href="#contact">تواصل معنا</a><a class="btn dk" href="#contact">اطلب عرض سعر</a></nav>
+ <nav><a class="l" href="#top">الرئيسية</a><a class="l" href="#products">منتجاتنا</a><a class="l" href="#about">من نحن</a><a class="l" href="#why">لماذا فلاش أون؟</a><a class="l" href="#contact">تواصل معنا</a><a class="btn dk" href="#contact">اطلب عرض سعر</a></nav>
 </div><span class="cur-bar" aria-hidden="true"><i></i></span></header>
 <main>
 
@@ -319,7 +329,7 @@ nav{font-weight:600}
     <a class="btn gh" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>موقع المصنع</a>
    </div>
    <span class="gbadge rv d4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>معتمدون لدى الجهات والهيئات الحكومية</span>
-   <div class="mini rv d4"><span>خراطيم كهربائية</span><span>مواسير PVC</span><span>علب ماجيك</span><span>كابلات</span></div>
+   <div class="mini rv d4"><span>خراطيم كهربائية</span><span>سوستة فلكسبل</span><span>مواسير PVC</span><span>علب ماجيك</span><span>كابلات</span></div>
   </div>
 
   <div class="art" aria-hidden="true">
@@ -407,21 +417,16 @@ nav{font-weight:600}
    </svg>
   </div>
  </div>
- <div class="trust"><div class="tw">
-  <ul class="rv d4">
-   <li><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 21V9l6-4v4l6-4v4l6-4v16z"/></svg></span><p><b>صناعة مصرية</b><small>منتجات تحمل اسم فلاش أون</small></p></li>
-   <li><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><p><b>من المصنع إليك</b><small>بلا وسطاء</small></p></li>
-   <li><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><p><b>عرض سعر مكتوب</b><small>وضوح قبل أي اتفاق</small></p></li>
-   <li><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><p><b>إذن تسليم</b><small>مع كل شحنة</small></p></li>
-  </ul>
- </div></div>
 </section>
 <section class="slogan"><div class="tw">
  <span class="sl-mark"><svg class="lg-i" viewBox="0 0 1042 840" overflow="visible" aria-hidden="true"><use href="#logo" width="1042" height="840"/></svg></span>
  <p><b>فلاش أون…</b> كل احتياجاتك الكهربائية <span>في مكان واحد</span></p>
 </div></section>
-<section class="gov" id="gov"><div class="tw"><div class="gov-in reveal"><span class="gov-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><p><b>معتمدون لدى الجهات والهيئات الحكومية</b></p></div></div></section>
 
+<section class="why" id="why"><div class="frame">
+ <div class="why-h reveal"><span class="tag">لماذا فلاش أون؟</span><h2>شريك موثوق لكل مشروع كهربائي</h2></div>
+ <ul class="wg"><li class="wc reveal d0"><span class="wn">01</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5-3v3l5-3v3l5-3v14z"/><path d="M3 21h18M7 17h2M12 17h2M17 17h1"/></svg></span><h3>تصنيع محلي</h3><p>صناعة مصرية بمنتجات تحمل اسم فلاش أون.</p></li><li class="wc reveal d1"><span class="wn">02</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><h3>توريد مباشر من المصنع</h3><p>من المصنع إليك مباشرةً دون وسطاء.</p></li><li class="wc reveal d2"><span class="wn">03</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>معتمدون لدى الجهات والهيئات الحكومية</h3><p>جهة توريد معتمدة رسمياً.</p></li><li class="wc reveal d3"><span class="wn">04</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg></span><h3>عرض سعر مكتوب وإذن تسليم مع كل شحنة</h3><p>وضوح تام قبل الاتفاق وعند الاستلام.</p></li></ul>
+</div></section>
 <!-- ===== المنتجات: مقطع الحائط ===== -->
 <section class="sec" id="products">
  <div class="frame">
@@ -447,7 +452,7 @@ nav{font-weight:600}
        <radialGradient id="screw" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#FAFBFC"/><stop offset=".5" stop-color="#B8BEC6"/><stop offset="1" stop-color="#6E757E"/></radialGradient>
        <linearGradient id="cu" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8C4A1C"/><stop offset=".45" stop-color="#F0A36A"/><stop offset="1" stop-color="#9E5524"/></linearGradient>
        <path id="wHose" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420"/>
-       <path id="wPvc" d="M500 46 V500 Q500 540 460 540 H40"/>
+       <path id="wPvc" d="M500 46 V540 H40"/>
       </defs>
       <!-- slab / floor (concrete) -->
       <rect x="0" y="0" width="600" height="46" fill="#8E9196"/><rect x="0" y="0" width="600" height="46" fill="#8E9196" filter="url(#concrete)" opacity=".9"/>
@@ -475,21 +480,23 @@ nav{font-weight:600}
        <path class="drw" pathLength="1" d="M129 46 V250 Q129 289 170 289 H360 Q399 289 399 330 V470 q0 26 0 46" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round"/>
        <g class="cuends" style="display:none"><path d="M376 506 l-7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M400 516 v9" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M424 506 l7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/></g>
       </g>
-      <!-- 1 corrugated hose -->
+      <!-- 1 smooth electrical hose -->
       <g class="part p1" filter="url(#psh)">
-       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#9A6A00" stroke-width="30"/>
-       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#F2B705" stroke-width="25"/>
-       <path class="drw" pathLength="1" d="M128 46 V250 Q128 288 170 288 H360 Q398 288 398 330 V420" fill="none" stroke="#FFD95A" stroke-width="9" transform="translate(-4 -4)"/>
-       <g class="wribs" data-path="wHose"></g>
-       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#FFF7D6" stroke-opacity=".75" stroke-width="2.5" transform="translate(-6 -6)"/>
+       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#8E1E08" stroke-width="30"/>
+       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#F0461C" stroke-width="25"/>
+       <path class="drw" pathLength="1" d="M128 46 V250 Q128 288 170 288 H360 Q398 288 398 330 V420" fill="none" stroke="#FF7A4E" stroke-width="9" transform="translate(-4 -4)"/>
+       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#FFE2D6" stroke-opacity=".9" stroke-width="2.5" transform="translate(-6 -6)"/>
       </g>
       <!-- 2 PVC pipe -->
       <g class="part p2" filter="url(#psh)">
-       <path class="drw" pathLength="1" d="M500 46 V500 Q500 540 460 540 H40" fill="none" stroke="#8E3606" stroke-width="32"/>
-       <path class="drw" pathLength="1" d="M500 46 V500 Q500 540 460 540 H40" fill="none" stroke="#E8601A" stroke-width="27"/>
-       <path class="drw" pathLength="1" d="M500 46 V500 Q500 540 460 540 H40" fill="none" stroke="#FF8A45" stroke-width="12" transform="translate(-5 -5)"/>
-       <path class="drw" pathLength="1" d="M500 46 V500 Q500 540 460 540 H40" fill="none" stroke="#FFE0C8" stroke-opacity=".85" stroke-width="3" transform="translate(-8 -8)"/>
-       <path class="drw" pathLength="1" d="M500 46 V500 Q500 540 460 540 H40" fill="none" stroke="#5A2000" stroke-opacity=".35" stroke-width="5" transform="translate(9 9)"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#8C9097" stroke-width="32"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#E9EBEE" stroke-width="27"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#F7F8FA" stroke-width="12" transform="translate(-5 -5)"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="3" transform="translate(-8 -8)"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#3A3F47" stroke-opacity=".35" stroke-width="5" transform="translate(9 9)"/>
+<g class="fit"><rect x="476" y="236" width="48" height="34" rx="4" fill="#D5D8DD"/><rect x="476" y="236" width="48" height="34" rx="4" fill="none" stroke="#8C9097" stroke-width="2"/><rect x="483" y="240" width="10" height="26" rx="3" fill="#FFFFFF" opacity=".7"/>
+<path d="M474 500 H520 Q536 500 536 516 V562 H474 Z" fill="#DDE0E4" stroke="#8C9097" stroke-width="2"/><path d="M474 500 V562 M474 562 H536" stroke="#8C9097" stroke-width="2"/><rect x="474" y="496" width="52" height="10" rx="3" fill="#C9CCD2" stroke="#8C9097" stroke-width="1.5"/><rect x="468" y="514" width="10" height="52" rx="3" fill="#C9CCD2" stroke="#8C9097" stroke-width="1.5"/><path d="M484 508 H516 Q524 508 524 516" fill="none" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="4"/>
+<rect x="236" y="522" width="34" height="36" rx="4" fill="#D5D8DD" stroke="#8C9097" stroke-width="2"/><rect x="240" y="526" width="26" height="8" rx="3" fill="#FFFFFF" opacity=".7"/></g>
       </g>
       <!-- 3 magic box -->
       <g class="part p3 box">
@@ -519,8 +526,8 @@ nav{font-weight:600}
      </svg>
     </div>
     <ol class="steps-b" id="bsteps">
-     <li class="on"><span class="n">01</span><h3>خراطيم كهربائية</h3><p>خراطيم مموّجة مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p></li>
-     <li><span class="n">02</span><h3>مواسير PVC</h3><p>مواسير متينة تُورَّد في لفات، بألوان تساعد على التمييز بين خطوط التأسيس.</p></li>
+     <li class="on"><span class="n">01</span><h3>خراطيم كهربائية</h3><p>خراطيم ملساء مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p></li>
+     <li><span class="n">02</span><h3>مواسير PVC</h3><p>مواسير PVC صلبة بأطوال مستقيمة، تُوصَل بالأكواع والجُلَب، بألوان تساعد على التمييز بين خطوط التأسيس.</p></li>
      <li><span class="n">03</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p></li>
      <li><span class="n">04</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p></li>
     </ol>
@@ -531,10 +538,11 @@ nav{font-weight:600}
 
  <div class="frame">
   <div class="cards">
-   <article class="card reveal"><div class="art2"><img src="assets/img/hoses.svg" alt="رسم توضيحي لخرطوم كهربائي مموّج" loading="lazy" width="400" height="400"></div><div class="cb"><span class="cat">تأسيس</span><h3>خراطيم كهربائية</h3><p>خراطيم مموّجة مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p><a class="more" href="#contact" data-ask="خراطيم كهربائية">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
-   <article class="card reveal d1"><div class="art2"><img src="assets/img/pvc.svg" alt="رسم توضيحي للفات مواسير PVC" loading="lazy" width="310" height="360"></div><div class="cb"><span class="cat">تأسيس</span><h3>مواسير PVC</h3><p>مواسير متينة تُورَّد في لفات، بألوان تساعد على التمييز بين خطوط التأسيس.</p><a class="more" href="#contact" data-ask="مواسير PVC">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
-   <article class="card reveal d2"><div class="art2"><img src="assets/img/magic.svg" alt="رسم توضيحي لعلبة ماجيك" loading="lazy" width="260" height="330"></div><div class="cb"><span class="cat">تشطيب</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p><a class="more" href="#contact" data-ask="علب ماجيك">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
-   <article class="card reveal d3"><div class="art2"><img src="assets/img/cables.svg" alt="رسم توضيحي لكابلات كهربائية" loading="lazy" width="560" height="430"></div><div class="cb"><span class="cat">كابلات</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p><a class="more" href="#contact" data-ask="الكابلات الكهربائية">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal"><div class="art2"><img src="assets/products/hose.webp" alt="لفة خرطوم كهربائي أملس باللون البرتقالي" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>خراطيم كهربائية</h3><p>خراطيم ملساء مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p><a class="more" href="#contact" data-ask="خراطيم كهربائية">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d1"><div class="art2"><img src="assets/products/flex.webp" alt="لفة سوستة فلكسبل حمراء" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>سوستة فلكسبل</h3><p>سوستة فلكسبل مرنة لحماية الأسلاك وتمريرها بسهولة.</p><a class="more" href="#contact" data-ask="سوستة فلكسبل">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d1"><div class="art2"><img src="assets/products/pvc.webp" alt="مواسير PVC مستقيمة باللونين الأبيض والرمادي" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>مواسير PVC</h3><p>مواسير PVC صلبة بأطوال مستقيمة، تُوصَل بالأكواع والجُلَب، بألوان تساعد على التمييز بين خطوط التأسيس.</p><a class="more" href="#contact" data-ask="مواسير PVC">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d2"><div class="art2"><img src="assets/products/magic-box.svg" alt="رسم توضيحي لعلبة ماجيك" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تشطيب</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p><a class="more" href="#contact" data-ask="علب ماجيك">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d3"><div class="art2"><img src="assets/products/cable.svg" alt="رسم توضيحي لكابلات كهربائية" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">كابلات</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p><a class="more" href="#contact" data-ask="الكابلات الكهربائية">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
   </div>
  </div>
 </section>
@@ -564,17 +572,6 @@ nav{font-weight:600}
  </div>
 </section>
 
-<!-- ===== طريقة الطلب ===== -->
-<section class="sec" id="order">
- <div class="frame">
-  <div class="head reveal"><div><span class="tag">آلية الطلب</span><h2>طلبك في ثلاث خطوات</h2></div><p class="lead">إجراءات واضحة وميسّرة من أول تواصل حتى تسلّم الشحنة.</p></div>
-  <ol class="steps3">
-   <li class="reveal"><span class="sn">01</span><h3>تواصل معنا</h3><p>زوّدنا بالصنف والمقاس والكمية.</p></li>
-   <li class="reveal d1"><span class="sn">02</span><h3>تسلّم عرض السعر</h3><p>عرض سعر مكتوب بكل التفاصيل.</p></li>
-   <li class="reveal d2"><span class="sn">03</span><h3>تسلّم شحنتك</h3><p>مع إذن تسليم بالأصناف والكميات.</p></li>
-  </ol>
- </div>
-</section>
 
 <!-- ===== الاعتمادات (مخفي حتى يرسل المالك أسماء الجهات) ===== -->
 <section class="sec approvals" id="approvals" hidden>
@@ -593,7 +590,7 @@ nav{font-weight:600}
     <h2>اطلب عرض سعر</h2>
     <p class="lead">زوّدنا بالصنف والمقاس والكمية، وسنرسل إليك عرض سعر مكتوباً.</p>
     <form class="qb" id="qb" hidden>
-     <label>الصنف<select id="qProd"><option>خراطيم كهربائية</option><option>مواسير PVC</option><option>علب ماجيك</option><option>الكابلات الكهربائية</option></select></label>
+     <label>الصنف<select id="qProd"><option>خراطيم كهربائية</option><option>سوستة فلكسبل</option><option>مواسير PVC</option><option>علب ماجيك</option><option>الكابلات الكهربائية</option></select></label>
      <label>المقاس<input id="qSize" placeholder="مثال: المقاس المطلوب"></label>
      <label>الكمية<input id="qQty" placeholder="مثال: عدد اللفات أو القطع"></label>
      <button class="btn wa" type="submit"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg>أرسل الطلب على واتساب</button>
@@ -623,8 +620,8 @@ nav{font-weight:600}
     <p>شركة مصرية لصناعة وتوريد الأدوات الكهربائية.</p>
     <p class="fsl">فلاش أون… كل احتياجاتك الكهربائية في مكان واحد</p>
    </div>
-   <div><h4>منتجاتنا</h4><ul><li><a href="#products">خراطيم كهربائية</a></li><li><a href="#products">مواسير PVC</a></li><li><a href="#products">علب ماجيك</a></li><li><a href="#products">الكابلات الكهربائية</a></li></ul></div>
-   <div><h4>الشركة</h4><ul><li><a href="#about">من نحن</a></li><li><a href="#order">آلية الطلب</a></li><li><a href="#contact">اطلب عرض سعر</a></li><li><a href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener">موقع المصنع</a></li></ul></div>
+   <div><h4>منتجاتنا</h4><ul><li><a href="#products">خراطيم كهربائية</a></li><li><a href="#products">سوستة فلكسبل</a></li><li><a href="#products">مواسير PVC</a></li><li><a href="#products">علب ماجيك</a></li><li><a href="#products">الكابلات الكهربائية</a></li></ul></div>
+   <div><h4>الشركة</h4><ul><li><a href="#about">من نحن</a></li><li><a href="#why">لماذا فلاش أون؟</a></li><li><a href="#contact">اطلب عرض سعر</a></li><li><a href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener">موقع المصنع</a></li></ul></div>
   </div>
   <div class="copy"><span>© <span id="yr">2026</span> فلاش أون. جميع الحقوق محفوظة.</span><span>صناعة مصرية</span></div>
  </div>
@@ -711,4 +708,5 @@ var APPROVALS=[];
 })();
 </script>
 
+<script>document.querySelectorAll(".wc").forEach(function(c){c.addEventListener("pointermove",function(e){var r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px")})})</script>
 </body></html>
