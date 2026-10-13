@@ -571,6 +571,7 @@ body{font-weight:500}
 <a class="fab" id="fab" href="#" hidden target="_blank" rel="noopener" aria-label="راسلنا على واتساب"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg></a>
 
 <script>
+if("scrollRestoration" in history)history.scrollRestoration="manual";if(!location.hash)scrollTo(0,0);addEventListener("pageshow",function(){if(!location.hash)scrollTo(0,0)});
 (function(){var hr=document.getElementById('hero'),r0=matchMedia('(prefers-reduced-motion: reduce)').matches;
  if(r0){hr.classList.add('on')}else{requestAnimationFrame(function(){hr.classList.add('go')});setTimeout(function(){hr.classList.add('on')},1650)}})();
 (function(){
@@ -608,7 +609,7 @@ var APPROVALS=[];
  /* reveal */
  var rv=document.querySelectorAll(".reveal");
  if(rm||!("IntersectionObserver" in window)){rv.forEach(function(e){e.classList.add("in")})}
- else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});rv.forEach(function(e){io.observe(e)})}
+ else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:0,rootMargin:"0px 0px -6% 0px"});rv.forEach(function(e){io.observe(e)})}
  /* bricks */
  (function(){var g=document.getElementById("bricks");if(!g)return;var o="",seed=7;function r(){seed=(seed*9301+49297)%233280;return seed/233280}
   var cols=["#A94E2E","#B5583A","#9C4429","#B9603F","#A5492C","#C06844","#934026"];
@@ -621,7 +622,7 @@ var APPROVALS=[];
  var de=document.documentElement,dh=1,tk=false;function mh(){dh=Math.max(1,de.scrollHeight-innerHeight)}mh();addEventListener("resize",mh);addEventListener("load",mh);
  if(!rm)addEventListener("scroll",function(){if(tk)return;tk=true;requestAnimationFrame(function(){tk=false;de.style.setProperty("--p",scrollY/dh)})},{passive:true});
  /* wall reveal: one-shot */
- var B=$("build");if(rm||!("IntersectionObserver" in window))B.classList.add("in");else{var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){B.classList.add("in");io.disconnect()}},{threshold:.25});io.observe(B)}
+ var B=$("build");if(rm||!("IntersectionObserver" in window))B.classList.add("in");else{var bio=new IntersectionObserver(function(es){if(es[0].isIntersecting){B.classList.add("in");bio.disconnect()}},{threshold:0,rootMargin:"0px 0px -10% 0px"});bio.observe(B)}
 })();
 </script>
 
