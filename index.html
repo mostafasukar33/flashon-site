@@ -16,7 +16,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 <link rel="icon" type="image/png" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" as="image" href="assets/img/hero.webp">
+<link rel="preload" as="image" href="assets/img/hero.svg">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
 :root{
@@ -103,8 +103,8 @@ h2{font-size:clamp(30px,3.6vw,46px);margin-top:14px}
 .stage .art img{width:100%;max-width:720px;margin-inline:auto}
 @media(min-width:1000px){
   .stage{grid-template-columns:1fr 1fr}
-  .stage .art{padding:64px 24px 26px 0}
-  .stage .art img{max-width:none;width:104%;margin-inline-start:-4%}
+  .stage .art{align-self:center;padding:40px 8px 40px 0}
+  .stage .art img{max-width:none;width:112%;margin-inline-start:-12%}
 }
 @media(max-width:999px){.stage .txt{padding-inline-end:clamp(36px,6vw,80px)}.stage .art{padding-top:0}}
 @media(max-width:600px){.stage{border-radius:28px}.stage .txt{padding:34px 24px 8px}.stage .ctas .btn{flex:1}}
@@ -131,8 +131,7 @@ h2{font-size:clamp(30px,3.6vw,46px);margin-top:14px}
 .prod+.prod{border-top:1px solid var(--line)}
 @media(min-width:900px){.prod{grid-template-columns:1.05fr .95fr}.prod.flip .ph{order:2}}
 .ph{position:relative;border-radius:30px;background:radial-gradient(110% 85% at 50% 35%,#FFFFFF 0%,var(--surface) 72%);border:1px solid var(--line);aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;padding:clamp(26px,4vw,52px);overflow:hidden}
-.ph::after{content:"";position:absolute;inset-inline:16%;bottom:8%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(40,30,15,.2),rgba(40,30,15,0))}
-.ph img{position:relative;z-index:1;max-height:100%;max-width:100%;width:auto;object-fit:contain;transition:transform .9s var(--ease)}
+.ph img{position:relative;z-index:1;height:100%;max-width:100%;width:auto;object-fit:contain;transition:transform .9s var(--ease)}
 .prod:hover .ph img{transform:scale(1.03)}
 /* صورة الكابلات مقصوصة من ناحية: تلزق في حرف الكارت فتبان مقصودة */
 .ph.bleed{justify-content:flex-end;padding-inline-end:0}
@@ -253,7 +252,7 @@ footer{border-top:1px solid var(--line);background:var(--surface)}
           </div>
         </div>
         <div class="art rv d1">
-          <img src="assets/img/hero.webp" width="1500" height="1046" alt="منتجات فلاش أون: مواسير PVC، خراطيم كهربائية، كابلات، وعلبة ماجيك">
+          <img src="assets/img/hero.svg" width="1110" height="560" alt="منتجات فلاش أون: مواسير PVC، خراطيم كهربائية، كابلات، وعلبة ماجيك">
         </div>
       </div>
 
@@ -275,7 +274,7 @@ footer{border-top:1px solid var(--line);background:var(--surface)}
       </div>
 
       <article class="prod rv">
-        <div class="ph"><span class="no">01</span><img src="assets/img/hoses.webp" width="733" height="1000" loading="lazy" alt="لفة خرطوم كهرباء مموّج"></div>
+        <div class="ph"><span class="no">01</span><img src="assets/img/hoses.svg" width="400" height="400" loading="lazy" alt="لفة خرطوم كهرباء مموّج"></div>
         <div>
           <span class="eyebrow">تأسيس</span>
           <h3>خراطيم كهربائية</h3>
@@ -290,7 +289,7 @@ footer{border-top:1px solid var(--line);background:var(--surface)}
       </article>
 
       <article class="prod flip rv">
-        <div class="ph"><span class="no">02</span><img src="assets/img/pvc-yellow.webp" width="665" height="1000" loading="lazy" alt="لفات مواسير PVC"></div>
+        <div class="ph"><span class="no">02</span><img src="assets/img/pvc.svg" width="310" height="360" loading="lazy" alt="لفات مواسير PVC"></div>
         <div>
           <span class="eyebrow">تأسيس</span>
           <h3>مواسير PVC</h3>
@@ -305,7 +304,7 @@ footer{border-top:1px solid var(--line);background:var(--surface)}
       </article>
 
       <article class="prod rv">
-        <div class="ph"><span class="no">03</span><img src="assets/img/magic.webp" width="744" height="1000" loading="lazy" alt="علبة ماجيك"></div>
+        <div class="ph"><span class="no">03</span><img src="assets/img/magic.svg" width="260" height="330" loading="lazy" alt="علبة ماجيك"></div>
         <div>
           <span class="eyebrow">تشطيب</span>
           <h3>علب ماجيك</h3>
@@ -319,7 +318,7 @@ footer{border-top:1px solid var(--line);background:var(--surface)}
       </article>
 
       <article class="prod flip rv" id="cables">
-        <div class="ph bleed"><span class="no">04</span><img src="assets/img/cables.webp" width="1000" height="582" loading="lazy" alt="كابلات فلاش أون الكهربائية"></div>
+        <div class="ph"><span class="no">04</span><img src="assets/img/cables.svg" width="560" height="430" loading="lazy" alt="كابلات فلاش أون الكهربائية"></div>
         <div>
           <span class="eyebrow">كابلات</span>
           <h3>الكابلات الكهربائية</h3>
