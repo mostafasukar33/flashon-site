@@ -256,7 +256,7 @@ h3{font-family:Alexandria;font-weight:700}
 .fplate svg{width:44px;height:auto}
 .fbrand b{display:block;font-family:Alexandria;font-size:20px}
 .fbrand small{display:block;font-family:Montserrat;font-weight:800;letter-spacing:.22em;font-size:12px;color:#fff;text-align:right}
-.fbrand small i{font-style:normal;color:var(--y)}
+.fbrand small i{font-style:normal;color:var(--y)}.fbrand small em{font-style:normal;color:#14171C;-webkit-text-stroke:2px #F6F3EC;paint-order:stroke fill}
 .foot p{margin-top:18px;font-size:15px;max-width:36ch}
 .fsl{color:var(--y)!important;font-family:Alexandria;font-weight:600}
 .foot h4{font-family:Alexandria;color:#fff;font-size:15px;margin-bottom:16px}
@@ -275,6 +275,7 @@ h3{font-family:Alexandria;font-weight:700}
 .cat{font-size:14px;color:#4A5059}.copy{font-size:14px;color:#9AA0A8}.foot ul{font-size:15px;color:#C3C7CD}.foot p{color:#C3C7CD}
 .trust small{color:#3F454E}.brand .nm small{color:#3F454E}
 nav{font-weight:600}
+.lg-i{display:block;aspect-ratio:1042/840;height:auto;overflow:visible;flex:none}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
  <symbol id="icWa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
@@ -283,7 +284,7 @@ nav{font-weight:600}
 
 <header class="hdr" id="top"><div class="frame">
  <a class="brand" href="#top" aria-label="فلاش أون">
-  <svg class="logo" viewBox="0 0 1042 840" role="img" aria-label="شعار فلاش أون"><use href="#logo"/></svg>
+  <svg class="lg-i logo" viewBox="0 0 1042 840" overflow="visible" role="img" aria-label="شعار فلاش أون"><use href="#logo" width="1042" height="840"/></svg>
   <span class="div"></span>
   <span class="nm">فلاش أون<small>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</small></span>
  </a>
@@ -371,10 +372,9 @@ nav{font-weight:600}
      <path class="cur cur2" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFFBEA" stroke-width="8" stroke-linecap="round"/>
     </g>
     <g class="px wmg" data-d="8">
-     <ellipse cx="400" cy="868" rx="240" ry="16" fill="#000" opacity=".5" filter="url(#sh)"/>
-     <rect x="140" y="772" width="520" height="92" rx="46" fill="url(#plate)"/>
-     <rect x="141.5" y="773.5" width="517" height="89" rx="44.5" fill="none" stroke="url(#rim)" stroke-width="3"/>
-     <text class="wm" x="409" y="842" text-anchor="middle" direction="ltr" font-family="Montserrat" font-weight="800" font-size="62" letter-spacing="18" fill="#14171C">FLASH <tspan fill="#F2B705">O</tspan>N</text>
+     <defs><radialGradient id="fglow"><stop offset="0" stop-color="#FFF3CC" stop-opacity=".55"/><stop offset="1" stop-color="#FFF3CC" stop-opacity="0"/></radialGradient></defs>
+     <ellipse cx="186" cy="820" rx="70" ry="62" fill="url(#fglow)"/>
+     <text class="wm" x="409" y="842" text-anchor="middle" direction="ltr" font-family="Montserrat" font-weight="800" font-size="62" letter-spacing="18" fill="#F6F3EC"><tspan fill="#14171C" stroke="#F6F3EC" stroke-width="4" paint-order="stroke" stroke-linejoin="round">F</tspan>LASH <tspan fill="#F2B705">O</tspan>N</text>
     </g>
     <!-- lamp -->
     <g class="px lampg" data-d="14">
@@ -401,7 +401,7 @@ nav{font-weight:600}
  </div></div>
 </section>
 <section class="slogan"><div class="tw">
- <span class="sl-mark"><svg viewBox="0 0 1042 840" aria-hidden="true"><use href="#logo"/></svg></span>
+ <span class="sl-mark"><svg class="lg-i" viewBox="0 0 1042 840" overflow="visible" aria-hidden="true"><use href="#logo" width="1042" height="840"/></svg></span>
  <p><b>فلاش أون…</b> كل احتياجاتك الكهربائية <span>في مكان واحد</span></p>
 </div></section>
 <!-- ===== المنتجات: مقطع الحائط ===== -->
@@ -501,11 +501,11 @@ nav{font-weight:600}
   </div>
   <div class="seal-wrap reveal d1" aria-hidden="true">
    <svg class="seal" viewBox="0 0 300 300">
-    <defs><path id="sc" d="M150 150 m-112 0 a112 112 0 1 1 224 0 a112 112 0 1 1 -224 0"/></defs>
+    <defs><path id="sc" d="M38 150 A112 112 0 0 1 262 150"/><path id="sc2" d="M24 150 A126 126 0 0 0 276 150"/></defs>
     <circle cx="150" cy="150" r="146" fill="#1B1F26" stroke="#F2B705" stroke-opacity=".35" stroke-width="2"/>
-    <g class="seal-rot"><text font-family="Alexandria" font-weight="700" font-size="21" letter-spacing="3" fill="#F2B705"><textPath href="#sc">صناعة مصرية ✦ فلاش أون ✦ صناعة مصرية ✦ فلاش أون ✦</textPath></text></g>
+    <g class="seal-rot"><text font-family="Alexandria" font-weight="700" font-size="21" letter-spacing="2" fill="#F2B705"><textPath href="#sc" startOffset="50%" text-anchor="middle">✦ صناعة مصرية ✦</textPath></text><text font-family="Alexandria" font-weight="700" font-size="21" letter-spacing="2" fill="#F2B705"><textPath href="#sc2" startOffset="50%" text-anchor="middle">فلاش أون</textPath></text></g>
     <circle cx="150" cy="150" r="84" fill="#F6F3EC"/>
-    <svg x="88" y="100" width="124" height="100" viewBox="90 130 1042 840"><use href="#logo"/></svg>
+    <svg x="88" y="100" width="124" height="100" viewBox="0 0 1042 840" overflow="visible"><use href="#logo" width="1042" height="840"/></svg>
    </svg>
   </div>
  </div>
@@ -566,7 +566,7 @@ nav{font-weight:600}
  <div class="frame">
   <div class="fg">
    <div>
-    <a class="fbrand" href="#top" aria-label="فلاش أون"><span class="fplate"><svg viewBox="0 0 1042 840"><use href="#logo"/></svg></span><span><b>فلاش أون</b><small dir="ltr">FLASH <i>O</i>N</small></span></a>
+    <a class="fbrand" href="#top" aria-label="فلاش أون"><span class="fplate"><svg class="lg-i" viewBox="0 0 1042 840" overflow="visible"><use href="#logo" width="1042" height="840"/></svg></span><span><b>فلاش أون</b><small dir="ltr"><em>F</em>LASH <i>O</i>N</small></span></a>
     <p>شركة مصرية لصناعة وتوريد الأدوات الكهربائية.</p>
     <p class="fsl">فلاش أون… كل احتياجاتك الكهربائية في مكان واحد</p>
    </div>
