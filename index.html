@@ -338,7 +338,7 @@ nav{font-weight:600}
      <radialGradient id="glow"><stop offset="0" stop-color="#F2B705" stop-opacity=".32"/><stop offset=".55" stop-color="#F2B705" stop-opacity=".06"/><stop offset="1" stop-color="#F2B705" stop-opacity="0"/></radialGradient>
      <radialGradient id="plate" cx=".45" cy=".22" r=".85"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#F6F3EC"/><stop offset="1" stop-color="#D6CFC0"/></radialGradient>
      <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-     <linearGradient id="hose" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD84D"/><stop offset=".5" stop-color="#F2B705"/><stop offset="1" stop-color="#C98F00"/></linearGradient>
+     <linearGradient id="hose" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A4E"/><stop offset=".5" stop-color="#F0461C"/><stop offset="1" stop-color="#B42A0C"/></linearGradient>
      <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B0D10"/><stop offset=".35" stop-color="#3A404A"/><stop offset=".55" stop-color="#262B33"/><stop offset="1" stop-color="#0B0D10"/></linearGradient>
      <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7A5A12"/><stop offset=".45" stop-color="#E9C66B"/><stop offset="1" stop-color="#7A5A12"/></linearGradient>
      <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A6" stop-opacity=".75"/><stop offset=".3" stop-color="#FFD866" stop-opacity=".34"/><stop offset=".75" stop-color="#FFC93A" stop-opacity=".1"/><stop offset="1" stop-color="#FFC93A" stop-opacity="0"/></linearGradient>
@@ -388,10 +388,10 @@ nav{font-weight:600}
      <!-- hose -->
      <g class="hoseg">
       <use href="#hp" fill="none" stroke="#000" stroke-opacity=".5" stroke-width="54" filter="url(#sh2)" transform="translate(0 14)"/>
-      <use href="#hp" fill="none" stroke="#9A6E00" stroke-width="50"/>
+      <use href="#hp" fill="none" stroke="#8E1E08" stroke-width="50"/>
       <use href="#hp" fill="none" stroke="url(#hose)" stroke-width="42"/>
-      <g id="ribs"></g>
-      <use href="#hp" fill="none" stroke="#FFF4C2" stroke-opacity=".35" stroke-width="10"/>
+      <use href="#hp" fill="none" stroke="#FF9A78" stroke-opacity=".55" stroke-width="16"/>
+      <use href="#hp" fill="none" stroke="#FFE6DC" stroke-opacity=".8" stroke-width="4"/>
      </g>
      <g transform="translate(218 730) rotate(143)"><ellipse rx="26" ry="10" fill="#C99400"/><ellipse rx="21" ry="7" fill="#14171C"/></g>
      <path class="cur cur1" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFD84D" stroke-width="26" stroke-linecap="round" filter="url(#spk)"/>
@@ -500,15 +500,16 @@ nav{font-weight:600}
       </g>
       <!-- 3 magic box -->
       <g class="part p3 box">
-       <rect x="346" y="418" width="108" height="108" rx="12" fill="#000" opacity=".45" filter="url(#ao)" transform="translate(3 6)"/>
-       <rect x="350" y="420" width="100" height="100" rx="11" fill="url(#boxW)"/>
-       <rect x="350.8" y="420.8" width="98.4" height="98.4" rx="10.5" fill="none" stroke="#FFF2B8" stroke-opacity=".7" stroke-width="1.6"/>
-       <rect x="362" y="432" width="76" height="76" rx="7" fill="url(#boxIn)"/>
-       <rect x="362" y="432" width="76" height="10" rx="5" fill="#000" opacity=".18"/>
-       <circle cx="366" cy="470" r="8" fill="#DCA400"/><circle cx="434" cy="470" r="8" fill="#DCA400"/>
-       <circle cx="366" cy="470" r="5.5" fill="url(#screw)"/><path d="M362.5 470h7" stroke="#59606A" stroke-width="1.6"/>
-       <circle cx="434" cy="470" r="5.5" fill="url(#screw)"/><path d="M430.5 470h7" stroke="#59606A" stroke-width="1.6"/>
-       <circle cx="400" cy="424" r="3" fill="#9A6E00" opacity=".6"/><circle cx="400" cy="516" r="3" fill="#9A6E00" opacity=".6"/>
+       <rect x="330" y="418" width="140" height="104" rx="8" fill="#000" opacity=".45" filter="url(#ao)" transform="translate(3 6)"/>
+       <rect x="334" y="420" width="132" height="98" rx="7" fill="url(#boxW)"/>
+       <rect x="334.8" y="420.8" width="130.4" height="96.4" rx="6.5" fill="none" stroke="#FFF2B8" stroke-opacity=".75" stroke-width="1.6"/>
+       <rect x="344" y="430" width="112" height="78" rx="4" fill="url(#boxIn)"/>
+       <rect x="344" y="430" width="112" height="9" rx="4" fill="#000" opacity=".2"/>
+       <rect x="372" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="372" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="372" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/>
+       <path d="M352 440 h10 a5 5 0 0 1 0 10 h-10 M352 488 h10 a5 5 0 0 1 0 10 h-10" fill="none" stroke="#8A6200" stroke-opacity=".5" stroke-width="1.6"/>
+       <rect x="345" y="462" width="12" height="16" rx="2" fill="#C99400"/><rect x="443" y="462" width="12" height="16" rx="2" fill="#C99400"/>
+       <circle cx="351" cy="470" r="5.5" fill="url(#screw)" stroke="#59606A" stroke-width=".8"/><path d="M347.5 470h7M351 466.5v7" stroke="#59606A" stroke-width="1.4"/>
+       <circle cx="449" cy="470" r="5.5" fill="url(#screw)" stroke="#59606A" stroke-width=".8"/><path d="M445.5 470h7M449 466.5v7" stroke="#59606A" stroke-width="1.4"/>
       </g>
       <!-- cable tails out of the box -->
       <g class="part p4 p4t" filter="url(#psh2)">
@@ -541,8 +542,8 @@ nav{font-weight:600}
    <article class="card reveal"><div class="art2"><img src="assets/products/hose.webp" alt="لفة خرطوم كهربائي أملس باللون البرتقالي" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>خراطيم كهربائية</h3><p>خراطيم ملساء مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p><a class="more" href="#contact" data-ask="خراطيم كهربائية">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
    <article class="card reveal d1"><div class="art2"><img src="assets/products/flex.webp" alt="لفة سوستة فلكسبل حمراء" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>سوستة فلكسبل</h3><p>سوستة فلكسبل مرنة لحماية الأسلاك وتمريرها بسهولة.</p><a class="more" href="#contact" data-ask="سوستة فلكسبل">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
    <article class="card reveal d1"><div class="art2"><img src="assets/products/pvc.webp" alt="مواسير PVC مستقيمة باللونين الأبيض والرمادي" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>مواسير PVC</h3><p>مواسير PVC صلبة بأطوال مستقيمة، تُوصَل بالأكواع والجُلَب، بألوان تساعد على التمييز بين خطوط التأسيس.</p><a class="more" href="#contact" data-ask="مواسير PVC">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
-   <article class="card reveal d2"><div class="art2"><img src="assets/products/magic-box.svg" alt="رسم توضيحي لعلبة ماجيك" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تشطيب</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p><a class="more" href="#contact" data-ask="علب ماجيك">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
-   <article class="card reveal d3"><div class="art2"><img src="assets/products/cable.svg" alt="رسم توضيحي لكابلات كهربائية" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">كابلات</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p><a class="more" href="#contact" data-ask="الكابلات الكهربائية">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d2"><div class="art2"><img src="assets/products/magic.webp" alt="علبة ماجيك صفراء مستطيلة بمسامير تثبيت معدنية" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تشطيب</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p><a class="more" href="#contact" data-ask="علب ماجيك">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d3"><div class="art2"><img src="assets/products/cable.webp" alt="كابلات كهربائية متعددة الألوان بموصلات نحاسية" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">كابلات</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p><a class="more" href="#contact" data-ask="الكابلات الكهربائية">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
   </div>
  </div>
 </section>
@@ -629,7 +630,7 @@ nav{font-weight:600}
 <a class="fab" id="fab" href="#" hidden target="_blank" rel="noopener" aria-label="راسلنا على واتساب"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg></a>
 
 <script>
-(function(){var p=document.getElementById('hp'),g=document.getElementById('ribs'),L=p.getTotalLength(),o='',NS='http://www.w3.org/2000/svg';
+(function(){var p=document.getElementById('hp'),g=document.getElementById('ribs')||document.createElementNS('http://www.w3.org/2000/svg','g'),L=p.getTotalLength(),o='',NS='http://www.w3.org/2000/svg';
  for(var d=4;d<L-2;d+=10){var a=p.getPointAtLength(d),b=p.getPointAtLength(d+.5),tx=b.x-a.x,ty=b.y-a.y,m=Math.hypot(tx,ty)||1,nx=-ty/m*25,ny=tx/m*25;
   o+='<line x1="'+(a.x-nx).toFixed(1)+'" y1="'+(a.y-ny).toFixed(1)+'" x2="'+(a.x+nx).toFixed(1)+'" y2="'+(a.y+ny).toFixed(1)+'" stroke="#8A6200" stroke-opacity=".55" stroke-width="3.2" stroke-linecap="round"/>';
   var c=p.getPointAtLength(d+3.6);o+='<line x1="'+(c.x-nx*.82).toFixed(1)+'" y1="'+(c.y-ny*.82).toFixed(1)+'" x2="'+(c.x+nx*.82).toFixed(1)+'" y2="'+(c.y+ny*.82).toFixed(1)+'" stroke="#FFE68A" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/>';}
