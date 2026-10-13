@@ -405,7 +405,32 @@ footer p,.card p,.wc p,.sec p{text-wrap:pretty}footer p:has(b),footer .slogan{te
 .contact{background:linear-gradient(180deg,#1A1D23,#14171C)!important;border:1px solid rgba(242,183,5,.16)!important;box-shadow:0 30px 70px -36px rgba(0,0,0,.9)!important}
 .contact .cl{background:transparent!important;color:#F6F3EC}
 .pending{background:rgba(255,255,255,.04)!important;border-color:rgba(242,183,5,.3)!important;color:#E9E5DC!important}
-footer{border-top:1px solid rgba(242,183,5,.12)}@media(max-width:700px){.fab{width:54px;height:54px;bottom:calc(16px + env(safe-area-inset-bottom));inset-inline-start:16px}footer{padding-bottom:88px!important}}.fab svg{width:28px;height:28px;fill:#fff}#callBtn span{font-family:Alexandria;letter-spacing:.02em}.qb label{color:#E9E5DC!important}.btn.dk2{background:rgba(255,255,255,.06)!important;color:#fff!important;border:1px solid rgba(242,183,5,.4)!important}.cbtns{display:grid!important;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.cbtns .btn,.qb .btn{width:100%;justify-content:center}@media(max-width:560px){.cbtns{grid-template-columns:1fr}}</style></head><body>
+footer{border-top:1px solid rgba(242,183,5,.12)}@media(max-width:700px){.fab{width:54px;height:54px;bottom:calc(16px + env(safe-area-inset-bottom));inset-inline-start:16px}footer{padding-bottom:88px!important}}.fab svg{width:28px;height:28px;fill:#fff}#callBtn span{font-family:Alexandria;letter-spacing:.02em}.qb label{color:#E9E5DC!important}.btn.dk2{background:rgba(255,255,255,.06)!important;color:#fff!important;border:1px solid rgba(242,183,5,.4)!important}.cbtns{display:grid!important;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.cbtns .btn,.qb .btn{width:100%;justify-content:center}@media(max-width:560px){.cbtns{grid-template-columns:1fr}}.hdr{background:rgba(13,15,18,.94)!important;border-bottom:0!important;box-shadow:0 10px 30px -18px rgba(0,0,0,.9)}
+.hdr::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:linear-gradient(90deg,#D7220A,#F2B705 50%,#D7220A);opacity:.85}
+.hdr .brand .logo{background:#F6F3EC;border-radius:14px;padding:6px 8px;box-sizing:content-box;width:46px!important;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 6px 18px -6px rgba(0,0,0,.6)}
+.hdr .brand .nm{color:#fff!important}.hdr .brand .nm small{color:rgba(246,243,236,.72)!important}.hdr .brand .div{background:rgba(255,255,255,.14)!important}
+.hdr nav .l{color:rgba(246,243,236,.9)!important;transition:color .2s}.hdr nav .l:hover,.hdr nav .l:focus-visible{color:#F2B705!important}
+.hdr .btn.dk{background:linear-gradient(180deg,#F7C52A,#E5A800)!important;color:#14171C!important;box-shadow:0 8px 22px -10px rgba(242,183,5,.7)}
+.dd{position:relative;display:inline-flex;align-items:center;gap:2px}
+.ddb{background:none;border:0;color:rgba(246,243,236,.85);padding:6px 4px;cursor:pointer;display:grid;place-items:center;border-radius:8px}
+.ddb .chev{width:16px;height:16px;transition:transform .25s}
+.dd.open .ddb .chev{transform:rotate(180deg)}
+.ddm{position:absolute;top:calc(100% + 14px);inset-inline-start:-14px;min-width:230px;list-style:none;margin:0;padding:8px;background:#16191E;border:1px solid rgba(242,183,5,.22);border-radius:16px;box-shadow:0 24px 60px -20px rgba(0,0,0,.85);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:80}
+.ddm::before{content:"";position:absolute;inset-inline:0;top:-16px;height:16px}
+.dd:hover .ddm,.dd.open .ddm,.dd:focus-within .ddm{opacity:1;visibility:visible;transform:none}
+.ddm a{display:block;padding:11px 14px;border-radius:10px;color:#F6F3EC;font-family:Alexandria;font-weight:600;font-size:15.5px;text-decoration:none;white-space:nowrap}
+.ddm a:hover,.ddm a:focus-visible{background:rgba(242,183,5,.12);color:#F2B705;outline:none}
+.burger{display:none;width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:#F6F3EC;border-radius:2px;transition:transform .25s,opacity .25s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger[aria-expanded=true] span:nth-child(2){opacity:0}.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mm{background:#111318;border-top:1px solid rgba(255,255,255,.06);max-height:calc(100svh - 70px);overflow:auto}
+.mm .frame{display:flex!important;flex-direction:column;height:auto!important;padding-block:10px 18px;align-items:stretch!important;gap:0!important}
+.mm a,.mm summary{display:block;padding:14px 4px;color:#F6F3EC;font-family:Alexandria;font-weight:700;font-size:17px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.07);cursor:pointer}
+.mm summary{list-style:none}.mm summary::-webkit-details-marker{display:none}.mm summary::after{content:"▾";float:left;color:#F2B705}
+.mm ul{list-style:none;margin:0;padding:4px 0 6px}.mm ul a{font-weight:600;font-size:16px;padding:11px 14px;color:rgba(246,243,236,.88);border-bottom:0}
+.mm ul a::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#F2B705;margin-inline-end:10px;vertical-align:middle}
+@media(min-width:901px){.mm{display:none!important}}
+@media(max-width:900px){.hdr nav .l,.dd{display:none!important}.burger{display:flex}.hdr nav{display:flex;align-items:center;gap:10px}.hdr .brand .logo{width:40px!important;padding:5px 7px;border-radius:12px}}.hdr nav .l,.hdr .brand .nm{white-space:nowrap}.hdr nav{gap:clamp(14px,1.8vw,30px)!important}@media(max-width:1320px) and (min-width:901px){.hdr .brand .nm small{display:none}}.mm .mmcta{margin-top:16px;text-align:center;justify-content:center;border-bottom:0;color:#14171C!important}@media(max-width:520px){.hdr nav .btn.dk{display:none!important}}.cmap{background:rgba(0,0,0,.18)!important;border-inline-start:1px solid rgba(255,255,255,.06)}.contact>*{min-width:0}.steps-b .n{display:none!important}@media(min-width:901px){.fab{display:none!important}}.qb{grid-template-columns:repeat(3,minmax(0,1fr))}.qb label,.qb select,.qb input{min-width:0;width:100%;box-sizing:border-box}.cbtns{margin-top:12px}@media(max-width:900px){.qb{grid-template-columns:minmax(0,1fr)}}</style></head><body>
 <a class="skip" href="#products">تخطَّ إلى المحتوى</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
  <symbol id="icWa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
@@ -418,8 +443,8 @@ footer{border-top:1px solid rgba(242,183,5,.12)}@media(max-width:700px){.fab{wid
   <span class="div"></span>
   <span class="nm">فلاش أون<small>شركة مصرية لتصنيع الأدوات الكهربائية</small></span>
  </a>
- <nav><a class="l" href="#top">الرئيسية</a><a class="l" href="#products">منتجاتنا</a><a class="l" href="#about">من نحن</a><a class="l" href="#why">لماذا فلاش أون؟</a><a class="l" href="#contact">تواصل معنا</a><a class="btn dk" href="#contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>اطلب عرض سعر</a></nav>
-</div><span class="cur-bar" aria-hidden="true"><i></i></span></header>
+ <nav><a class="l" href="#top">الرئيسية</a><div class="dd"><a class="l" href="#products">منتجاتنا</a><button class="ddb" type="button" aria-expanded="false" aria-controls="ddm" aria-label="قائمة المنتجات"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><ul class="ddm" id="ddm" role="menu"><li><a href="#hose" role="menuitem">خراطيم كهربائية</a></li><li><a href="#flex" role="menuitem">سوستة فلكسبل</a></li><li><a href="#pvc" role="menuitem">مواسير PVC</a></li><li><a href="#pvc-acc" role="menuitem">إكسسوارات PVC</a></li><li><a href="#magic" role="menuitem">علب الماجيك</a></li><li><a href="#cable" role="menuitem">الكابلات الكهربائية</a></li></ul></div><a class="l" href="#about">من نحن</a><a class="l" href="#why">لماذا فلاش أون؟</a><a class="l" href="#contact">تواصل معنا</a><a class="btn dk" href="#contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>اطلب عرض سعر</a><button class="burger" type="button" aria-expanded="false" aria-controls="mm" aria-label="القائمة"><span></span><span></span><span></span></button></nav>
+</div><div class="mm" id="mm" hidden><div class="frame"><a href="#top">الرئيسية</a><details open><summary>منتجاتنا</summary><ul><li><a href="#hose">خراطيم كهربائية</a></li><li><a href="#flex">سوستة فلكسبل</a></li><li><a href="#pvc">مواسير PVC</a></li><li><a href="#pvc-acc">إكسسوارات PVC</a></li><li><a href="#magic">علب الماجيك</a></li><li><a href="#cable">الكابلات الكهربائية</a></li></ul></details><a href="#about">من نحن</a><a href="#why">لماذا فلاش أون؟</a><a href="#contact">تواصل معنا</a><a class="btn y mmcta" href="#contact">اطلب عرض سعر</a></div></div><span class="cur-bar" aria-hidden="true"><i></i></span></header>
 <main>
 
 <section class="hero" id="hero">
@@ -609,8 +634,8 @@ footer{border-top:1px solid rgba(242,183,5,.12)}@media(max-width:700px){.fab{wid
     <p class="lead">زوّدنا بالصنف والمقاس والكمية، وسنرسل إليك عرض سعر مكتوباً.</p>
     <form class="qb" id="qb">
      <label>الصنف<select id="qProd"><option>خراطيم كهربائية</option><option>سوستة فلكسبل</option><option>مواسير PVC</option><option>إكسسوارات PVC</option><option>علب ماجيك</option><option>الكابلات الكهربائية</option></select></label>
-     <label>المقاس<input id="qSize" placeholder="مثال: المقاس المطلوب"></label>
-     <label>الكمية<input id="qQty" placeholder="مثال: عدد اللفات أو القطع"></label>
+     <label>المقاس<input id="qSize" placeholder="اكتب المقاس"></label>
+     <label>الكمية<input id="qQty" placeholder="اكتب الكمية"></label>
      <button class="btn wa" type="submit"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg>أرسل الطلب على واتساب</button>
     </form>
     <div class="cbtns">
@@ -707,4 +732,11 @@ var APPROVALS=[];
 <script>(function(){var P=["hose","flex","pvc","pvc-acc","magic","cable"],T={"مفرد":0,"مجوّز أفقي":1,"مجوّز رأسي":2},R=matchMedia("(prefers-reduced-motion:reduce)").matches;
 function go(id,t,smooth){var c=document.getElementById(id);if(!c)return;c.classList.add("in","is-in");var y=c.getBoundingClientRect().top+scrollY-(innerWidth<=700?90:110);scrollTo({top:Math.max(0,y),behavior:smooth&&!R?"smooth":"auto"});setTimeout(function(){var d=c.getBoundingClientRect().top-(innerWidth<=700?90:110);if(Math.abs(d)>6)scrollTo({top:scrollY+d,behavior:"auto"})},smooth&&!R?1100:50);c.classList.remove("hl");void c.offsetWidth;c.classList.add("hl");setTimeout(function(){c.classList.remove("hl")},1700);if(t!=null){var b=c.querySelector('.tbtn[data-i="'+t+'"]');b&&b.click()}}
 document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute("href").slice(1);if(P.indexOf(id)<0)return;e.preventDefault();go(id,a.dataset.t,true)});
-var h=location.hash.slice(1);if(P.indexOf(h)>=0){addEventListener("load",function(){go(h,null,false);history.replaceState(null,"",location.pathname+location.search)})}})()</script></body></html>
+var h=location.hash.slice(1);if(P.indexOf(h)>=0){addEventListener("load",function(){go(h,null,false);history.replaceState(null,"",location.pathname+location.search)})}})()</script><script>(function(){var d=document.querySelector(".dd"),b=d&&d.querySelector(".ddb"),bu=document.querySelector(".burger"),mm=document.getElementById("mm");
+function cd(){if(d){d.classList.remove("open");b.setAttribute("aria-expanded","false")}}
+function cm(){if(mm&&!mm.hidden){mm.hidden=true;bu.setAttribute("aria-expanded","false")}}
+b&&b.addEventListener("click",function(e){e.stopPropagation();var o=!d.classList.contains("open");d.classList.toggle("open",o);b.setAttribute("aria-expanded",o);if(o){var f=d.querySelector(".ddm a");f&&f.focus()}});
+d&&d.addEventListener("keydown",function(e){var a=[].slice.call(d.querySelectorAll(".ddm a")),i=a.indexOf(document.activeElement);if(e.key=="Escape"){cd();b.focus()}else if(e.key=="ArrowDown"){e.preventDefault();d.classList.add("open");(a[i+1]||a[0]).focus()}else if(e.key=="ArrowUp"){e.preventDefault();(a[i-1]||a[a.length-1]).focus()}});
+bu&&bu.addEventListener("click",function(){var o=mm.hidden;mm.hidden=!o;bu.setAttribute("aria-expanded",o)});
+document.addEventListener("click",function(e){if(d&&!d.contains(e.target))cd();var a=e.target.closest&&e.target.closest("a");if(a&&(a.closest(".ddm")||a.closest(".mm"))){cd();cm()}else if(mm&&!mm.contains(e.target)&&!(bu&&bu.contains(e.target)))cm()},true);
+addEventListener("keydown",function(e){if(e.key=="Escape"){cd();cm()}})})()</script></body></html>
