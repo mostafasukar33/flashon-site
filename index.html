@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية</title>
 <meta name="description" content="فلاش أون شركة مصرية لصناعة وتوريد الأدوات الكهربائية: خراطيم كهربائية، مواسير PVC، علب ماجيك، وجميع الكابلات الكهربائية.">
-<meta name="theme-color" content="#FCFBF8">
+<meta name="theme-color" content="#14161A">
 <meta property="og:type" content="website">
 <meta property="og:title" content="فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية">
 <meta property="og:description" content="معاً لعالم متكامل من احتياجاتك الكهربائية.">
@@ -16,340 +16,274 @@
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 <link rel="icon" type="image/png" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" as="image" href="assets/img/hero.svg">
+<link rel="preload" as="image" href="assets/photos/factory.webp">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
-:root{
-  --bg:#FCFBF8;
-  --surface:#F5F2EB;
-  --surface-2:#EEE9DF;
-  --white:#FFFFFF;
-  --ink:#1A1918;
-  --ink-2:#3A3834;
-  --muted:#75716A;
-  --line:#E7E2D8;
-  --brand:#E6B028;
-  --brand-ink:#94700F;
-  --brand-soft:#FBF3DD;
-  --wa:#1F9D55;
-  --gutter:clamp(20px,4.5vw,48px);
-  --max:1200px;
-  --ease:cubic-bezier(.2,.7,.2,1);
-}
+:root{--ink:#14161A;--ink2:#1E2127;--ink3:#2A2E36;--text:#1B1D21;--muted:#6B6F78;--line:#E6E3DC;--bg:#FAF8F4;--soft:#F2EEE5;--brand:#E6B028;--brand2:#F4C94E;--brand-ink:#8A6508;--wa:#1F9D55;--max:1200px;--g:clamp(20px,4.5vw,48px);--ease:cubic-bezier(.2,.7,.2,1)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
-body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.85;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img,svg{display:block}
-img{max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
-ul,ol{list-style:none}
-:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:6px}
-.frame{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:17px;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block}img{max-width:100%;height:auto}a{color:inherit;text-decoration:none}ul,ol{list-style:none}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
 [hidden]{display:none!important}
-
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--brand-ink)}
-.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--brand-soft)}
-h1,h2,h3{font-weight:700;letter-spacing:-.01em;line-height:1.3}
-h2{font-size:clamp(30px,3.6vw,46px);margin-top:14px}
-.lead{color:var(--muted);font-size:clamp(17px,1.4vw,19px);max-width:50ch;margin-top:16px}
-
-.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 28px;border-radius:14px;font-family:inherit;font-weight:700;font-size:16px;border:1px solid transparent;cursor:pointer;transition:background .25s,border-color .25s,color .25s,box-shadow .25s}
+.frame{max-width:var(--max);margin-inline:auto;padding-inline:var(--g)}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;font-weight:700;letter-spacing:.02em;color:var(--brand-ink)}
+.tag::before{content:"";width:22px;height:3px;border-radius:3px;background:var(--brand)}
+.dark .tag{color:var(--brand2)}
+h1,h2,h3{font-weight:800;line-height:1.3;letter-spacing:-.01em}
+h2{font-size:clamp(28px,3.6vw,44px);margin-top:12px}
+.lead{color:var(--muted);font-size:clamp(16px,1.4vw,18.5px);max-width:52ch;margin-top:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:12px;font:700 16px/1 inherit;font-family:inherit;white-space:nowrap;border:1px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s,box-shadow .25s,border-color .25s}
 .btn svg{width:20px;height:20px;flex:none}
-.btn.primary{background:var(--ink);color:#fff;box-shadow:0 10px 24px -14px rgba(26,25,24,.7)}
-.btn.primary:hover{background:#000}
-.btn.ghost{background:var(--white);border-color:var(--line);color:var(--ink)}
-.btn.ghost:hover{border-color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn.y{background:var(--brand);color:var(--ink);box-shadow:0 14px 30px -14px rgba(230,176,40,.8)}
+.btn.y:hover{background:var(--brand2)}
+.btn.o{border-color:rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(6px)}
+.btn.o:hover{border-color:#fff}
+.btn.d{background:var(--ink);color:#fff}
+.btn.l{background:#fff;border-color:var(--line);color:var(--ink)}.btn.l:hover{border-color:var(--ink)}
 .btn.wa{background:var(--wa);color:#fff}
-.btn.wa:hover{background:#198548}
-.link{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--ink);border-bottom:1.5px solid var(--brand);padding-bottom:2px}
-.link svg{width:17px;height:17px;transition:transform .25s var(--ease)}
-.link:hover svg{transform:translateX(-4px)}
-.pin{width:54px;height:54px;border-radius:14px;border:1px solid var(--line);background:var(--white);display:inline-grid;place-items:center;color:var(--brand-ink);transition:border-color .25s}
-.pin:hover{border-color:var(--ink)}
-.pin svg{width:22px;height:22px}
-
-/* ===== الهيدر ===== */
-.hdr{position:sticky;top:0;z-index:40;background:rgba(252,251,248,.88);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);transition:box-shadow .3s}
-.hdr.on{box-shadow:0 1px 0 var(--line)}
-.hdr .frame{display:flex;align-items:center;justify-content:space-between;gap:24px;height:92px}
-.brand{display:flex;align-items:center;gap:16px}
-.brand .mark{width:62px;height:auto;flex:none}
-.brand .sep{width:1px;height:40px;background:var(--line)}
-.brand b{display:block;font-size:21px;line-height:1.25}
-.brand small{display:block;font-size:12.5px;color:var(--muted);font-weight:600;line-height:1.4}
-.nav{display:flex;align-items:center;gap:34px;font-size:15px;font-weight:600;color:var(--ink-2)}
-.nav a:not(.btn){position:relative;padding-block:6px}
-.nav a:not(.btn)::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;border-radius:2px;background:var(--brand);transform:scaleX(0);transition:transform .3s var(--ease)}
+/* header */
+.hdr{position:fixed;inset-inline:0;top:0;z-index:40;transition:background .35s,box-shadow .35s}
+.hdr .frame{display:flex;align-items:center;justify-content:space-between;gap:20px;height:80px}
+.hdr.on{background:rgba(20,22,26,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.brand{display:flex;align-items:center;gap:14px;color:#fff}
+.brand .mark{width:52px;height:auto}
+.brand b{display:block;font-size:20px;line-height:1.2}
+.brand small{display:block;font-size:12px;opacity:.65;font-weight:600;line-height:1.4}
+.nav{display:flex;align-items:center;gap:30px;font-size:15px;font-weight:600;color:rgba(255,255,255,.8)}
+.nav a:not(.btn){position:relative;padding-block:6px;transition:color .2s}
+.nav a:not(.btn):hover{color:#fff}
+.nav a:not(.btn)::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--brand);transform:scaleX(0);transition:transform .3s var(--ease)}
 .nav a:not(.btn):hover::after{transform:scaleX(1)}
-.nav .btn{height:46px;padding:0 22px;font-size:15px;border-radius:12px}
+.nav .btn{height:44px;padding:0 20px;font-size:14.5px}
 @media(max-width:960px){.nav a:not(.btn){display:none}}
-@media(max-width:600px){
-  .hdr .frame{height:78px}
-  .brand{gap:12px}.brand .mark{width:50px}.brand .sep,.brand small{display:none}
-  .nav .btn{height:42px;padding:0 16px;font-size:14px}
-}
-
-/* ===== البداية ===== */
-.hero{padding-top:clamp(8px,1.6vw,20px)}
-.stage{position:relative;background:linear-gradient(155deg,#F8F5EE 0%,#EFEADF 100%);border-radius:36px;overflow:hidden;display:grid;align-items:center;min-height:clamp(540px,70vh,700px);isolation:isolate}
-.stage::before{content:"";position:absolute;z-index:-1;width:780px;aspect-ratio:1;border-radius:50%;inset-inline-end:-220px;top:50%;transform:translateY(-50%);border:120px solid rgba(230,176,40,.07)}
-.stage .txt{padding:clamp(36px,6vw,80px);padding-inline-end:0}
-.stage h1{font-size:clamp(32px,3.4vw,50px);line-height:1.3}
-.stage h1 i,.stage h1 span{display:block;font-style:normal}
-.stage h1 span{color:var(--brand-ink)}
-.stage p{color:var(--ink-2);opacity:.85;font-size:clamp(17px,1.5vw,19px);max-width:40ch;margin-top:22px}
-.stage .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.stage .art{align-self:end;padding:0 clamp(16px,3vw,40px) clamp(20px,3vw,36px)}
-.stage .art img{width:100%;max-width:720px;margin-inline:auto}
-@media(min-width:1000px){
-  .stage{grid-template-columns:1fr 1fr}
-  .stage .art{align-self:center;padding:40px 8px 40px 0}
-  .stage .art img{max-width:none;width:112%;margin-inline-start:-12%}
-}
-@media(max-width:999px){.stage .txt{padding-inline-end:clamp(36px,6vw,80px)}.stage .art{padding-top:0}}
-@media(max-width:600px){.stage{border-radius:28px}.stage .txt{padding:34px 24px 8px}.stage .ctas .btn{flex:1}}
-
-/* ===== شريط الثقة ===== */
-.trust{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 0;margin-top:clamp(26px,3.6vw,40px);padding-block:8px}
-@media(min-width:880px){.trust{grid-template-columns:repeat(4,1fr)}}
-.trust div{display:flex;align-items:center;gap:14px;padding-inline:clamp(10px,2vw,26px);border-inline-start:1px solid var(--line)}
-.trust div:first-child{border-inline-start:0;padding-inline-start:0}
-@media(max-width:879px){.trust div:nth-child(3){border-inline-start:0;padding-inline-start:0}}
-.trust .ic{width:44px;height:44px;border-radius:12px;background:var(--brand-soft);color:var(--brand-ink);display:grid;place-items:center;flex:none}
-.trust .ic svg{width:21px;height:21px}
+@media(max-width:600px){.hdr .frame{height:68px}.brand .mark{width:42px}.brand small{display:none}.nav .btn{height:40px;padding:0 14px;font-size:13.5px}}
+/* hero */
+.hero{position:relative;min-height:min(100svh,860px);display:flex;align-items:center;color:#fff;background:var(--ink);overflow:hidden;isolation:isolate;padding:120px 0 90px}
+.hero .bg{position:absolute;inset:0;z-index:-2;background:url(assets/photos/factory.webp) center/cover;transform:scale(1.06);animation:kb 18s var(--ease) forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,rgba(14,16,19,.96) 0%,rgba(14,16,19,.86) 42%,rgba(14,16,19,.45) 100%),linear-gradient(0deg,rgba(14,16,19,.9),transparent 45%)}
+.hero .frame{width:100%}
+.hero h1{font-size:clamp(34px,5.2vw,64px);line-height:1.25;max-width:16ch;margin-top:18px}
+.hero h1 span{color:var(--brand)}
+.hero p{font-size:clamp(17px,1.6vw,20px);color:rgba(255,255,255,.78);max-width:46ch;margin-top:20px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
+.chips span{font-size:14px;font-weight:600;padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);color:rgba(255,255,255,.88)}
+@media(max-width:600px){.chips{display:none}.hero{padding:110px 0 80px;min-height:auto}.hero .ctas .btn{flex:1 1 100%}.hero::before{background:linear-gradient(0deg,rgba(14,16,19,.97) 20%,rgba(14,16,19,.75))}}
+/* trust bar */
+.trust{position:relative;z-index:2;margin-top:-46px}
+.trust ul{display:grid;grid-template-columns:repeat(2,1fr);background:#fff;border-radius:20px;box-shadow:0 30px 60px -30px rgba(20,22,26,.35);border:1px solid var(--line);overflow:hidden}
+@media(min-width:880px){.trust ul{grid-template-columns:repeat(4,1fr)}}
+.trust li{display:flex;align-items:center;gap:14px;padding:24px clamp(16px,2vw,28px);border-inline-start:1px solid var(--line);border-top:1px solid var(--line);margin:-1px 0 0 -1px}
+.ic{width:46px;height:46px;border-radius:12px;background:#FBF1D6;color:var(--brand-ink);display:grid;place-items:center;flex:none}
+.ic svg{width:22px;height:22px}
 .trust b{display:block;font-size:15.5px;line-height:1.4}
-.trust span{display:block;font-size:13px;color:var(--muted);line-height:1.5}
-@media(max-width:600px){.trust span{display:none}.trust .ic{width:38px;height:38px}.trust div{gap:10px}}
-
-/* ===== أقسام ===== */
-.sec{padding-block:clamp(80px,10vw,140px)}
-.sec-head{display:grid;gap:18px;margin-bottom:clamp(40px,5vw,72px)}
-@media(min-width:900px){.sec-head{grid-template-columns:1fr 1fr;align-items:end}.sec-head .lead{justify-self:end;margin:0}}
-
-/* ===== المنتجات ===== */
-.prod{display:grid;gap:clamp(28px,4vw,72px);align-items:center;padding-block:clamp(32px,4.4vw,56px)}
-.prod+.prod{border-top:1px solid var(--line)}
-@media(min-width:900px){.prod{grid-template-columns:1.05fr .95fr}.prod.flip .ph{order:2}}
-.ph{position:relative;border-radius:30px;background:radial-gradient(110% 85% at 50% 35%,#FFFFFF 0%,var(--surface) 72%);border:1px solid var(--line);aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;padding:clamp(26px,4vw,52px);overflow:hidden}
-.ph img{position:relative;z-index:1;height:100%;max-width:100%;width:auto;object-fit:contain;transition:transform .9s var(--ease)}
-.prod:hover .ph img{transform:scale(1.03)}
-/* صورة الكابلات مقصوصة من ناحية: تلزق في حرف الكارت فتبان مقصودة */
-.ph.bleed{justify-content:flex-end;padding-inline-end:0}
-.ph.bleed img{max-width:none;width:112%;margin-inline-end:-12%}
-.ph.bleed::after{inset-inline-end:0}
-.ph .no{position:absolute;top:22px;inset-inline-start:26px;z-index:2;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.06em}
-.prod h3{font-size:clamp(28px,3vw,40px);margin-top:12px}
-.prod .desc{color:var(--muted);margin-top:12px;max-width:44ch}
-.spec{margin-top:26px;border-top:1px solid var(--line)}
-.spec div{display:flex;justify-content:space-between;gap:20px;padding-block:13px;border-bottom:1px solid var(--line);font-size:16px}
-.spec dt{color:var(--muted)}
-.spec dd{font-weight:700;text-align:left}
-.dots{display:inline-flex;gap:6px;vertical-align:middle}
-.dots i{width:14px;height:14px;border-radius:50%;display:inline-block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
-.prod .acts{margin-top:28px}
-
-/* ===== بلوك الجملة ===== */
-.statement{background:#1C1B19;color:#EEEAE2;border-radius:36px;padding:clamp(44px,7vw,92px) clamp(28px,6vw,88px);display:grid;gap:40px;position:relative;overflow:hidden;isolation:isolate}
-.statement::after{content:"";position:absolute;z-index:-1;width:440px;aspect-ratio:1;border-radius:50%;border:70px solid rgba(230,176,40,.09);inset-inline-start:-140px;bottom:-230px}
-.statement p.big{font-size:clamp(26px,3.3vw,42px);font-weight:700;line-height:1.5;max-width:24ch}
-.statement p.big span{color:var(--brand)}
-.pillars{display:grid;gap:24px}
-@media(min-width:800px){.pillars{grid-template-columns:repeat(3,1fr);gap:40px}}
-.pillars div{border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
-.pillars b{display:block;font-size:18px;color:#fff}
-.pillars span{display:block;color:#ABA597;font-size:15px;margin-top:6px}
-
-/* ===== خطوات الطلب ===== */
+.trust small{display:block;font-size:13px;color:var(--muted);line-height:1.5}
+@media(max-width:600px){.trust li{padding:18px 14px;gap:10px}.trust .ic{width:38px;height:38px}.trust small{display:none}.trust b{font-size:14px}}
+/* sections */
+.sec{padding-block:clamp(80px,10vw,130px)}
+.head{display:grid;gap:14px;margin-bottom:clamp(36px,5vw,64px)}
+@media(min-width:900px){.head{grid-template-columns:1fr 1fr;align-items:end}.head .lead{justify-self:end;margin:0}}
+/* products */
+.grid{display:grid;gap:22px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 34px 60px -34px rgba(20,22,26,.4);border-color:#d9d3c6}
+.card .art{position:relative;aspect-ratio:16/10;background:radial-gradient(90% 90% at 50% 40%,#fff 0%,var(--soft) 75%);display:grid;place-items:center;padding:26px;overflow:hidden}
+.card .art img{height:100%;width:auto;max-width:100%;object-fit:contain;transition:transform .9s var(--ease)}
+.card:hover .art img{transform:scale(1.05)}
+.card .no{position:absolute;top:18px;inset-inline-start:20px;font-size:13px;font-weight:800;color:var(--brand-ink);background:#FBF1D6;border-radius:8px;padding:2px 10px}
+.card .body{padding:26px 28px 30px;display:flex;flex-direction:column;flex:1}
+.card .cat{font-size:13px;font-weight:700;color:var(--muted)}
+.card h3{font-size:clamp(22px,2.2vw,28px);margin-top:4px}
+.card p{color:var(--muted);margin-top:10px;font-size:16px}
+.spec{margin-top:18px;border-top:1px solid var(--line)}
+.spec div{display:flex;justify-content:space-between;gap:16px;padding-block:10px;border-bottom:1px solid var(--line);font-size:15px}
+.spec dt{color:var(--muted)}.spec dd{font-weight:700;text-align:left}
+.dots{display:inline-flex;gap:6px;vertical-align:middle}.dots i{width:14px;height:14px;border-radius:50%;display:inline-block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.more{margin-top:auto;padding-top:22px;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--ink)}
+.more svg{width:18px;height:18px;color:var(--brand-ink);transition:transform .3s var(--ease)}
+.card:hover .more svg{transform:translateX(-5px)}
+/* about */
+.about{background:var(--ink);color:#EDEAE3;position:relative;overflow:hidden;isolation:isolate}
+.about::after{content:"";position:absolute;z-index:-1;width:620px;aspect-ratio:1;border-radius:50%;border:90px solid rgba(230,176,40,.06);inset-inline-end:-260px;top:-200px}
+.about .wrap{display:grid;gap:clamp(36px,5vw,72px);align-items:center}
+@media(min-width:960px){.about .wrap{grid-template-columns:1fr 1fr}}
+.about .big{font-size:clamp(26px,3.3vw,42px);font-weight:800;line-height:1.45;color:#fff;margin-top:12px}
+.about .big span{color:var(--brand)}
+.pillars{margin-top:34px;display:grid;gap:4px}
+.pillars li{display:flex;gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.1)}
+.pillars .ic{background:rgba(230,176,40,.12);color:var(--brand)}
+.pillars b{display:block;color:#fff;font-size:17.5px}
+.pillars span{display:block;color:#A9A59C;font-size:15px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.photos figure{border-radius:22px;overflow:hidden;position:relative;aspect-ratio:3/4}
+.photos figure:last-child{margin-top:48px}
+.photos img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.photos figure:hover img{transform:scale(1.05)}
+.photos figure::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,16,19,.35),transparent 50%)}
+/* steps */
 .steps{display:grid;gap:18px;counter-reset:s}
 @media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr);gap:22px}}
-.steps li{counter-increment:s;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:30px 28px 32px}
-.steps li::before{content:"0" counter(s);display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--brand-soft);color:var(--brand-ink);font-size:15px;font-weight:700;margin-bottom:26px}
-.steps b{display:block;font-size:21px}
-.steps span{display:block;color:var(--muted);margin-top:8px}
-
-/* ===== التواصل ===== */
-.contact{background:var(--white);border:1px solid var(--line);border-radius:36px;padding:clamp(32px,5vw,72px);display:grid;gap:clamp(32px,4vw,64px);align-items:center}
+.steps li{counter-increment:s;position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 28px;overflow:hidden}
+.steps li::before{content:"0" counter(s);display:block;font-size:44px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--brand);margin-bottom:22px}
+.steps li::after{content:"";position:absolute;top:0;inset-inline-start:0;width:60px;height:4px;background:var(--brand);border-end-end-radius:4px}
+.steps b{display:block;font-size:20px}.steps span{display:block;color:var(--muted);margin-top:6px;font-size:16px}
+/* contact */
+.contact{display:grid;border-radius:28px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 40px 80px -50px rgba(20,22,26,.4)}
 @media(min-width:960px){.contact{grid-template-columns:1.1fr .9fr}}
-.contact .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:32px}
-.pending{color:var(--muted);font-size:14px;margin-top:16px}
-.rows{border-top:1px solid var(--line)}
-.rows>div{display:flex;gap:16px;align-items:center;padding-block:18px;border-bottom:1px solid var(--line)}
-.rows .ic{width:46px;height:46px;border-radius:12px;background:var(--brand-soft);display:grid;place-items:center;flex:none;color:var(--brand-ink)}
-.rows .ic svg{width:21px;height:21px}
+.contact .l{padding:clamp(30px,5vw,64px)}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.pending{color:var(--muted);font-size:14px;margin-top:14px}
+.rows{margin-top:28px;border-top:1px solid var(--line)}
+.rows>div{display:flex;gap:14px;align-items:center;padding-block:15px;border-bottom:1px solid var(--line)}
 .rows small{display:block;color:var(--muted);font-size:13px;font-weight:600;line-height:1.5}
-.rows strong{display:block;font-size:17px;line-height:1.6}
+.rows strong{display:block;font-size:16.5px;line-height:1.6}
 .rows strong.num{direction:ltr;text-align:right}
-
-/* ===== الشعار تحت ===== */
-.motto{text-align:center;padding-block:clamp(80px,10vw,130px) clamp(56px,7vw,90px)}
-.motto .mark{width:clamp(88px,10vw,120px);height:auto;margin:0 auto 30px}
-.motto p{font-size:clamp(28px,4vw,52px);font-weight:700;line-height:1.45;max-width:20ch;margin-inline:auto;color:var(--ink)}
+.map{position:relative;min-height:340px;background:var(--ink) url(assets/photos/cables.webp) center/cover;display:flex;align-items:flex-end;isolation:isolate}
+.map::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(14,16,19,.92),rgba(14,16,19,.3))}
+.map .in{padding:clamp(26px,4vw,44px);color:#fff}
+.map .pinbig{width:60px;height:60px;border-radius:16px;background:var(--brand);color:var(--ink);display:grid;place-items:center;margin-bottom:18px;animation:bob 3s ease-in-out infinite}
+.map .pinbig svg{width:28px;height:28px}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.map h3{font-size:24px}.map p{color:rgba(255,255,255,.75);margin:6px 0 20px}
+/* motto */
+.motto{text-align:center;padding-block:clamp(80px,10vw,120px)}
+.motto .mark{width:clamp(80px,9vw,110px);height:auto;margin:0 auto 26px}
+.motto p{font-size:clamp(26px,4vw,48px);font-weight:800;line-height:1.45;max-width:20ch;margin-inline:auto}
 .motto p span{display:block;color:var(--brand-ink)}
-.motto .rule{width:64px;height:3px;border-radius:3px;background:var(--brand);margin:28px auto 0}
-
-/* ===== الفوتر ===== */
-footer{border-top:1px solid var(--line);background:var(--surface)}
-.foot{display:grid;gap:36px;padding-block:52px}
+.motto .rule{width:64px;height:4px;border-radius:4px;background:var(--brand);margin:26px auto 0}
+/* footer */
+footer{background:var(--ink);color:#B9B5AC}
+.foot{display:grid;gap:34px;padding-block:56px}
 @media(min-width:900px){.foot{grid-template-columns:1.5fr 1fr 1fr}}
-.foot p{color:var(--muted);margin-top:16px;max-width:34ch;font-size:15px}
-.foot h4{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:14px}
-.foot li{margin-bottom:8px;font-size:15px;font-weight:600}
-.foot li a:hover{color:var(--brand-ink)}
-.foot .pin{width:42px;height:42px;border-radius:12px}
-.foot .pin svg{width:18px;height:18px}
-.copy{border-top:1px solid var(--line);padding-block:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;color:var(--muted);font-size:13px}
-
-/* زرار واتساب ثابت */
-.fab{position:fixed;bottom:22px;inset-inline-start:22px;z-index:50;height:56px;padding:0 22px 0 18px;border-radius:999px;background:var(--wa);color:#fff;display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;box-shadow:0 12px 28px -10px rgba(31,157,85,.65)}
+.foot p{margin-top:16px;max-width:34ch;font-size:15px}
+.foot h4{font-size:14px;color:#fff;margin-bottom:14px}
+.foot li{margin-bottom:8px;font-size:15px}
+.foot li a:hover{color:var(--brand)}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding-block:22px;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between;font-size:13px;color:#8A877F}
+.copy a{text-decoration:underline}
+.fab{position:fixed;bottom:20px;inset-inline-start:20px;z-index:50;height:56px;padding:0 22px 0 18px;border-radius:999px;background:var(--wa);color:#fff;display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;box-shadow:0 12px 28px -10px rgba(31,157,85,.7)}
 .fab svg{width:24px;height:24px}
-
-/* ظهور هادي */
-.rv{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .rv.in{opacity:1;transform:none}
-.d1{transition-delay:.08s}.d2{transition-delay:.16s}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.ph img{transition:none}html{scroll-behavior:auto}}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero .bg,.map .pinbig{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="logo" viewBox="100 140 1022 820"><circle cx="717" cy="550" r="330" fill="none" stroke="#E6B028" stroke-width="148"/><circle cx="717" cy="551" r="83" fill="#E6B028"/><path d="M105 158H492V297H264V477H595V621H264V940H105Z" fill="#161616"/></symbol>
+  <symbol id="logo" viewBox="100 140 1022 820"><circle cx="717" cy="550" r="330" fill="none" stroke="#E6B028" stroke-width="148"/><circle cx="717" cy="551" r="83" fill="#E6B028"/><path d="M105 158H492V297H264V477H595V621H264V940H105Z" fill="currentColor"/></symbol>
   <symbol id="icWa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
   <symbol id="icPin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
   <symbol id="icArrow" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icFac" viewBox="0 0 24 24"><path d="M3 21V9l6-4v4l6-4v4l6-4v16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="icShield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></g></symbol>
+  <symbol id="icTruck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></g></symbol>
+  <symbol id="icDoc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></g></symbol>
+  <symbol id="icPhone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
 </svg>
 
 <header class="hdr" id="hdr">
   <div class="frame">
     <a class="brand" href="#" aria-label="فلاش أون، الصفحة الرئيسية">
-      <svg class="mark" viewBox="0 0 1022 820" role="img" aria-label="شعار فلاش أون"><use href="#logo"/></svg>
-      <span class="sep"></span>
+      <svg class="mark" viewBox="0 0 1022 820" style="color:#fff" role="img" aria-label="شعار فلاش أون"><use href="#logo"/></svg>
       <span><b>فلاش أون</b><small>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</small></span>
     </a>
     <nav class="nav" aria-label="أقسام الموقع">
-      <a href="#products">المنتجات</a>
-      <a href="#about">من نحن</a>
-      <a href="#order">طريقة الطلب</a>
-      <a href="#contact">تواصل معنا</a>
-      <a class="btn primary" href="#contact">اطلب عرض سعر</a>
+      <a href="#products">المنتجات</a><a href="#about">من نحن</a><a href="#order">طريقة الطلب</a><a href="#contact">تواصل معنا</a>
+      <a class="btn y" href="#contact">اطلب عرض سعر</a>
     </nav>
   </div>
 </header>
 
 <main>
-
-  <!-- ===== البداية ===== -->
   <section class="hero">
+    <div class="bg" role="img" aria-label="صورة تعبيرية لخط إنتاج داخل مصنع"></div>
     <div class="frame">
-      <div class="stage">
-        <div class="txt rv">
-          <span class="eyebrow">شركة مصرية لصناعة وتوريد الأدوات الكهربائية</span>
-          <h1><i>كل ما يحتاجه</i> <i>التأسيس الكهربائي</i> <span>من مصدر واحد</span></h1>
-          <p>نصنّع ونورّد الخراطيم والمواسير وعلب الماجيك والكابلات الكهربائية للمقاولين والتجار، بجودة ثابتة وبأسعار المصنع.</p>
-          <div class="ctas">
-            <a class="btn primary" id="waTop" href="#contact"><svg><use href="#icWa"/></svg>اطلب عرض سعر</a>
-            <a class="btn ghost" href="#products">تصفّح المنتجات</a>
-          </div>
-        </div>
-        <div class="art rv d1">
-          <img src="assets/img/hero.svg" width="1110" height="560" alt="منتجات فلاش أون: مواسير PVC، خراطيم كهربائية، كابلات، وعلبة ماجيك">
-        </div>
+      <span class="tag rv">شركة مصرية لصناعة وتوريد الأدوات الكهربائية</span>
+      <h1 class="rv d1">كل ما يحتاجه التأسيس الكهربائي <span>من مصدر واحد</span></h1>
+      <p class="rv d2">نصنّع ونورّد الخراطيم والمواسير وعلب الماجيك والكابلات الكهربائية للمقاولين والتجار، بجودة ثابتة وبأسعار المصنع.</p>
+      <div class="ctas rv d3">
+        <a class="btn y" id="waTop" href="#contact"><svg><use href="#icWa"/></svg>اطلب عرض سعر</a>
+        <a class="btn o" href="#products">تصفّح المنتجات <svg><use href="#icArrow"/></svg></a>
       </div>
-
-      <div class="trust rv d2">
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l6-4v4l6-4v4l6-4v16z"/></svg></span><p><b>صناعة مصرية</b><span>من المصنع مباشرة</span></p></div>
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><p><b>جودة مطابقة</b><span>للمواصفات القياسية</span></p></div>
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><p><b>توريد مباشر</b><span>حتى موقع العمل</span></p></div>
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><p><b>عرض سعر مكتوب</b><span>قبل أي توريد</span></p></div>
-      </div>
+      <div class="chips rv d3"><span>خراطيم كهربائية</span><span>مواسير PVC</span><span>علب ماجيك</span><span>الكابلات الكهربائية</span></div>
     </div>
   </section>
 
-  <!-- ===== المنتجات ===== -->
+  <div class="trust frame rv">
+    <ul>
+      <li><span class="ic"><svg><use href="#icFac"/></svg></span><p><b>صناعة مصرية</b><small>من المصنع مباشرة</small></p></li>
+      <li><span class="ic"><svg><use href="#icShield"/></svg></span><p><b>جودة مطابقة</b><small>للمواصفات القياسية</small></p></li>
+      <li><span class="ic"><svg><use href="#icTruck"/></svg></span><p><b>توريد مباشر</b><small>حتى موقع العمل</small></p></li>
+      <li><span class="ic"><svg><use href="#icDoc"/></svg></span><p><b>عرض سعر مكتوب</b><small>قبل أي توريد</small></p></li>
+    </ul>
+  </div>
+
   <section class="sec" id="products">
     <div class="frame">
-      <div class="sec-head rv">
-        <div><span class="eyebrow">المنتجات</span><h2>أربعة خطوط إنتاج،<br>مستوى جودة واحد</h2></div>
+      <div class="head rv">
+        <div><span class="tag">المنتجات</span><h2>أربعة خطوط إنتاج،<br>مستوى جودة واحد</h2></div>
         <p class="lead">كل ما يحتاجه المقاول في تأسيس الكهرباء: من الخرطوم إلى العلبة إلى الكابل.</p>
       </div>
-
-      <article class="prod rv">
-        <div class="ph"><span class="no">01</span><img src="assets/img/hoses.svg" width="400" height="400" loading="lazy" alt="لفة خرطوم كهرباء مموّج"></div>
-        <div>
-          <span class="eyebrow">تأسيس</span>
-          <h3>خراطيم كهربائية</h3>
-          <p class="desc">خرطوم مموّج مرن يحمي الأسلاك ويسهّل تمريرها داخل الحوائط والأسقف، ويتحمّل الثني دون أن يتكسر.</p>
-          <dl class="spec">
-            <div><dt>الشكل</dt><dd>مموّج مرن</dd></div>
-            <div><dt>الاستخدام</dt><dd>تمديدات داخل الحوائط والأسقف</dd></div>
-            <div><dt>اللون</dt><dd><span class="dots"><i style="background:#F2C200"></i></span></dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن مقاسات وأسعار الخراطيم الكهربائية" href="#contact">اطلب المقاسات والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
-
-      <article class="prod flip rv">
-        <div class="ph"><span class="no">02</span><img src="assets/img/pvc.svg" width="310" height="360" loading="lazy" alt="لفات مواسير PVC"></div>
-        <div>
-          <span class="eyebrow">تأسيس</span>
-          <h3>مواسير PVC</h3>
-          <p class="desc">مواسير ناعمة ومتينة تُورَّد في لفات، بألوان متعددة للتفريق بين خطوط التمديدات داخل المشروع الواحد.</p>
-          <dl class="spec">
-            <div><dt>الخامة</dt><dd>PVC</dd></div>
-            <div><dt>التعبئة</dt><dd>لفات</dd></div>
-            <div><dt>الألوان</dt><dd><span class="dots"><i style="background:#F5D90A"></i><i style="background:#F2541B"></i></span></dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن مقاسات وأسعار مواسير PVC" href="#contact">اطلب المقاسات والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
-
-      <article class="prod rv">
-        <div class="ph"><span class="no">03</span><img src="assets/img/magic.svg" width="260" height="330" loading="lazy" alt="علبة ماجيك"></div>
-        <div>
-          <span class="eyebrow">تشطيب</span>
-          <h3>علب ماجيك</h3>
-          <p class="desc">علب مخصّصة للمفاتيح والبرايز، مزوّدة بمسامير معدنية للتثبيت، وتُركَّب مفردة أو متجاورة أو فوق بعضها حسب التصميم.</p>
-          <dl class="spec">
-            <div><dt>التركيب</dt><dd>مفردة · متجاورة · فوق بعضها</dd></div>
-            <div><dt>التثبيت</dt><dd>مسامير معدنية</dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن أنواع وأسعار علب الماجيك" href="#contact">اطلب الأنواع والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
-
-      <article class="prod flip rv" id="cables">
-        <div class="ph"><span class="no">04</span><img src="assets/img/cables.svg" width="560" height="430" loading="lazy" alt="كابلات فلاش أون الكهربائية"></div>
-        <div>
-          <span class="eyebrow">كابلات</span>
-          <h3>الكابلات الكهربائية</h3>
-          <p class="desc">نورّد جميع أنواع الكابلات والأسلاك الكهربائية بمختلف المقاطع والألوان، لتلبية احتياجات المشروعات السكنية والتجارية.</p>
-          <dl class="spec">
-            <div><dt>النطاق</dt><dd>جميع الكابلات الكهربائية</dd></div>
-            <div><dt>الاستخدام</dt><dd>المشروعات السكنية والتجارية</dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن الكابلات الكهربائية وأسعارها" href="#contact">اطلب الأنواع والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ===== من نحن ===== -->
-  <section class="frame rv" id="about">
-    <div class="statement">
-      <p class="big">نصنّع في مصر، <span>ونورّد مباشرة</span> إلى موقع العمل.</p>
-      <div class="pillars">
-        <div><b>صناعة مصرية</b><span>منتجات تُصنَّع في مصر وتحمل اسم فلاش أون.</span></div>
-        <div><b>مواصفات قياسية</b><span>جودة مطابقة للمواصفات القياسية في كل منتج.</span></div>
-        <div><b>تعامل واضح</b><span>عرض سعر مكتوب وإذن تسليم مع كل شحنة.</span></div>
+      <div class="grid">
+        <a class="card rv" data-ask="أرغب في الاستفسار عن مقاسات وأسعار الخراطيم الكهربائية" href="#contact">
+          <div class="art"><span class="no">01</span><img src="assets/img/hoses.svg" width="400" height="400" loading="lazy" alt="رسم توضيحي للفة خرطوم كهرباء مموّج"></div>
+          <div class="body"><span class="cat">تأسيس</span><h3>خراطيم كهربائية</h3>
+            <p>خرطوم مموّج مرن يحمي الأسلاك ويسهّل تمريرها داخل الحوائط والأسقف، ويتحمّل الثني دون أن يتكسر.</p>
+            <dl class="spec"><div><dt>الشكل</dt><dd>مموّج مرن</dd></div><div><dt>الاستخدام</dt><dd>تمديدات داخل الحوائط والأسقف</dd></div><div><dt>اللون</dt><dd><span class="dots"><i style="background:#F2C200"></i></span></dd></div></dl>
+            <span class="more">اطلب المقاسات والأسعار <svg><use href="#icArrow"/></svg></span></div>
+        </a>
+        <a class="card rv d1" data-ask="أرغب في الاستفسار عن مقاسات وأسعار مواسير PVC" href="#contact">
+          <div class="art"><span class="no">02</span><img src="assets/img/pvc.svg" width="310" height="360" loading="lazy" alt="رسم توضيحي للفات مواسير PVC"></div>
+          <div class="body"><span class="cat">تأسيس</span><h3>مواسير PVC</h3>
+            <p>مواسير ناعمة ومتينة تُورَّد في لفات، بألوان متعددة للتفريق بين خطوط التمديدات داخل المشروع الواحد.</p>
+            <dl class="spec"><div><dt>الخامة</dt><dd>PVC</dd></div><div><dt>التعبئة</dt><dd>لفات</dd></div><div><dt>الألوان</dt><dd><span class="dots"><i style="background:#F5D90A"></i><i style="background:#F2541B"></i></span></dd></div></dl>
+            <span class="more">اطلب المقاسات والأسعار <svg><use href="#icArrow"/></svg></span></div>
+        </a>
+        <a class="card rv" data-ask="أرغب في الاستفسار عن أنواع وأسعار علب الماجيك" href="#contact">
+          <div class="art"><span class="no">03</span><img src="assets/img/magic.svg" width="260" height="330" loading="lazy" alt="رسم توضيحي لعلبة ماجيك"></div>
+          <div class="body"><span class="cat">تشطيب</span><h3>علب ماجيك</h3>
+            <p>علب مخصّصة للمفاتيح والبرايز، مزوّدة بمسامير معدنية للتثبيت، وتُركَّب مفردة أو متجاورة أو فوق بعضها حسب التصميم.</p>
+            <dl class="spec"><div><dt>التركيب</dt><dd>مفردة · متجاورة · فوق بعضها</dd></div><div><dt>التثبيت</dt><dd>مسامير معدنية</dd></div></dl>
+            <span class="more">اطلب الأنواع والأسعار <svg><use href="#icArrow"/></svg></span></div>
+        </a>
+        <a class="card rv d1" id="cables" data-ask="أرغب في الاستفسار عن الكابلات الكهربائية وأسعارها" href="#contact">
+          <div class="art"><span class="no">04</span><img src="assets/img/cables.svg" width="560" height="430" loading="lazy" alt="رسم توضيحي لكابلات كهربائية"></div>
+          <div class="body"><span class="cat">كابلات</span><h3>الكابلات الكهربائية</h3>
+            <p>نورّد جميع أنواع الكابلات والأسلاك الكهربائية بمختلف المقاطع والألوان، لتلبية احتياجات المشروعات السكنية والتجارية.</p>
+            <dl class="spec"><div><dt>النطاق</dt><dd>جميع الكابلات الكهربائية</dd></div><div><dt>الاستخدام</dt><dd>المشروعات السكنية والتجارية</dd></div></dl>
+            <span class="more">اطلب الأنواع والأسعار <svg><use href="#icArrow"/></svg></span></div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== طريقة الطلب ===== -->
+  <section class="about sec" id="about">
+    <div class="frame wrap">
+      <div class="rv">
+        <span class="tag">من نحن</span>
+        <p class="big">نصنّع في مصر، <span>ونورّد مباشرة</span> إلى موقع العمل.</p>
+        <ul class="pillars">
+          <li><span class="ic"><svg><use href="#icFac"/></svg></span><p><b>صناعة مصرية</b><span>منتجات تُصنَّع في مصر وتحمل اسم فلاش أون.</span></p></li>
+          <li><span class="ic"><svg><use href="#icShield"/></svg></span><p><b>مواصفات قياسية</b><span>جودة مطابقة للمواصفات القياسية في كل منتج.</span></p></li>
+          <li><span class="ic"><svg><use href="#icDoc"/></svg></span><p><b>تعامل واضح</b><span>عرض سعر مكتوب وإذن تسليم مع كل شحنة.</span></p></li>
+        </ul>
+      </div>
+      <div class="photos rv d1" aria-hidden="true">
+        <figure><img src="assets/photos/pipes.webp" loading="lazy" alt=""></figure>
+        <figure><img src="assets/photos/cables.webp" loading="lazy" alt=""></figure>
+      </div>
+    </div>
+  </section>
+
   <section class="sec" id="order">
     <div class="frame">
-      <div class="sec-head rv">
-        <div><span class="eyebrow">طريقة الطلب</span><h2>ثلاث خطوات<br>وتصلك الشحنة</h2></div>
+      <div class="head rv">
+        <div><span class="tag">طريقة الطلب</span><h2>ثلاث خطوات<br>وتصلك الشحنة</h2></div>
         <p class="lead">بدون تعقيد: تواصل معنا، استلم عرض السعر، ثم استلم الشحنة.</p>
       </div>
       <ol class="steps">
@@ -360,56 +294,54 @@ footer{border-top:1px solid var(--line);background:var(--surface)}
     </div>
   </section>
 
-  <!-- ===== التواصل ===== -->
   <section id="contact">
     <div class="frame">
       <div class="contact rv">
-        <div>
-          <span class="eyebrow">تواصل معنا</span>
+        <div class="l">
+          <span class="tag">تواصل معنا</span>
           <h2>اطلب عرض سعر</h2>
           <p class="lead">أرسل لنا الصنف والمقاس والكمية، وسنرد عليك بالسعر في أقرب وقت.</p>
           <div class="ctas">
             <a class="btn wa" id="waBtm" href="#" hidden><svg><use href="#icWa"/></svg>راسلنا على واتساب</a>
-            <a class="btn ghost" id="callBtm" href="#" hidden>اتصل بنا</a>
-            <a class="pin" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener" aria-label="الموقع على الخريطة" title="الموقع على الخريطة"><svg><use href="#icPin"/></svg></a>
+            <a class="btn l" id="callBtm" href="#" hidden><svg><use href="#icPhone"/></svg>اتصل بنا</a>
           </div>
           <p class="pending" id="pending" hidden>سيتم إضافة رقم التواصل قريباً.</p>
+          <div class="rows">
+            <div id="rowPhone" hidden><span class="ic"><svg><use href="#icPhone"/></svg></span><p><small>الهاتف</small><strong class="num" id="nums"></strong></p></div>
+            <div><span class="ic"><svg><use href="#icDoc"/></svg></span><p><small>عرض السعر</small><strong>مكتوب بصيغة PDF</strong></p></div>
+            <div><span class="ic"><svg><use href="#icTruck"/></svg></span><p><small>التسليم</small><strong>بإذن تسليم مع كل شحنة</strong></p></div>
+          </div>
         </div>
-        <div class="rows">
-          <div id="rowPhone" hidden><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><p><small>الهاتف</small><strong class="num" id="nums"></strong></p></div>
-          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><p><small>عرض السعر</small><strong>مكتوب بصيغة PDF</strong></p></div>
-          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><p><small>التسليم</small><strong>بإذن تسليم مع كل شحنة</strong></p></div>
+        <div class="map">
+          <div class="in">
+            <span class="pinbig"><svg><use href="#icPin"/></svg></span>
+            <h3>موقعنا على الخريطة</h3>
+            <p>افتح الموقع في خرائط جوجل للوصول إلينا.</p>
+            <a class="btn y" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener"><svg><use href="#icPin"/></svg>افتح الخريطة</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== الشعار ===== -->
   <section class="motto frame rv">
-    <svg class="mark" viewBox="0 0 1022 820" aria-hidden="true"><use href="#logo"/></svg>
+    <svg class="mark" viewBox="0 0 1022 820" style="color:#161616" aria-hidden="true"><use href="#logo"/></svg>
     <p>معاً لعالم متكامل <span>من احتياجاتك الكهربائية</span></p>
     <div class="rule"></div>
   </section>
-
 </main>
 
 <footer>
   <div class="frame">
     <div class="foot">
       <div>
-        <a class="brand" href="#" aria-label="فلاش أون"><svg class="mark" viewBox="0 0 1022 820" aria-hidden="true"><use href="#logo"/></svg><span class="sep"></span><span><b>فلاش أون</b><small>Flash on</small></span></a>
+        <a class="brand" href="#" aria-label="فلاش أون"><svg class="mark" viewBox="0 0 1022 820" style="color:#fff" aria-hidden="true"><use href="#logo"/></svg><span><b>فلاش أون</b><small>Flash on</small></span></a>
         <p>شركة مصرية لصناعة وتوريد الأدوات الكهربائية.</p>
       </div>
-      <div>
-        <h4>المنتجات</h4>
-        <ul><li><a href="#products">خراطيم كهربائية</a></li><li><a href="#products">مواسير PVC</a></li><li><a href="#products">علب ماجيك</a></li><li><a href="#cables">الكابلات الكهربائية</a></li></ul>
-      </div>
-      <div>
-        <h4>تواصل</h4>
-        <ul><li><a href="#contact">اطلب عرض سعر</a></li><li><a class="pin" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener" aria-label="الموقع على الخريطة" title="الموقع على الخريطة"><svg><use href="#icPin"/></svg></a></li></ul>
-      </div>
+      <div><h4>المنتجات</h4><ul><li><a href="#products">خراطيم كهربائية</a></li><li><a href="#products">مواسير PVC</a></li><li><a href="#products">علب ماجيك</a></li><li><a href="#cables">الكابلات الكهربائية</a></li></ul></div>
+      <div><h4>تواصل</h4><ul><li><a href="#contact">اطلب عرض سعر</a></li><li><a href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener">الموقع على الخريطة</a></li></ul></div>
     </div>
-    <div class="copy"><span>© <span id="yr">2026</span> فلاش أون. جميع الحقوق محفوظة.</span><span>صُنع في مصر</span></div>
+    <div class="copy"><span>© <span id="yr">2026</span> فلاش أون. جميع الحقوق محفوظة.</span><span>صور تعبيرية من <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · صُنع في مصر</span></div>
   </div>
 </footer>
 
