@@ -276,6 +276,17 @@ h3{font-family:Alexandria;font-weight:700}
 .trust small{color:#3F454E}.brand .nm small{color:#3F454E}
 nav{font-weight:600}
 .lg-i{display:block;aspect-ratio:1042/840;height:auto;overflow:visible;flex:none}
+
+.gov{padding:0 0 clamp(56px,6vw,84px)}
+.gov-in{display:flex;align-items:center;justify-content:center;gap:18px;padding:26px 32px;border-radius:22px;background:linear-gradient(135deg,#14171C,#232830);color:#fff;box-shadow:0 30px 60px -36px rgba(20,23,28,.6);position:relative;overflow:hidden;isolation:isolate}
+.gov-in::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 120% at 85% 50%,rgba(242,183,5,.22),transparent 70%)}
+.gov-ic{width:58px;height:58px;border-radius:16px;background:var(--y);color:var(--g);display:grid;place-items:center;flex:none;box-shadow:0 0 0 6px rgba(242,183,5,.15)}
+.gov-ic svg{width:30px;height:30px}
+.gov-in b{font-family:Alexandria;font-weight:700;font-size:clamp(19px,2.2vw,28px)}
+.gbadge{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:9px 16px;border-radius:12px;background:rgba(242,183,5,.1);border:1px solid rgba(242,183,5,.35);color:#FFE18A;font-weight:600;font-size:15px}
+.gbadge svg{width:20px;height:20px;color:var(--y)}
+@media(max-width:980px){.gbadge{margin-inline:auto}}
+@media(max-width:600px){.gov-in{flex-direction:column;text-align:center;padding:24px 20px}.gbadge{font-size:14px}}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
  <symbol id="icWa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
@@ -303,6 +314,7 @@ nav{font-weight:600}
     <a class="btn y" href="#contact">اطلب عرض سعر<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
     <a class="btn gh" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>موقع المصنع</a>
    </div>
+   <span class="gbadge rv d4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>معتمدون لدى الجهات والهيئات الحكومية</span>
    <div class="mini rv d4"><span>خراطيم كهربائية</span><span>مواسير PVC</span><span>علب ماجيك</span><span>كابلات</span></div>
   </div>
 
@@ -404,6 +416,8 @@ nav{font-weight:600}
  <span class="sl-mark"><svg class="lg-i" viewBox="0 0 1042 840" overflow="visible" aria-hidden="true"><use href="#logo" width="1042" height="840"/></svg></span>
  <p><b>فلاش أون…</b> كل احتياجاتك الكهربائية <span>في مكان واحد</span></p>
 </div></section>
+<section class="gov" id="gov"><div class="tw"><div class="gov-in reveal"><span class="gov-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><p><b>معتمدون لدى الجهات والهيئات الحكومية</b></p></div></div></section>
+
 <!-- ===== المنتجات: مقطع الحائط ===== -->
 <section class="sec" id="products">
  <div class="frame">
