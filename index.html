@@ -1,459 +1,733 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية</title>
-<meta name="description" content="فلاش أون شركة مصرية لصناعة وتوريد الأدوات الكهربائية: خراطيم كهربائية، مواسير PVC، علب ماجيك، وجميع الكابلات الكهربائية.">
-<meta name="theme-color" content="#FCFBF8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="فلاش أون | شركة مصرية لصناعة وتوريد الأدوات الكهربائية">
-<meta property="og:description" content="معاً لعالم متكامل من احتياجاتك الكهربائية.">
-<meta property="og:image" content="https://flashoneg.com/assets/img/share.jpg">
-<meta property="og:url" content="https://flashoneg.com/">
-<meta property="og:locale" content="ar_EG">
+<meta name="description" content="فلاش أون شركة مصرية لصناعة وتوريد الأدوات الكهربائية: خراطيم كهربائية، سوستة فلكسبل، مواسير PVC، علب ماجيك، وجميع أنواع الكابلات الكهربائية.">
+<meta name="theme-color" content="#14171C">
+<meta property="og:type" content="website"><meta property="og:title" content="فلاش أون | كل احتياجاتك الكهربائية في مكان واحد">
+<meta property="og:description" content="شركة مصرية لصناعة وتوريد الأدوات الكهربائية.">
+<meta property="og:image" content="https://flashoneg.com/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="فلاش أون"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://flashoneg.com/assets/og.jpg"><meta property="og:url" content="https://flashoneg.com/"><meta property="og:locale" content="ar_EG">
 <link rel="canonical" href="https://flashoneg.com/">
-<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
-<link rel="icon" type="image/png" href="assets/icon-192.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" as="image" href="assets/img/hero.svg">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg"><link rel="icon" type="image/png" href="assets/icon-192.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="preload" href="assets/fonts/f11.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/fonts/f5.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/fonts/f3.woff2" as="font" type="font/woff2" crossorigin><link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"name":"فلاش أون","alternateName":"Flash On","url":"https://flashoneg.com/","logo":"https://flashoneg.com/assets/icon-512.png","slogan":"فلاش أون… كل احتياجاتك الكهربائية في مكان واحد","description":"شركة مصرية لصناعة وتوريد الأدوات الكهربائية","knowsAbout":["خراطيم كهربائية","سوستة فلكسبل","مواسير PVC","علب ماجيك","الكابلات الكهربائية"],"hasMap":"https://maps.app.goo.gl/vbUYCvFpYyoybS6L6"}</script>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
-:root{
-  --bg:#FCFBF8;
-  --surface:#F5F2EB;
-  --surface-2:#EEE9DF;
-  --white:#FFFFFF;
-  --ink:#1A1918;
-  --ink-2:#3A3834;
-  --muted:#75716A;
-  --line:#E7E2D8;
-  --brand:#E6B028;
-  --brand-ink:#94700F;
-  --brand-soft:#FBF3DD;
-  --wa:#1F9D55;
-  --gutter:clamp(20px,4.5vw,48px);
-  --max:1200px;
-  --ease:cubic-bezier(.2,.7,.2,1);
-}
+:root{--g:#14171C;--g2:#1B1F26;--y:#F2B705;--y2:#FFD34D;--paper:#F6F3EC;--steel:#5E6670;--ease:cubic-bezier(.2,.7,.2,1);--max:1240px;--pad:clamp(20px,4.5vw,56px)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
-body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.85;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img,svg{display:block}
-img{max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
-ul,ol{list-style:none}
-:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:6px}
-.frame{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
-[hidden]{display:none!important}
-
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--brand-ink)}
-.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--brand-soft)}
-h1,h2,h3{font-weight:700;letter-spacing:-.01em;line-height:1.3}
-h2{font-size:clamp(30px,3.6vw,46px);margin-top:14px}
-.lead{color:var(--muted);font-size:clamp(17px,1.4vw,19px);max-width:50ch;margin-top:16px}
-
-.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 28px;border-radius:14px;font-family:inherit;font-weight:700;font-size:16px;border:1px solid transparent;cursor:pointer;transition:background .25s,border-color .25s,color .25s,box-shadow .25s}
-.btn svg{width:20px;height:20px;flex:none}
-.btn.primary{background:var(--ink);color:#fff;box-shadow:0 10px 24px -14px rgba(26,25,24,.7)}
-.btn.primary:hover{background:#000}
-.btn.ghost{background:var(--white);border-color:var(--line);color:var(--ink)}
-.btn.ghost:hover{border-color:var(--ink)}
-.btn.wa{background:var(--wa);color:#fff}
-.btn.wa:hover{background:#198548}
-.link{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--ink);border-bottom:1.5px solid var(--brand);padding-bottom:2px}
-.link svg{width:17px;height:17px;transition:transform .25s var(--ease)}
-.link:hover svg{transform:translateX(-4px)}
-.pin{width:54px;height:54px;border-radius:14px;border:1px solid var(--line);background:var(--white);display:inline-grid;place-items:center;color:var(--brand-ink);transition:border-color .25s}
-.pin:hover{border-color:var(--ink)}
-.pin svg{width:22px;height:22px}
-
-/* ===== الهيدر ===== */
-.hdr{position:sticky;top:0;z-index:40;background:rgba(252,251,248,.88);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);transition:box-shadow .3s}
-.hdr.on{box-shadow:0 1px 0 var(--line)}
-.hdr .frame{display:flex;align-items:center;justify-content:space-between;gap:24px;height:92px}
-.brand{display:flex;align-items:center;gap:16px}
-.brand .mark{width:62px;height:auto;flex:none}
-.brand .sep{width:1px;height:40px;background:var(--line)}
-.brand b{display:block;font-size:21px;line-height:1.25}
-.brand small{display:block;font-size:12.5px;color:var(--muted);font-weight:600;line-height:1.4}
-.nav{display:flex;align-items:center;gap:34px;font-size:15px;font-weight:600;color:var(--ink-2)}
-.nav a:not(.btn){position:relative;padding-block:6px}
-.nav a:not(.btn)::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;border-radius:2px;background:var(--brand);transform:scaleX(0);transition:transform .3s var(--ease)}
-.nav a:not(.btn):hover::after{transform:scaleX(1)}
-.nav .btn{height:46px;padding:0 22px;font-size:15px;border-radius:12px}
-@media(max-width:960px){.nav a:not(.btn){display:none}}
+body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--paper);color:var(--g);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}svg{display:block}
+.frame{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(246,243,236,.86);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border-bottom:1px solid rgba(20,23,28,.08)}
+.hdr .frame{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .logo{width:64px;height:auto}
+.brand .nm{font-family:Alexandria;font-weight:800;font-size:21px;line-height:1.1}
+.brand .nm small{display:block;font-family:'IBM Plex Sans Arabic';font-weight:500;font-size:14px;color:#4A5059;margin-top:5px}
+.brand .div{width:1px;height:38px;background:rgba(20,23,28,.14)}
+nav{display:flex;align-items:center;gap:34px;font-weight:500;font-size:15.5px;color:#3a3f47}
+nav a.l{position:relative;padding-block:6px}
+nav a.l::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--y);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+nav a.l:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:14px;font-family:Alexandria;font-weight:700;font-size:15.5px;white-space:nowrap;transition:transform .3s var(--ease),box-shadow .3s,background .3s,border-color .3s;position:relative;overflow:hidden}
+.btn svg{width:19px;height:19px}
+.btn:hover{transform:translateY(-2px)}
+.btn.dk{background:var(--g);color:#fff;height:46px;padding:0 20px;font-size:14.5px;border-radius:12px}
+.btn.y{background:linear-gradient(180deg,var(--y2),var(--y));color:var(--g);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 18px 40px -16px rgba(242,183,5,.75)}
+.btn.y::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(120%);transition:transform .8s var(--ease)}
+.btn.y:hover::after{transform:translateX(-120%)}
+.btn.gh{color:#fff;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04)}
+.btn.gh:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.08)}
+@media(max-width:980px){nav a.l{display:none}}
+@media(max-width:600px){.hdr .frame{height:70px}.brand .logo{width:50px}.brand .div,.brand .nm small{display:none}.brand .nm{font-size:18px}.btn.dk{height:42px;padding:0 15px;font-size:13.5px}}
+/* hero */
+.hero{position:relative;background:var(--g);color:#fff;overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(55% 70% at 24% 45%,rgba(242,183,5,.2),transparent 70%);opacity:0;transition:opacity 1.6s ease}.hero.on::after{opacity:1}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(50% 60% at 90% 0%,rgba(255,255,255,.05),transparent 70%),linear-gradient(180deg,#171A20,#111317)}
+.grid-bg{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(70% 80% at 30% 50%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(70% 80% at 30% 50%,#000 20%,transparent 75%)}
+.grain{position:absolute;inset:0;z-index:-1;opacity:.09;mix-blend-mode:overlay;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero .frame{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:40px;min-height:0;padding-block:56px 64px}
+.kick{display:inline-flex;align-items:center;gap:12px;font-size:15px;font-weight:600;color:var(--y);padding:8px 18px 8px 16px;border:1px solid rgba(242,183,5,.28);border-radius:999px;background:rgba(242,183,5,.06)}
+.kick i{width:7px;height:7px;border-radius:50%;background:var(--y);box-shadow:0 0 0 4px rgba(242,183,5,.18),0 0 14px var(--y)}
+h1{text-wrap:balance;font-family:Alexandria;font-weight:800;font-size:clamp(28px,3.2vw,46px);line-height:1.22;letter-spacing:-.01em;margin-top:26px}
+h1 .s{display:block;color:var(--y)}h1 .s,h1 .s .w{background:linear-gradient(180deg,var(--y2),var(--y) 55%,#E3A000);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.08em}
+.hero p{font-size:clamp(16.5px,1.35vw,19px);line-height:1.95;color:rgba(255,255,255,.72);max-width:46ch;margin-top:22px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+.mini{display:flex;align-items:center;gap:12px;margin-top:36px;color:rgba(255,255,255,.82);font-size:16px;font-weight:500}
+.mini span{display:inline-flex;align-items:center;gap:8px}
+.mini span+span::before{content:"";width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.3);margin-inline-end:4px}
+.art{position:relative;width:100%;max-width:540px;justify-self:center;aspect-ratio:800/1190;margin-block:-30px -20px}
+.art svg{width:100%;height:100%;overflow:visible}
+.spin{transform-origin:400px 400px;animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.float{animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.rv{opacity:0;transform:translateY(22px);animation:in 1s var(--ease) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.45s}
+@keyframes in{to{opacity:1;transform:none}}
+/* trust */
+.trust{padding-bottom:0;color:var(--g)}.trust p{color:inherit;margin:0;max-width:none;font-size:inherit;line-height:1.5}.tw{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.trust ul{list-style:none;box-shadow:0 -20px 50px -30px rgba(0,0,0,.6);display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border-radius:22px 22px 0 0;transform:translateY(0)}
+.trust li{display:flex;align-items:center;gap:14px;padding:26px 24px;position:relative}
+.trust li+li::before{content:"";position:absolute;inset-inline-start:0;top:28%;bottom:28%;width:1px;background:rgba(20,23,28,.12)}
+.ti{width:50px;height:50px;border-radius:14px;flex:none;display:grid;place-items:center;background:var(--g);color:var(--y);box-shadow:0 10px 22px -12px rgba(20,23,28,.6)}
+.ti svg{width:23px;height:23px}
+.trust b{display:block;font-family:Alexandria;font-weight:700;font-size:16px}
+.trust small{white-space:nowrap;display:block;color:#4A5059;font-size:14.5px;margin-top:2px}
+.slogan{padding:52px 0 64px;text-align:center}
+.slogan .tw{display:flex;align-items:center;justify-content:center;gap:22px}
+.sl-mark svg{width:58px;height:auto}
+.slogan p{font-family:Alexandria;font-weight:700;font-size:clamp(22px,2.6vw,36px);line-height:1.5;color:var(--g)}
+.slogan p b{font-weight:800}
+.slogan p span{color:#C99400;white-space:nowrap}
+.slogan .tw::after{content:"";display:none}
+.slogan{position:relative;isolation:isolate}
+@media(max-width:600px){.slogan{padding:44px 0 56px}.slogan .tw{flex-direction:column;gap:14px}.sl-mark svg{width:48px}}
+@media(max-width:980px){
+ .hero .frame{grid-template-columns:1fr;min-height:0;max-height:none;padding-block:36px 56px;gap:8px}
+ .art{order:-1;max-width:380px;margin:0 auto}
+ .txt{text-align:center}.kick{margin-inline:auto}.hero p{margin-inline:auto}.ctas,.mini{justify-content:center}
+ .trust ul{grid-template-columns:1fr 1fr}
+ .trust li:nth-child(3)::before{display:none}
+}
 @media(max-width:600px){
-  .hdr .frame{height:78px}
-  .brand{gap:12px}.brand .mark{width:50px}.brand .sep,.brand small{display:none}
-  .nav .btn{height:42px;padding:0 16px;font-size:14px}
+ .art{max-width:330px;margin-top:-6px}
+ h1{margin-top:20px;font-size:27px}.art svg{overflow:hidden}.art{margin-bottom:22px;}
+ .ctas .btn{flex:1 1 100%}
+ .mini{flex-wrap:wrap;gap:8px 12px;font-size:15px}
+ .trust li{flex-direction:column;text-align:center;padding:22px 10px;gap:10px}.trust small{white-space:normal}.trust li+li::before{top:22%;bottom:22%}
+ .trust li:nth-child(n+3){border-top:1px solid rgba(20,23,28,.08)}
+ .ti{width:42px;height:42px;border-radius:12px}.ti svg{width:20px;height:20px}
+ .trust b{font-size:14.5px}.trust small{font-size:12.5px}
 }
+@media (prefers-reduced-motion:reduce){.spin,.float,.rv{animation:none;opacity:1;transform:none}}
 
-/* ===== البداية ===== */
-.hero{padding-top:clamp(8px,1.6vw,20px)}
-.stage{position:relative;background:linear-gradient(155deg,#F8F5EE 0%,#EFEADF 100%);border-radius:36px;overflow:hidden;display:grid;align-items:center;min-height:clamp(540px,70vh,700px);isolation:isolate}
-.stage::before{content:"";position:absolute;z-index:-1;width:780px;aspect-ratio:1;border-radius:50%;inset-inline-end:-220px;top:50%;transform:translateY(-50%);border:120px solid rgba(230,176,40,.07)}
-.stage .txt{padding:clamp(36px,6vw,80px);padding-inline-end:0}
-.stage h1{font-size:clamp(32px,3.4vw,50px);line-height:1.3}
-.stage h1 i,.stage h1 span{display:block;font-style:normal}
-.stage h1 span{color:var(--brand-ink)}
-.stage p{color:var(--ink-2);opacity:.85;font-size:clamp(17px,1.5vw,19px);max-width:40ch;margin-top:22px}
-.stage .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.stage .art{align-self:end;padding:0 clamp(16px,3vw,40px) clamp(20px,3vw,36px)}
-.stage .art img{width:100%;max-width:720px;margin-inline:auto}
-@media(min-width:1000px){
-  .stage{grid-template-columns:1fr 1fr}
-  .stage .art{align-self:center;padding:40px 8px 40px 0}
-  .stage .art img{max-width:none;width:112%;margin-inline-start:-12%}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes pop{to{transform:scale(1)}}@keyframes rise{to{transform:none}}@keyframes fade{to{opacity:1}}
+@keyframes pulse{50%{opacity:.7;transform:scale(1.04)}}
+.px{transition:transform .9s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(.5em);filter:blur(6px);animation:wi .9s var(--ease) forwards}
+@keyframes wi{to{opacity:1;transform:none;filter:none}}
+@media (prefers-reduced-motion:reduce){.ring,.hdraw,.fr,.dot,.hend,.glw,.hero h1 .w{animation:none!important;stroke-dashoffset:0;transform:none;opacity:1;filter:none}.px{transition:none}}
+
+/* light-on intro */
+.cur{stroke-dasharray:.07 1.2;stroke-dashoffset:.07;opacity:0}
+.hero.go .cur{animation:run 1.45s .25s cubic-bezier(.45,0,.3,1) forwards}
+@keyframes run{0%{opacity:0;stroke-dashoffset:.07}8%{opacity:1}88%{opacity:1}100%{opacity:0;stroke-dashoffset:-1}}
+.hoseg{filter:brightness(.42) saturate(.55);transition:filter 1.2s ease .1s}
+.hero.on .hoseg{filter:none}
+.ring,.dot{opacity:.16}
+.lampglow{opacity:0}
+.glw{opacity:0;transition:opacity 1.6s ease}
+.hero.on .glw{opacity:1}
+.hero.on .ring,.hero.on .dot{animation:lamp .9s linear forwards}
+.hero.on .lampglow{animation:lampg 2.4s ease forwards}
+@keyframes lamp{0%{opacity:.16}10%{opacity:1}18%{opacity:.3}30%{opacity:.95}38%{opacity:.5}52%,100%{opacity:1}}
+@keyframes lampg{0%{opacity:0}10%{opacity:.7}18%{opacity:.1}30%{opacity:.6}38%{opacity:.25}55%{opacity:.85}100%{opacity:.45}}
+.hero:not(.on) .rv,.hero:not(.on) .w{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.cur{display:none}.hoseg{filter:none}.ring,.dot{opacity:1;animation:none!important}.lampglow{opacity:.45;animation:none!important}.glw{opacity:1}.hero::after{opacity:1}}
+
+.plate{filter:brightness(.22) saturate(.6);transition:filter 1.4s cubic-bezier(.3,.7,.2,1) .15s}
+.hero.on .plate{filter:none}
+.cone,.halo,.pool{opacity:0}.bulbc{fill:#3a3f47}.mouth{opacity:.05}
+.hero.on .cone{animation:conef 1.6s linear forwards}
+.hero.on .halo{animation:conef 1.6s linear forwards}
+.hero.on .pool,.hero.on .mouth{animation:conef 1.6s linear forwards}
+.hero.on .bulbc{fill:url(#bulb);animation:lamp 1s linear}
+@keyframes conef{0%{opacity:0}8%{opacity:.9}14%{opacity:.15}24%{opacity:.8}32%{opacity:.3}46%,100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.plate{filter:none}.cone,.halo,.pool,.mouth{opacity:1;animation:none!important}.bulbc{fill:url(#bulb)}}
+.dust circle{animation:dust 9s ease-in-out infinite alternate}.dust circle:nth-child(2n){animation-duration:12s;animation-delay:-3s}.dust circle:nth-child(3n){animation-duration:7s;animation-delay:-5s}
+@keyframes dust{to{transform:translate(10px,26px)}}
+@media (prefers-reduced-motion:reduce){.dust circle{animation:none}}
+.wmg{filter:brightness(.22) saturate(.6);transition:filter 1.4s cubic-bezier(.3,.7,.2,1) .35s}
+.hero.on .wmg{filter:none}
+@media (prefers-reduced-motion:reduce){.wmg{filter:none}}
+/* ===== full site ===== */
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:14.5px;font-weight:600;color:#A87A00;font-family:'IBM Plex Sans Arabic'}
+.tag::before{content:"";width:24px;height:3px;border-radius:3px;background:var(--y)}
+h2{font-family:Alexandria;font-weight:800;font-size:clamp(28px,3.4vw,46px);line-height:1.3;margin-top:12px;letter-spacing:-.01em}
+h3{font-family:Alexandria;font-weight:700}
+.lead{color:#4A5059;font-size:clamp(16.5px,1.3vw,18.5px);line-height:1.9;max-width:54ch;margin-top:14px}
+.sec{padding-block:clamp(84px,9vw,128px)}
+.head{display:grid;gap:14px;margin-bottom:clamp(36px,4vw,56px)}
+@media(min-width:960px){.head{grid-template-columns:1.1fr .9fr;align-items:end}.head .lead{justify-self:end;margin:0}}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+/* scroll progress current */
+.cur-bar{position:absolute;inset-inline:0;bottom:-1px;height:2px;pointer-events:none}
+.cur-bar i{display:block;height:100%;width:100%;transform-origin:right;transform:scaleX(var(--p,0));background:linear-gradient(270deg,#E3A000,var(--y),#FFE58A);box-shadow:0 0 10px rgba(242,183,5,.8)}
+/* build section */
+#products{padding-bottom:clamp(60px,7vw,100px)}
+.build{height:380vh;position:relative}
+.build-in{position:sticky;top:84px;height:calc(100vh - 84px);display:flex;flex-direction:column;justify-content:center}
+.build-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:center;width:100%}
+.wall-wrap{background:var(--g);border-radius:28px;padding:clamp(14px,2vw,24px);box-shadow:0 40px 80px -40px rgba(20,23,28,.55)}
+.wall{width:100%;height:auto;max-height:calc(100vh - 220px);border-radius:16px;overflow:hidden}
+.wall .fit{opacity:calc((.35 - var(--o,0))*3)}.wall .chase{opacity:0;transition:opacity .6s}
+.wall .drw{stroke-dasharray:1;stroke-dashoffset:var(--o,1)}
+.wall .wribs{opacity:var(--r,0)}.wall .cuends{opacity:calc(1 - var(--o,1))}
+.wall .box{transform-box:fill-box;transform-origin:center;opacity:var(--b,0);transform:scale(calc(.6 + .4*var(--b,0)))}
+.wall .lbl{opacity:0;transform:translateY(6px);transition:opacity .5s,transform .5s var(--ease)}
+.wall .lbl.on{opacity:1;transform:none}
+.wall .lbl text{font-family:Alexandria;font-weight:700;font-size:16px;fill:#F2B705}
+.steps-b{list-style:none;position:relative;display:grid;gap:12px}
+.steps-b li{padding:20px 24px;border-radius:18px;border:1px solid transparent;opacity:.38;transition:opacity .5s,background .5s,border-color .5s,transform .5s var(--ease)}
+.steps-b li.on{opacity:1;background:#fff;border-color:#E5E0D5;box-shadow:0 24px 50px -32px rgba(20,23,28,.35);transform:translateX(-6px)}
+.steps-b .n{font-family:Alexandria;font-weight:800;font-size:14px;color:#A87A00}
+.steps-b h3{font-size:clamp(19px,1.7vw,24px);margin-top:2px}
+.steps-b p{color:#4A5059;font-size:16px;line-height:1.8;margin-top:6px}
+.bprog{max-width:var(--max);margin:22px auto 0;padding-inline:var(--pad);width:100%}
+.bprog i{display:block;height:4px;border-radius:4px;background:linear-gradient(270deg,#E3A000,var(--y));transform-origin:right;transform:scaleX(var(--bp,0))}
+.bprog{position:relative}.bprog::before{content:"";position:absolute;inset-inline:var(--pad);top:0;height:4px;border-radius:4px;background:#E5E0D5;z-index:-1}
+.static .build{height:auto}.static .build-in{position:static;height:auto;padding-block:10px 40px}.static .steps-b li{opacity:1;background:#fff;border-color:#E5E0D5;transform:none}.static .bprog{display:none}.static .wall .lbl{opacity:1;transform:none}
+@media(max-width:900px){
+ .build{height:420vh}
+ .build-in{top:70px;height:calc(100svh - 70px);justify-content:flex-start;padding-top:14px}
+ .build-grid{grid-template-columns:1fr;gap:14px}
+ .wall{max-height:52svh}
+ .steps-b{display:block;min-height:150px}
+ .steps-b li{position:absolute;inset:0 0 auto 0;opacity:0;transform:translateY(10px)}
+ .steps-b li.on{opacity:1;transform:none}
+ .static .steps-b{display:grid;min-height:0}.static .steps-b li{position:static}
 }
-@media(max-width:999px){.stage .txt{padding-inline-end:clamp(36px,6vw,80px)}.stage .art{padding-top:0}}
-@media(max-width:600px){.stage{border-radius:28px}.stage .txt{padding:34px 24px 8px}.stage .ctas .btn{flex:1}}
+/* cards */
+.cards{display:grid;gap:20px;grid-template-columns:repeat(6,1fr);margin-top:clamp(50px,6vw,90px)}
+.card{background:#fff;border:1px solid #E5E0D5;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -34px rgba(20,23,28,.45);border-color:#D8D0BF}
+.art2{aspect-ratio:4/3;background:radial-gradient(80% 90% at 50% 30%,#3A4048,#14171C);display:grid;place-items:center;overflow:hidden}.art2 img[src$=".svg"]{padding:22px;box-sizing:border-box}
+.art2 img{height:100%;width:100%;object-fit:contain;transition:transform .8s var(--ease)}
+.card:hover .art2 img{transform:scale(1.06)}
+.cb{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.cat{font-size:13px;font-weight:600;color:var(--steel)}
+.cb h3{font-size:20px;margin-top:2px}
+.cb p{color:#4A5059;font-size:15px;line-height:1.8;margin-top:8px}
+.more{margin-top:auto;padding-top:16px;display:inline-flex;align-items:center;gap:8px;font-family:Alexandria;font-weight:700;font-size:14px}
+.more svg{width:18px;height:18px;color:#C99400;transition:transform .3s var(--ease)}
+.card:hover .more svg{transform:translateX(-5px)}
+.cards>.card{grid-column:span 2}.cards>.card:nth-child(-n+2){grid-column:span 3}
+@media(max-width:1100px){.cards{grid-template-columns:repeat(2,1fr)}.cards>.card,.cards>.card:nth-child(-n+2){grid-column:auto}.cards>.card:first-child{grid-column:1/-1}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.cards>.card:first-child{grid-column:auto}}
+/* about */
+.about{background:var(--g);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+.about::before{content:"";position:absolute;z-index:-1;width:700px;height:700px;border-radius:50%;background:radial-gradient(rgba(242,183,5,.14),transparent 65%);inset-inline-end:-200px;top:-200px}
+.about .tag{color:var(--y)}.about .lead{color:rgba(255,255,255,.86)}
+.about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center}
+.pts{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.pts li{padding:20px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1)}
+.pts b{display:block;font-family:Alexandria;font-size:17px;color:#fff}
+.pts span{display:block;color:rgba(255,255,255,.66);font-size:15px;margin-top:4px}
+.seal-wrap{justify-self:center;width:min(320px,80vw)}
+.seal{width:100%;height:auto}
+.seal-rot{transform-origin:150px 150px;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}.pts{grid-template-columns:1fr}.seal-wrap{order:-1;width:220px}}
+/* steps */
+.sn{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--g);color:var(--y);font-family:Alexandria;font-weight:800;font-size:17px;margin-bottom:22px}
+.appr{list-style:none;display:flex;flex-wrap:wrap;gap:14px}
+.appr li{padding:16px 22px;border-radius:16px;background:#fff;border:1px solid #E5E0D5;font-family:Alexandria;font-weight:700}
+/* contact */
+.contact-sec{padding-top:0}
+.contact{display:grid;grid-template-columns:1.15fr .85fr;border-radius:28px;overflow:hidden;background:#fff;border:1px solid #E5E0D5;box-shadow:0 40px 80px -50px rgba(20,23,28,.45)}
+.cl{padding:clamp(28px,5vw,60px)}
+.cbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn.wa{background:#1F9D55;color:#fff}.btn.wa svg{fill:#fff}
+.btn.dk2{background:var(--g);color:#fff}
+.pending{margin-top:20px;color:#4A5059;font-size:15.5px;padding:14px 18px;border-radius:14px;background:#F6F3EC;border:1px dashed #D8D0BF;display:inline-block}
+.qb{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:26px}
+.qb label{display:grid;gap:6px;font-size:14px;font-weight:600;color:#4A5059}
+.qb select,.qb input{height:50px;border-radius:12px;border:1px solid #DCD5C6;background:#FBFAF7;padding:0 14px;font:inherit;font-size:15px;color:var(--g)}
+.qb select:focus,.qb input:focus{outline:2px solid var(--y);outline-offset:1px}
+.qb button{grid-column:1/-1;justify-self:start;border:0;cursor:pointer}
+.cmap{background:var(--g);color:#fff;padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;position:relative;overflow:hidden;isolation:isolate}
+.cmap::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 60% at 70% 20%,rgba(242,183,5,.2),transparent 70%)}
+.pinbig{width:64px;height:64px;border-radius:18px;background:var(--y);color:var(--g);display:grid;place-items:center;margin-bottom:20px;animation:bob 3s ease-in-out infinite}
+.pinbig svg{width:30px;height:30px}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.cmap h3{font-size:24px}.cmap p{color:rgba(255,255,255,.72);margin:8px 0 24px}
+@media(max-width:900px){.contact{grid-template-columns:1fr}.qb{grid-template-columns:1fr}}
+/* footer */
+.foot{background:#0F1115;color:#AEB3BB}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-block:64px 44px}
+.fbrand{display:flex;align-items:center;gap:14px;color:#fff}
+.fplate{width:64px;height:64px;border-radius:50%;background:var(--paper);display:grid;place-items:center}
+.fplate svg{width:44px;height:auto}
+.fbrand b{display:block;font-family:Alexandria;font-size:20px}
+.fbrand small{display:block;font-family:Montserrat;font-weight:800;letter-spacing:.22em;font-size:12px;color:#fff;text-align:right}
+.fbrand small i{font-style:normal;color:var(--y)}.fbrand small em{font-style:normal;color:#14171C;-webkit-text-stroke:2px #F6F3EC;paint-order:stroke fill}
+.foot p{margin-top:18px;font-size:15px;max-width:36ch}
+.fsl{color:var(--y)!important;font-family:Alexandria;font-weight:600}
+.foot h4{font-family:Alexandria;color:#fff;font-size:15px;margin-bottom:16px}
+.foot ul{list-style:none;display:grid;gap:10px;font-size:15px}
+.foot a:hover{color:var(--y)}
+.copy{border-top:1px solid rgba(255,255,255,.08);padding-block:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13.5px;color:#7E848D}
+@media(max-width:900px){.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}}
+.fab{position:fixed;bottom:20px;inset-inline-start:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1F9D55;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(31,157,85,.7)}
+.fab svg{width:28px;height:28px;fill:#fff}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.seal-rot,.pinbig{animation:none}}
 
-/* ===== شريط الثقة ===== */
-.trust{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 0;margin-top:clamp(26px,3.6vw,40px);padding-block:8px}
-@media(min-width:880px){.trust{grid-template-columns:repeat(4,1fr)}}
-.trust div{display:flex;align-items:center;gap:14px;padding-inline:clamp(10px,2vw,26px);border-inline-start:1px solid var(--line)}
-.trust div:first-child{border-inline-start:0;padding-inline-start:0}
-@media(max-width:879px){.trust div:nth-child(3){border-inline-start:0;padding-inline-start:0}}
-.trust .ic{width:44px;height:44px;border-radius:12px;background:var(--brand-soft);color:var(--brand-ink);display:grid;place-items:center;flex:none}
-.trust .ic svg{width:21px;height:21px}
-.trust b{display:block;font-size:15.5px;line-height:1.4}
-.trust span{display:block;font-size:13px;color:var(--muted);line-height:1.5}
-@media(max-width:600px){.trust span{display:none}.trust .ic{width:38px;height:38px}.trust div{gap:10px}}
 
-/* ===== أقسام ===== */
-.sec{padding-block:clamp(80px,10vw,140px)}
-.sec-head{display:grid;gap:18px;margin-bottom:clamp(40px,5vw,72px)}
-@media(min-width:900px){.sec-head{grid-template-columns:1fr 1fr;align-items:end}.sec-head .lead{justify-self:end;margin:0}}
+/* small text: crisp & formal */
+.kick,.tag,.cat,.mini,.mini span,.trust small,.brand .nm small,.foot p,.foot ul,.foot li a,.copy,.qb label,.pending,.cmap p,.pts span,.steps-b p,.cb p,.steps3 p,.lead,.hero p{font-weight:600}
+.brand .nm small{font-size:14px}.trust small{font-size:14.5px}
+.cat{font-size:14px;color:#4A5059}.copy{font-size:14px;color:#9AA0A8}.foot ul{font-size:15px;color:#C3C7CD}.foot p{color:#C3C7CD}
+.trust small{color:#3F454E}.brand .nm small{color:#3F454E}
+nav{font-weight:600}
+.lg-i{display:block;aspect-ratio:1042/840;height:auto;overflow:visible;flex:none}
 
-/* ===== المنتجات ===== */
-.prod{display:grid;gap:clamp(28px,4vw,72px);align-items:center;padding-block:clamp(32px,4.4vw,56px)}
-.prod+.prod{border-top:1px solid var(--line)}
-@media(min-width:900px){.prod{grid-template-columns:1.05fr .95fr}.prod.flip .ph{order:2}}
-.ph{position:relative;border-radius:30px;background:radial-gradient(110% 85% at 50% 35%,#FFFFFF 0%,var(--surface) 72%);border:1px solid var(--line);aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;padding:clamp(26px,4vw,52px);overflow:hidden}
-.ph img{position:relative;z-index:1;height:100%;max-width:100%;width:auto;object-fit:contain;transition:transform .9s var(--ease)}
-.prod:hover .ph img{transform:scale(1.03)}
-/* صورة الكابلات مقصوصة من ناحية: تلزق في حرف الكارت فتبان مقصودة */
-.ph.bleed{justify-content:flex-end;padding-inline-end:0}
-.ph.bleed img{max-width:none;width:112%;margin-inline-end:-12%}
-.ph.bleed::after{inset-inline-end:0}
-.ph .no{position:absolute;top:22px;inset-inline-start:26px;z-index:2;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.06em}
-.prod h3{font-size:clamp(28px,3vw,40px);margin-top:12px}
-.prod .desc{color:var(--muted);margin-top:12px;max-width:44ch}
-.spec{margin-top:26px;border-top:1px solid var(--line)}
-.spec div{display:flex;justify-content:space-between;gap:20px;padding-block:13px;border-bottom:1px solid var(--line);font-size:16px}
-.spec dt{color:var(--muted)}
-.spec dd{font-weight:700;text-align:left}
-.dots{display:inline-flex;gap:6px;vertical-align:middle}
-.dots i{width:14px;height:14px;border-radius:50%;display:inline-block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
-.prod .acts{margin-top:28px}
+.gov{padding:0 0 clamp(56px,6vw,84px)}
+.gov-in{display:flex;align-items:center;justify-content:center;gap:18px;padding:26px 32px;border-radius:22px;background:linear-gradient(135deg,#14171C,#232830);color:#fff;box-shadow:0 30px 60px -36px rgba(20,23,28,.6);position:relative;overflow:hidden;isolation:isolate}
+.gov-in::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 120% at 85% 50%,rgba(242,183,5,.22),transparent 70%)}
+.gov-ic{width:58px;height:58px;border-radius:16px;background:var(--y);color:var(--g);display:grid;place-items:center;flex:none;box-shadow:0 0 0 6px rgba(242,183,5,.15)}
+.gov-ic svg{width:30px;height:30px}
+.gov-in b{font-family:Alexandria;font-weight:700;font-size:clamp(19px,2.2vw,28px)}
+.gbadge{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:9px 16px;border-radius:12px;background:rgba(242,183,5,.1);border:1px solid rgba(242,183,5,.35);color:#FFE18A;font-weight:600;font-size:15px}
+.gbadge svg{width:20px;height:20px;color:var(--y)}
+@media(max-width:980px){.gbadge{margin-inline:auto}}
+@media(max-width:600px){.gov-in{flex-direction:column;text-align:center;padding:24px 20px}.gbadge{font-size:14px}}
+.skip{position:fixed;top:12px;inset-inline-start:16px;z-index:100;background:var(--y);color:var(--g);padding:10px 16px;border-radius:10px;font-weight:700;transform:translateY(-200%);opacity:0;pointer-events:none;transition:transform .2s,opacity .2s}.skip:focus{transform:none;opacity:1;pointer-events:auto}
+:focus-visible{outline:2px solid var(--y);outline-offset:3px;border-radius:8px}
+.why{background:linear-gradient(180deg,#14171C,#1B1F26);color:#fff;padding:clamp(72px,8vw,112px) 0;position:relative;overflow:hidden;isolation:isolate}
+.why::before{content:"";position:absolute;inset:-20% 10% auto;height:70%;z-index:-1;background:radial-gradient(50% 60% at 50% 0,rgba(242,183,5,.16),transparent 70%)}
+.why-h{text-align:center;margin-bottom:clamp(36px,4vw,56px)}.why-h h2{color:#fff;margin:12px 0 0}
+.wg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.wc{--mx:50%;--my:0%;position:relative;padding:30px 26px 32px;border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.wc::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(242,183,5,.18),transparent 65%);opacity:0;transition:opacity .4s;pointer-events:none}
+.wc:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1px rgba(242,183,5,.45),0 30px 60px -30px rgba(0,0,0,.8)}.wc:hover::before{opacity:1}
+.wn{position:absolute;top:22px;inset-inline-end:24px;font-family:Montserrat;font-weight:800;font-size:15px;color:rgba(255,255,255,.35);letter-spacing:.1em}
+.wi{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;color:var(--y);background:radial-gradient(circle at 30% 25%,rgba(242,183,5,.28),rgba(242,183,5,.06));box-shadow:inset 0 0 0 1px rgba(242,183,5,.35),0 0 30px -8px rgba(242,183,5,.5);margin-bottom:22px;transition:transform .5s}
+.wc:hover .wi{transform:scale(1.06) rotate(-4deg)}.wi svg{width:30px;height:30px}
+.wc h3{font-family:Alexandria;font-weight:700;font-size:19px;line-height:1.5;margin:0 0 10px;color:#fff}
+.wc p{margin:0;font-size:15px;font-weight:600;line-height:1.7;color:rgba(255,255,255,.72)}
+@media(max-width:1000px){.wg{grid-template-columns:1fr 1fr}}@media(max-width:560px){.wg{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.wc,.wi{transition:none}.wc:hover{transform:none}}
+.types{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}.types li.hl{background:#14171C;color:#F2B705;box-shadow:none}.types li{font-family:"IBM Plex Sans Arabic",sans-serif;font-weight:600;font-size:14px;line-height:1;padding:9px 14px;border-radius:999px;background:#FFF6D6;color:#5A4300;box-shadow:inset 0 0 0 1px rgba(201,143,0,.35)}
 
-/* ===== بلوك الجملة ===== */
-.statement{background:#1C1B19;color:#EEEAE2;border-radius:36px;padding:clamp(44px,7vw,92px) clamp(28px,6vw,88px);display:grid;gap:40px;position:relative;overflow:hidden;isolation:isolate}
-.statement::after{content:"";position:absolute;z-index:-1;width:440px;aspect-ratio:1;border-radius:50%;border:70px solid rgba(230,176,40,.09);inset-inline-start:-140px;bottom:-230px}
-.statement p.big{font-size:clamp(26px,3.3vw,42px);font-weight:700;line-height:1.5;max-width:24ch}
-.statement p.big span{color:var(--brand)}
-.pillars{display:grid;gap:24px}
-@media(min-width:800px){.pillars{grid-template-columns:repeat(3,1fr);gap:40px}}
-.pillars div{border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
-.pillars b{display:block;font-size:18px;color:#fff}
-.pillars span{display:block;color:#ABA597;font-size:15px;margin-top:6px}
+/* === typography pass === */
+body{font-weight:500}
+.cb p,.wc p,.steps-b p,.lead,.foot p,.hero p,.cmap p,.pending,.slogan p{font-weight:600}
+.cb p,.steps-b p{font-size:16px;line-height:1.85;color:#2F343C}
+.wc p{font-size:16px;line-height:1.85;color:rgba(255,255,255,.86)}
+.lead{font-size:17.5px;line-height:1.9;color:#2F343C}
+.cat,.tag{font-weight:700;font-size:14px;letter-spacing:0}
+.cb h3{font-weight:800}
+.foot p,.foot li a{font-size:15.5px;line-height:1.9}
+.foot .nm small,.fwm small,.foot small{font-size:14px!important}
+.more{font-weight:700;font-size:16px}
+.aud-t{margin:30px 0 12px;font-family:Alexandria;font-weight:700;font-size:15px;color:var(--y)}
+.aud{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.aud li{font-weight:600;font-size:15.5px;padding:11px 18px;border-radius:999px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);color:#fff}
+.types li{font-size:14.5px}
+@media(max-width:600px){.cb p,.steps-b p,.wc p{font-size:15.5px;line-height:1.85}.lead{font-size:16px}.hdr .btn{font-size:14px}}
+@media(max-width:700px){.wall .lbl{transform-box:fill-box;transform-origin:center;scale:1.45}}
+.mvar{position:relative}.mvar .mv{position:absolute;inset:0;opacity:0;transform:scale(.97);transition:opacity .45s var(--ease),transform .6s var(--ease)}.mvar .mv.on{opacity:1;transform:none}
+.types .tbtn{font-family:"IBM Plex Sans Arabic",sans-serif;font-weight:600;font-size:14.5px;line-height:1;padding:10px 15px;border-radius:999px;border:0;cursor:pointer;background:#FFF6D6;color:#5A4300;box-shadow:inset 0 0 0 1px rgba(201,143,0,.35);transition:background .25s,color .25s,transform .2s}
+.types .tbtn:hover{transform:translateY(-1px)}.types .tbtn.on{background:#14171C;color:#F2B705;box-shadow:none}
+@media(max-width:600px){.mini{justify-content:center;flex-wrap:wrap;gap:8px 16px}}
+</style></head><body>
+<a class="skip" href="#products">تخطَّ إلى المحتوى</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <symbol id="icWa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
+ <symbol id="logo" viewBox="90 130 1042 840"><circle cx="717" cy="550" r="330" fill="none" stroke="#F2B705" stroke-width="148"/><circle cx="717" cy="551" r="83" fill="#F2B705"/><path d="M105 158H492V297H264V477H595V621H264V940H105Z" fill="#14171C"/></symbol>
+</defs></svg>
 
-/* ===== خطوات الطلب ===== */
-.steps{display:grid;gap:18px;counter-reset:s}
-@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr);gap:22px}}
-.steps li{counter-increment:s;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:30px 28px 32px}
-.steps li::before{content:"0" counter(s);display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--brand-soft);color:var(--brand-ink);font-size:15px;font-weight:700;margin-bottom:26px}
-.steps b{display:block;font-size:21px}
-.steps span{display:block;color:var(--muted);margin-top:8px}
-
-/* ===== التواصل ===== */
-.contact{background:var(--white);border:1px solid var(--line);border-radius:36px;padding:clamp(32px,5vw,72px);display:grid;gap:clamp(32px,4vw,64px);align-items:center}
-@media(min-width:960px){.contact{grid-template-columns:1.1fr .9fr}}
-.contact .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:32px}
-.pending{color:var(--muted);font-size:14px;margin-top:16px}
-.rows{border-top:1px solid var(--line)}
-.rows>div{display:flex;gap:16px;align-items:center;padding-block:18px;border-bottom:1px solid var(--line)}
-.rows .ic{width:46px;height:46px;border-radius:12px;background:var(--brand-soft);display:grid;place-items:center;flex:none;color:var(--brand-ink)}
-.rows .ic svg{width:21px;height:21px}
-.rows small{display:block;color:var(--muted);font-size:13px;font-weight:600;line-height:1.5}
-.rows strong{display:block;font-size:17px;line-height:1.6}
-.rows strong.num{direction:ltr;text-align:right}
-
-/* ===== الشعار تحت ===== */
-.motto{text-align:center;padding-block:clamp(80px,10vw,130px) clamp(56px,7vw,90px)}
-.motto .mark{width:clamp(88px,10vw,120px);height:auto;margin:0 auto 30px}
-.motto p{font-size:clamp(28px,4vw,52px);font-weight:700;line-height:1.45;max-width:20ch;margin-inline:auto;color:var(--ink)}
-.motto p span{display:block;color:var(--brand-ink)}
-.motto .rule{width:64px;height:3px;border-radius:3px;background:var(--brand);margin:28px auto 0}
-
-/* ===== الفوتر ===== */
-footer{border-top:1px solid var(--line);background:var(--surface)}
-.foot{display:grid;gap:36px;padding-block:52px}
-@media(min-width:900px){.foot{grid-template-columns:1.5fr 1fr 1fr}}
-.foot p{color:var(--muted);margin-top:16px;max-width:34ch;font-size:15px}
-.foot h4{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:14px}
-.foot li{margin-bottom:8px;font-size:15px;font-weight:600}
-.foot li a:hover{color:var(--brand-ink)}
-.foot .pin{width:42px;height:42px;border-radius:12px}
-.foot .pin svg{width:18px;height:18px}
-.copy{border-top:1px solid var(--line);padding-block:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;color:var(--muted);font-size:13px}
-
-/* زرار واتساب ثابت */
-.fab{position:fixed;bottom:22px;inset-inline-start:22px;z-index:50;height:56px;padding:0 22px 0 18px;border-radius:999px;background:var(--wa);color:#fff;display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;box-shadow:0 12px 28px -10px rgba(31,157,85,.65)}
-.fab svg{width:24px;height:24px}
-
-/* ظهور هادي */
-.rv{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
-.rv.in{opacity:1;transform:none}
-.d1{transition-delay:.08s}.d2{transition-delay:.16s}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.ph img{transition:none}html{scroll-behavior:auto}}
-</style>
-</head>
-<body>
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="logo" viewBox="100 140 1022 820"><circle cx="717" cy="550" r="330" fill="none" stroke="#E6B028" stroke-width="148"/><circle cx="717" cy="551" r="83" fill="#E6B028"/><path d="M105 158H492V297H264V477H595V621H264V940H105Z" fill="#161616"/></symbol>
-  <symbol id="icWa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
-  <symbol id="icPin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
-  <symbol id="icArrow" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-</svg>
-
-<header class="hdr" id="hdr">
-  <div class="frame">
-    <a class="brand" href="#" aria-label="فلاش أون، الصفحة الرئيسية">
-      <svg class="mark" viewBox="0 0 1022 820" role="img" aria-label="شعار فلاش أون"><use href="#logo"/></svg>
-      <span class="sep"></span>
-      <span><b>فلاش أون</b><small>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</small></span>
-    </a>
-    <nav class="nav" aria-label="أقسام الموقع">
-      <a href="#products">المنتجات</a>
-      <a href="#about">من نحن</a>
-      <a href="#order">طريقة الطلب</a>
-      <a href="#contact">تواصل معنا</a>
-      <a class="btn primary" href="#contact">اطلب عرض سعر</a>
-    </nav>
-  </div>
-</header>
-
+<header class="hdr" id="top"><div class="frame">
+ <a class="brand" href="#top" aria-label="فلاش أون">
+  <svg class="lg-i logo" viewBox="0 0 1042 840" overflow="visible" role="img" aria-label="شعار فلاش أون"><use href="#logo" width="1042" height="840"/></svg>
+  <span class="div"></span>
+  <span class="nm">فلاش أون<small>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</small></span>
+ </a>
+ <nav><a class="l" href="#top">الرئيسية</a><a class="l" href="#products">منتجاتنا</a><a class="l" href="#about">من نحن</a><a class="l" href="#why">لماذا فلاش أون؟</a><a class="l" href="#contact">تواصل معنا</a><a class="btn dk" href="#contact">اطلب عرض سعر</a></nav>
+</div><span class="cur-bar" aria-hidden="true"><i></i></span></header>
 <main>
 
-  <!-- ===== البداية ===== -->
-  <section class="hero">
-    <div class="frame">
-      <div class="stage">
-        <div class="txt rv">
-          <span class="eyebrow">شركة مصرية لصناعة وتوريد الأدوات الكهربائية</span>
-          <h1><i>كل ما يحتاجه</i> <i>التأسيس الكهربائي</i> <span>من مصدر واحد</span></h1>
-          <p>نصنّع ونورّد الخراطيم والمواسير وعلب الماجيك والكابلات الكهربائية للمقاولين والتجار، بجودة ثابتة وبأسعار المصنع.</p>
-          <div class="ctas">
-            <a class="btn primary" id="waTop" href="#contact"><svg><use href="#icWa"/></svg>اطلب عرض سعر</a>
-            <a class="btn ghost" href="#products">تصفّح المنتجات</a>
-          </div>
-        </div>
-        <div class="art rv d1">
-          <img src="assets/img/hero.svg" width="1110" height="560" alt="منتجات فلاش أون: مواسير PVC، خراطيم كهربائية، كابلات، وعلبة ماجيك">
-        </div>
-      </div>
+<section class="hero" id="hero">
+ 
+ <div class="frame">
+  <div class="txt">
+   <span class="kick rv"><i></i>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</span>
+   <h1 class="rv d1">كل تأسيس كهربائي <span class="s">يبدأ من فلاش&nbsp;أون</span></h1>
+   <p class="rv d2">نصنع الخراطيم الكهربائية ونورّد مواسير PVC وعلب الماجيك والكابلات الكهربائية، ونتعامل مع المقاولين وتجار الكهرباء مباشرة من المصنع.</p>
+   <div class="ctas rv d3">
+    <a class="btn y" href="#contact">اطلب عرض سعر<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <a class="btn gh" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>موقع المصنع</a>
+   </div>
+   <span class="gbadge rv d4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>معتمدون لدى الجهات والهيئات الحكومية</span>
+   <div class="mini rv d4"><span>خراطيم كهربائية</span><span>سوستة فلكسبل</span><span>مواسير PVC</span><span>علب ماجيك</span><span>كابلات</span></div>
+  </div>
 
-      <div class="trust rv d2">
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l6-4v4l6-4v4l6-4v16z"/></svg></span><p><b>صناعة مصرية</b><span>من المصنع مباشرة</span></p></div>
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><p><b>جودة مطابقة</b><span>للمواصفات القياسية</span></p></div>
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><p><b>توريد مباشر</b><span>حتى موقع العمل</span></p></div>
-        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><p><b>عرض سعر مكتوب</b><span>قبل أي توريد</span></p></div>
-      </div>
+  <div class="art" aria-hidden="true">
+   <svg viewBox="0 -300 800 1190">
+    <defs>
+     <radialGradient id="glow"><stop offset="0" stop-color="#F2B705" stop-opacity=".32"/><stop offset=".55" stop-color="#F2B705" stop-opacity=".06"/><stop offset="1" stop-color="#F2B705" stop-opacity="0"/></radialGradient>
+     <radialGradient id="plate" cx=".45" cy=".22" r=".85"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#F6F3EC"/><stop offset="1" stop-color="#D6CFC0"/></radialGradient>
+     <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+     <linearGradient id="hose" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A4E"/><stop offset=".5" stop-color="#F0461C"/><stop offset="1" stop-color="#B42A0C"/></linearGradient>
+     <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B0D10"/><stop offset=".35" stop-color="#3A404A"/><stop offset=".55" stop-color="#262B33"/><stop offset="1" stop-color="#0B0D10"/></linearGradient>
+     <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7A5A12"/><stop offset=".45" stop-color="#E9C66B"/><stop offset="1" stop-color="#7A5A12"/></linearGradient>
+     <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A6" stop-opacity=".75"/><stop offset=".3" stop-color="#FFD866" stop-opacity=".34"/><stop offset=".75" stop-color="#FFC93A" stop-opacity=".1"/><stop offset="1" stop-color="#FFC93A" stop-opacity="0"/></linearGradient>
+     <linearGradient id="coreg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6D8" stop-opacity=".9"/><stop offset=".45" stop-color="#FFE7A0" stop-opacity=".3"/><stop offset="1" stop-color="#FFE7A0" stop-opacity="0"/></linearGradient>
+     <radialGradient id="poolb" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF8E0" stop-opacity=".95"/><stop offset=".6" stop-color="#FFE9A6" stop-opacity=".35"/><stop offset="1" stop-color="#FFE9A6" stop-opacity="0"/></radialGradient>
+     <filter id="soft2" x="-30%" y="-10%" width="160%" height="130%"><feGaussianBlur stdDeviation="28"/></filter>
+     <radialGradient id="bulb"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#FFF3C4"/><stop offset="1" stop-color="#FFC93A"/></radialGradient>
+     <radialGradient id="halo"><stop offset="0" stop-color="#FFE08A" stop-opacity=".9"/><stop offset=".25" stop-color="#FFD054" stop-opacity=".35"/><stop offset="1" stop-color="#FFD054" stop-opacity="0"/></radialGradient>
+     <radialGradient id="pool" cx=".5" cy=".2" r=".7"><stop offset="0" stop-color="#FFF6D6" stop-opacity=".55"/><stop offset="1" stop-color="#FFF6D6" stop-opacity="0"/></radialGradient>
+     <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+     <filter id="soft" x="-30%" y="-10%" width="160%" height="130%"><feGaussianBlur stdDeviation="16"/></filter>
+     <filter id="spk" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+     <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+     <clipPath id="plc"><circle cx="400" cy="400" r="300"/></clipPath>
+     <path id="hp" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206"/>
+    </defs>
+    <circle class="glw" cx="400" cy="420" r="420" fill="url(#glow)"/>
+    <g class="px" data-d="8">
+     <!-- light cone -->
+     <g class="cone" style="mix-blend-mode:screen">
+      <path d="M330 -110 L470 -110 L790 720 L10 720 Z" fill="url(#cone)" filter="url(#soft2)"/>
+      <path d="M352 -110 L448 -110 L600 520 L200 520 Z" fill="url(#coreg)" filter="url(#soft)"/>
+      <g class="dust" fill="#FFF3C8">
+       <circle cx="372" cy="-20" r="2.2" opacity=".7"/><circle cx="430" cy="30" r="1.6" opacity=".6"/><circle cx="350" cy="70" r="1.4" opacity=".5"/><circle cx="462" cy="-50" r="1.8" opacity=".55"/><circle cx="405" cy="12" r="1.2" opacity=".6"/><circle cx="318" cy="10" r="1.5" opacity=".4"/><circle cx="490" cy="60" r="1.3" opacity=".45"/><circle cx="395" cy="-70" r="1.4" opacity=".6"/>
+      </g>
+     </g>
+     <!-- plate -->
+     <g class="plate">
+      <ellipse cx="400" cy="725" rx="230" ry="24" fill="#000" opacity=".55" filter="url(#sh)"/>
+      <circle cx="400" cy="424" r="300" fill="#000" opacity=".55" filter="url(#sh)"/>
+      <circle cx="400" cy="400" r="300" fill="url(#plate)"/>
+      <circle cx="400" cy="400" r="298.5" fill="none" stroke="url(#rim)" stroke-width="3"/>
+      <defs><linearGradient id="vig" x1="0" y1="0" x2="0" y2="1"><stop offset=".45" stop-color="#14171C" stop-opacity="0"/><stop offset="1" stop-color="#14171C" stop-opacity=".22"/></linearGradient></defs>
+      <circle cx="400" cy="400" r="300" fill="url(#vig)"/>
+      <g class="pool" clip-path="url(#plc)"><ellipse cx="400" cy="250" rx="300" ry="230" fill="url(#poolb)" style="mix-blend-mode:soft-light"/><ellipse cx="400" cy="200" rx="200" ry="120" fill="url(#poolb)" opacity=".55" style="mix-blend-mode:screen"/></g>
+      <circle class="pool" cx="400" cy="400" r="300" fill="none" stroke="#FFE7A0" stroke-opacity=".6" stroke-width="4" clip-path="url(#plc)" stroke-dasharray="0 0"/>
+      <svg x="196" y="236" width="408" height="327" viewBox="100 140 1022 820">
+       <defs><filter id="lamp" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="46"/></filter></defs>
+       <circle class="lampglow" cx="717" cy="550" r="330" fill="none" stroke="#FFC21A" stroke-width="190" filter="url(#lamp)"/>
+       <circle class="ring" cx="717" cy="550" r="330" fill="none" stroke="#F2B705" stroke-width="148"/>
+       <circle class="dot" cx="717" cy="551" r="83" fill="#F2B705"/>
+       <path d="M105 158H492V297H264V477H595V621H264V940H105Z" fill="#14171C"/>
+      </svg>
+           </g>
+    </g>
+    <g class="px" data-d="18">
+     <!-- hose -->
+     <g class="hoseg">
+      <use href="#hp" fill="none" stroke="#000" stroke-opacity=".5" stroke-width="54" filter="url(#sh2)" transform="translate(0 14)"/>
+      <use href="#hp" fill="none" stroke="#8E1E08" stroke-width="50"/>
+      <use href="#hp" fill="none" stroke="url(#hose)" stroke-width="42"/>
+      <use href="#hp" fill="none" stroke="#FF9A78" stroke-opacity=".55" stroke-width="16"/>
+      <use href="#hp" fill="none" stroke="#FFE6DC" stroke-opacity=".8" stroke-width="4"/>
+     </g>
+     <g transform="translate(218 730) rotate(143)"><ellipse rx="26" ry="10" fill="#C99400"/><ellipse rx="21" ry="7" fill="#14171C"/></g>
+     <path class="cur cur1" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFD84D" stroke-width="26" stroke-linecap="round" filter="url(#spk)"/>
+     <path class="cur cur2" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFFBEA" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <g class="px wmg" data-d="8">
+     <defs><radialGradient id="fglow"><stop offset="0" stop-color="#FFF3CC" stop-opacity=".55"/><stop offset="1" stop-color="#FFF3CC" stop-opacity="0"/></radialGradient></defs>
+     <ellipse cx="186" cy="820" rx="70" ry="62" fill="url(#fglow)"/>
+     <text class="wm" x="409" y="842" text-anchor="middle" direction="ltr" font-family="Montserrat" font-weight="800" font-size="62" letter-spacing="18" fill="#F6F3EC"><tspan fill="#14171C" stroke="#F6F3EC" stroke-width="4" paint-order="stroke" stroke-linejoin="round">F</tspan>LASH <tspan fill="#F2B705">O</tspan>N</text>
+    </g>
+    <!-- lamp -->
+    <g class="px lampg" data-d="14">
+     <line x1="400" y1="-320" x2="400" y2="-222" stroke="#0B0D10" stroke-width="4"/>
+     <rect x="376" y="-224" width="48" height="40" rx="7" fill="url(#shade)"/>
+     <rect x="372" y="-190" width="56" height="8" rx="3" fill="url(#brass)"/>
+     <circle class="halo" cx="400" cy="-104" r="190" fill="url(#halo)"/>
+     <circle class="bulbc" cx="400" cy="-102" r="24" fill="url(#bulb)"/>
+     <path d="M400 -184 C 352 -184 330 -158 324 -112 L476 -112 C 470 -158 448 -184 400 -184 Z" fill="url(#shade)"/>
+     <path d="M346 -170 C 360 -180 380 -183 392 -183" stroke="#fff" stroke-opacity=".25" stroke-width="3" fill="none" stroke-linecap="round"/>
+     <ellipse cx="400" cy="-112" rx="76" ry="7" fill="url(#brass)"/>
+     <ellipse class="mouth" cx="400" cy="-110" rx="70" ry="5" fill="#FFF1C2"/>
+    </g>
+   </svg>
+  </div>
+ </div>
+</section>
+<section class="slogan"><div class="tw">
+ <span class="sl-mark"><svg class="lg-i" viewBox="0 0 1042 840" overflow="visible" aria-hidden="true"><use href="#logo" width="1042" height="840"/></svg></span>
+ <p><b>فلاش أون…</b> كل احتياجاتك الكهربائية <span>في مكان واحد</span></p>
+</div></section>
+
+<section class="why" id="why"><div class="frame">
+ <div class="why-h reveal"><span class="tag">لماذا فلاش أون؟</span><h2>شريك موثوق لكل مشروع كهربائي</h2></div>
+ <ul class="wg"><li class="wc reveal d0"><span class="wn">01</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5-3v3l5-3v3l5-3v14z"/><path d="M3 21h18M7 17h2M12 17h2M17 17h1"/></svg></span><h3>تصنيع محلي</h3><p>صناعة مصرية بمنتجات تحمل اسم فلاش أون.</p></li><li class="wc reveal d1"><span class="wn">02</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><h3>توريد مباشر من المصنع</h3><p>من المصنع إليك مباشرةً دون وسطاء.</p></li><li class="wc reveal d2"><span class="wn">03</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>معتمدون لدى الجهات والهيئات الحكومية</h3><p>جهة توريد معتمدة رسمياً.</p></li><li class="wc reveal d3"><span class="wn">04</span><span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg></span><h3>عرض سعر مكتوب وإذن تسليم مع كل شحنة</h3><p>وضوح تام قبل الاتفاق وعند الاستلام.</p></li></ul>
+</div></section>
+<!-- ===== المنتجات: مقطع الحائط ===== -->
+<section class="sec" id="products">
+ <div class="frame">
+  <div class="head reveal">
+   <div><span class="tag">منتجاتنا</span><h2>كل ما يحتاجه التأسيس الكهربائي في مكان واحد</h2></div>
+   <p class="lead">تابع تأسيس حائط واحد خطوة بخطوة، وتعرّف على موضع كل منتج من منتجات فلاش أون داخله.</p>
+  </div>
+ </div>
+ <div class="build" id="build">
+  <div class="build-in">
+   <div class="frame build-grid">
+    <div class="wall-wrap">
+     <svg class="wall" viewBox="0 0 600 640" aria-label="مقطع توضيحي لحائط أثناء التأسيس الكهربائي" role="img">
+      <defs>
+       <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .5  0 0 0 0 .4  0 0 0 0 .35  0 0 0 .55 0" result="g"/><feComposite in="g" in2="SourceGraphic" operator="in" result="gi"/><feBlend in="SourceGraphic" in2="gi" mode="multiply"/></filter>
+       <filter id="relief" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".045 .09" numOctaves="4" seed="9" result="t"/><feDiffuseLighting in="t" surfaceScale="2.2" lighting-color="#fff" result="l"><feDistantLight azimuth="235" elevation="52"/></feDiffuseLighting><feComposite in="l" in2="SourceGraphic" operator="in" result="lc"/><feBlend in="SourceGraphic" in2="lc" mode="multiply"/></filter>
+       <filter id="concrete" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="4" seed="2" result="t"/><feDiffuseLighting in="t" surfaceScale="1.4" lighting-color="#d8d8d8"><feDistantLight azimuth="240" elevation="58"/></feDiffuseLighting><feComposite in2="SourceGraphic" operator="in"/></filter>
+       <filter id="ao" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+       <filter id="psh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="6" stdDeviation="5" flood-color="#1a0d05" flood-opacity=".55"/></filter>
+       <filter id="psh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000" flood-opacity=".5"/></filter>
+       <linearGradient id="boxW" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE27A"/><stop offset=".5" stop-color="#F2B705"/><stop offset="1" stop-color="#C99000"/></linearGradient>
+       <linearGradient id="boxIn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A5600"/><stop offset=".25" stop-color="#C89300"/><stop offset="1" stop-color="#E2AA00"/></linearGradient>
+       <radialGradient id="screw" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#FAFBFC"/><stop offset=".5" stop-color="#B8BEC6"/><stop offset="1" stop-color="#6E757E"/></radialGradient>
+       <linearGradient id="cu" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8C4A1C"/><stop offset=".45" stop-color="#F0A36A"/><stop offset="1" stop-color="#9E5524"/></linearGradient>
+       <path id="wHose" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420"/>
+       <path id="wPvc" d="M500 46 V540 H40"/>
+      </defs>
+      <!-- slab / floor (concrete) -->
+      <rect x="0" y="0" width="600" height="46" fill="#8E9196"/><rect x="0" y="0" width="600" height="46" fill="#8E9196" filter="url(#concrete)" opacity=".9"/>
+      <rect x="0" y="40" width="600" height="8" fill="#000" opacity=".25" filter="url(#ao)"/>
+      <!-- bricks (generated) -->
+      <g id="bricks" filter="url(#relief)"><rect x="0" y="46" width="600" height="560" fill="#C9C1B4"/></g>
+      <rect x="0" y="46" width="600" height="560" fill="#7a3a22" opacity=".001" filter="url(#grain)"/>
+      <rect x="0" y="606" width="600" height="34" fill="#8E9196"/><rect x="0" y="606" width="600" height="34" fill="#8E9196" filter="url(#concrete)" opacity=".9"/>
+      <rect x="0" y="600" width="600" height="8" fill="#000" opacity=".22" filter="url(#ao)"/>
+      <!-- chases: rough cement grooves -->
+      <g class="chase">
+       <use href="#wHose" fill="none" stroke="#6E6A64" stroke-width="48" stroke-linecap="square"/>
+       <use href="#wHose" fill="none" stroke="#9B958C" stroke-width="40" stroke-linecap="square" filter="url(#concrete)"/>
+       <use href="#wPvc" fill="none" stroke="#6E6A64" stroke-width="50"/>
+       <use href="#wPvc" fill="none" stroke="#9B958C" stroke-width="42" filter="url(#concrete)"/>
+       <use href="#wHose" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="40" filter="url(#ao)"/>
+       <use href="#wPvc" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="42" filter="url(#ao)"/>
+      </g>
+      <!-- 4 cables: insulated + copper -->
+      <g class="part p4" filter="url(#psh2)">
+       <path class="drw" pathLength="1" d="M124 46 V250 Q124 284 170 284 H360 Q394 284 394 330 V470 q0 22 -18 36" fill="none" stroke="#B71C1C" stroke-width="5.5" stroke-linecap="round"/>
+       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V470 q0 26 0 46" fill="none" stroke="#1450A8" stroke-width="5.5" stroke-linecap="round"/>
+       <path class="drw" pathLength="1" d="M136 46 V250 Q136 296 170 296 H360 Q406 296 406 330 V470 q0 22 18 36" fill="none" stroke="#1C1E22" stroke-width="5.5" stroke-linecap="round"/>
+       <path class="drw" pathLength="1" d="M123 46 V250 Q123 283 170 283 H360 Q393 283 393 330 V470 q0 22 -18 36" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round"/>
+       <path class="drw" pathLength="1" d="M129 46 V250 Q129 289 170 289 H360 Q399 289 399 330 V470 q0 26 0 46" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round"/>
+       <g class="cuends" style="display:none"><path d="M376 506 l-7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M400 516 v9" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M424 506 l7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/></g>
+      </g>
+      <!-- 1 smooth electrical hose -->
+      <g class="part p1" filter="url(#psh)">
+       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#8E1E08" stroke-width="30"/>
+       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#F0461C" stroke-width="25"/>
+       <path class="drw" pathLength="1" d="M128 46 V250 Q128 288 170 288 H360 Q398 288 398 330 V420" fill="none" stroke="#FF7A4E" stroke-width="9" transform="translate(-4 -4)"/>
+       <path class="drw" pathLength="1" d="M130 46 V250 Q130 290 170 290 H360 Q400 290 400 330 V420" fill="none" stroke="#FFE2D6" stroke-opacity=".9" stroke-width="2.5" transform="translate(-6 -6)"/>
+      </g>
+      <!-- 2 PVC pipe -->
+      <g class="part p2" filter="url(#psh)">
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#8C9097" stroke-width="32"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#E9EBEE" stroke-width="27"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#F7F8FA" stroke-width="12" transform="translate(-5 -5)"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="3" transform="translate(-8 -8)"/>
+       <path class="drw" pathLength="1" d="M500 46 V540 H40" fill="none" stroke="#3A3F47" stroke-opacity=".35" stroke-width="5" transform="translate(9 9)"/>
+<g class="fit"><rect x="476" y="236" width="48" height="34" rx="4" fill="#D5D8DD"/><rect x="476" y="236" width="48" height="34" rx="4" fill="none" stroke="#8C9097" stroke-width="2"/><rect x="483" y="240" width="10" height="26" rx="3" fill="#FFFFFF" opacity=".7"/>
+<path d="M474 500 H520 Q536 500 536 516 V562 H474 Z" fill="#DDE0E4" stroke="#8C9097" stroke-width="2"/><path d="M474 500 V562 M474 562 H536" stroke="#8C9097" stroke-width="2"/><rect x="474" y="496" width="52" height="10" rx="3" fill="#C9CCD2" stroke="#8C9097" stroke-width="1.5"/><rect x="468" y="514" width="10" height="52" rx="3" fill="#C9CCD2" stroke="#8C9097" stroke-width="1.5"/><path d="M484 508 H516 Q524 508 524 516" fill="none" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="4"/>
+<rect x="236" y="522" width="34" height="36" rx="4" fill="#D5D8DD" stroke="#8C9097" stroke-width="2"/><rect x="240" y="526" width="26" height="8" rx="3" fill="#FFFFFF" opacity=".7"/></g>
+      </g>
+      <!-- 3 magic box -->
+      <g class="part p3 box">
+       <rect x="330" y="418" width="140" height="104" rx="8" fill="#000" opacity=".45" filter="url(#ao)" transform="translate(3 6)"/>
+       <rect x="334" y="420" width="132" height="98" rx="7" fill="url(#boxW)"/>
+       <rect x="334.8" y="420.8" width="130.4" height="96.4" rx="6.5" fill="none" stroke="#FFF2B8" stroke-opacity=".75" stroke-width="1.6"/>
+       <rect x="344" y="430" width="112" height="78" rx="4" fill="url(#boxIn)"/>
+       <rect x="344" y="430" width="112" height="9" rx="4" fill="#000" opacity=".2"/>
+       <rect x="372" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="372" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="372" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="379" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="386" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="452" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="459" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="416" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="423" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/><rect x="430" y="466" width="4.5" height="4.5" rx="1" fill="#8A6200" opacity=".55"/>
+       <path d="M352 440 h10 a5 5 0 0 1 0 10 h-10 M352 488 h10 a5 5 0 0 1 0 10 h-10" fill="none" stroke="#8A6200" stroke-opacity=".5" stroke-width="1.6"/>
+       <rect x="345" y="462" width="12" height="16" rx="2" fill="#C99400"/><rect x="443" y="462" width="12" height="16" rx="2" fill="#C99400"/>
+       <circle cx="351" cy="470" r="5.5" fill="url(#screw)" stroke="#59606A" stroke-width=".8"/><path d="M347.5 470h7M351 466.5v7" stroke="#59606A" stroke-width="1.4"/>
+       <circle cx="449" cy="470" r="5.5" fill="url(#screw)" stroke="#59606A" stroke-width=".8"/><path d="M445.5 470h7M449 466.5v7" stroke="#59606A" stroke-width="1.4"/>
+      </g>
+      <!-- cable tails out of the box -->
+      <g class="part p4 p4t" filter="url(#psh2)">
+       <path class="drw" pathLength="1" d="M394 452 V470 q0 22 -18 36" fill="none" stroke="#B71C1C" stroke-width="5.5" stroke-linecap="round"/>
+       <path class="drw" pathLength="1" d="M400 452 V470 q0 26 0 46" fill="none" stroke="#1450A8" stroke-width="5.5" stroke-linecap="round"/>
+       <path class="drw" pathLength="1" d="M406 452 V470 q0 22 18 36" fill="none" stroke="#1C1E22" stroke-width="5.5" stroke-linecap="round"/>
+       <g class="cuends"><path d="M376 506 l-7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M400 516 v9" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/><path d="M424 506 l7 6" stroke="url(#cu)" stroke-width="3.2" stroke-linecap="round"/></g>
+      </g>
+      <g class="part p4 p4s"><path class="drw" pathLength="1" d="M124 0 V48" stroke="#B71C1C" stroke-width="5" fill="none"/><path class="drw" pathLength="1" d="M130 0 V48" stroke="#1450A8" stroke-width="5" fill="none"/><path class="drw" pathLength="1" d="M136 0 V48" stroke="#1C1E22" stroke-width="5" fill="none"/></g>
+      <!-- labels -->
+      <g class="lbl l1"><rect x="150" y="150" width="148" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="224" y="176" text-anchor="middle">خرطوم كهربائي</text></g>
+      <g class="lbl l2"><rect x="60" y="562" width="132" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="126" y="588" text-anchor="middle">ماسورة PVC</text></g>
+      <g class="lbl l3"><rect x="214" y="398" width="104" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="266" y="424" text-anchor="middle">علبة ماجيك</text></g>
+      <g class="lbl l4"><rect x="250" y="484" width="96" height="40" rx="20" fill="#14171C" fill-opacity=".92"/><text x="298" y="510" text-anchor="middle">كابلات</text></g>
+     </svg>
     </div>
-  </section>
+    <ol class="steps-b" id="bsteps">
+     <li class="on"><span class="n">01</span><h3>خراطيم كهربائية</h3><p>خراطيم ملساء مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p></li>
+     <li><span class="n">02</span><h3>مواسير PVC</h3><p>مواسير PVC صلبة بأطوال مستقيمة، تُوصَل بالأكواع والجُلَب، بألوان تساعد على التمييز بين خطوط التأسيس.</p></li>
+     <li><span class="n">03</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p></li>
+     <li><span class="n">04</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p></li>
+    </ol>
+   </div>
+   <div class="bprog" aria-hidden="true"><i id="bbar"></i></div>
+  </div>
+ </div>
 
-  <!-- ===== المنتجات ===== -->
-  <section class="sec" id="products">
-    <div class="frame">
-      <div class="sec-head rv">
-        <div><span class="eyebrow">المنتجات</span><h2>أربعة خطوط إنتاج،<br>مستوى جودة واحد</h2></div>
-        <p class="lead">كل ما يحتاجه المقاول في تأسيس الكهرباء: من الخرطوم إلى العلبة إلى الكابل.</p>
-      </div>
+ <div class="frame">
+  <div class="cards">
+   <article class="card reveal"><div class="art2"><img src="assets/products/hose-720.webp" srcset="assets/products/hose-720.webp 720w, assets/products/hose.webp 1200w" sizes="(max-width:560px) 92vw, (max-width:1100px) 46vw, 40vw" decoding="async" alt="لفة خرطوم كهربائي أملس باللون البرتقالي" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>خراطيم كهربائية</h3><p>خراطيم ملساء مرنة تحمي الأسلاك وتسهّل تمريرها داخل الحوائط والأسقف.</p><ul class="types"><li class="hl">متوفر بجميع الألوان</li></ul><a class="more" href="#contact" data-ask="خراطيم كهربائية">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d1"><div class="art2"><img src="assets/products/flex-720.webp" srcset="assets/products/flex-720.webp 720w, assets/products/flex.webp 1200w" sizes="(max-width:560px) 92vw, (max-width:1100px) 46vw, 40vw" decoding="async" alt="سوستة فلكسبل: لفة ووصلات مموّجة" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>سوستة فلكسبل</h3><p>سوستة فلكسبل مرنة لحماية الأسلاك وتمريرها بسهولة.</p><a class="more" href="#contact" data-ask="سوستة فلكسبل">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d1"><div class="art2"><img src="assets/products/pvc-720.webp" srcset="assets/products/pvc-720.webp 720w, assets/products/pvc.webp 1200w" sizes="(max-width:560px) 92vw, (max-width:1100px) 46vw, 40vw" decoding="async" alt="مواسير PVC مستقيمة باللونين الأبيض والرمادي" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">تأسيس</span><h3>مواسير PVC</h3><p>مواسير PVC صلبة بأطوال مستقيمة، تُوصَل بالأكواع والجُلَب، بألوان تساعد على التمييز بين خطوط التأسيس.</p><a class="more" href="#contact" data-ask="مواسير PVC">استفسر عن المقاسات والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d2"><div class="art2 mvar"><img class="mv on" data-i="0" src="assets/products/magic-720.webp" srcset="assets/products/magic-720.webp 720w, assets/products/magic.webp 1200w" sizes="(max-width:560px) 92vw, (max-width:1100px) 46vw, 30vw" alt="علبة ماجيك مفردة" loading="lazy" decoding="async" width="800" height="600"><img class="mv" data-i="1" src="assets/products/magich-720.webp" srcset="assets/products/magich-720.webp 720w, assets/products/magich.webp 1200w" sizes="(max-width:560px) 92vw, (max-width:1100px) 46vw, 30vw" alt="علبة ماجيك مجوّز أفقي" loading="lazy" decoding="async" width="800" height="600"><img class="mv" data-i="2" src="assets/products/magicv-720.webp" srcset="assets/products/magicv-720.webp 720w, assets/products/magicv.webp 1200w" sizes="(max-width:560px) 92vw, (max-width:1100px) 46vw, 30vw" alt="علبة ماجيك مجوّز رأسي" loading="lazy" decoding="async" width="800" height="600"></div><div class="cb"><span class="cat">تشطيب</span><h3>علب ماجيك</h3><p>علب للمفاتيح والبرايز بمسامير تثبيت معدنية، تُركَّب منفردة أو متجاورة أو فوق بعضها.</p><div class="types" role="group" aria-label="أنواع علب الماجيك"><button type="button" class="tbtn on" aria-pressed="true" data-i="0">مفرد</button><button type="button" class="tbtn" aria-pressed="false" data-i="1">مجوّز أفقي</button><button type="button" class="tbtn" aria-pressed="false" data-i="2">مجوّز رأسي</button></div><a class="more" href="#contact" data-ask="علب ماجيك">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+   <article class="card reveal d3"><div class="art2"><img src="assets/products/cable-720.webp" srcset="assets/products/cable-720.webp 720w, assets/products/cable.webp 1200w" sizes="(max-width:560px) 92vw, (max-width:1100px) 46vw, 40vw" decoding="async" alt="كابلات كهربائية متعددة الألوان بموصلات نحاسية" loading="lazy" width="800" height="600"></div><div class="cb"><span class="cat">كابلات</span><h3>الكابلات الكهربائية</h3><p>نوفّر جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.</p><a class="more" href="#contact" data-ask="الكابلات الكهربائية">استفسر عن الأنواع والأسعار<svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></article>
+  </div>
+ </div>
+</section>
 
-      <article class="prod rv">
-        <div class="ph"><span class="no">01</span><img src="assets/img/hoses.svg" width="400" height="400" loading="lazy" alt="لفة خرطوم كهرباء مموّج"></div>
-        <div>
-          <span class="eyebrow">تأسيس</span>
-          <h3>خراطيم كهربائية</h3>
-          <p class="desc">خرطوم مموّج مرن يحمي الأسلاك ويسهّل تمريرها داخل الحوائط والأسقف، ويتحمّل الثني دون أن يتكسر.</p>
-          <dl class="spec">
-            <div><dt>الشكل</dt><dd>مموّج مرن</dd></div>
-            <div><dt>الاستخدام</dt><dd>تمديدات داخل الحوائط والأسقف</dd></div>
-            <div><dt>اللون</dt><dd><span class="dots"><i style="background:#F2C200"></i></span></dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن مقاسات وأسعار الخراطيم الكهربائية" href="#contact">اطلب المقاسات والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
+<!-- ===== من نحن ===== -->
+<section class="about sec" id="about">
+ <div class="frame about-grid">
+  <div class="reveal">
+   <span class="tag">من نحن</span>
+   <h2>شركة مصرية لصناعة وتوريد الأدوات الكهربائية</h2>
+   <p class="lead">فلاش أون شركة مصرية متخصصة في صناعة وتوريد الأدوات الكهربائية، نخدم المقاولين وأصحاب مواقع التنفيذ وتجار الكهرباء، ونؤمن بأن التعامل الواضح هو أساس كل شراكة ناجحة.</p>
+   <p class="aud-t">نخدم</p><ul class="aud"><li>المقاولين</li><li>أصحاب مواقع التنفيذ</li><li>تجار الكهرباء</li></ul>
+  </div>
+  <div class="seal-wrap reveal d1" aria-hidden="true">
+   <svg class="seal" viewBox="0 0 300 300">
+    <defs><path id="sc" d="M38 150 A112 112 0 0 1 262 150"/><path id="sc2" d="M24 150 A126 126 0 0 0 276 150"/></defs>
+    <circle cx="150" cy="150" r="146" fill="#1B1F26" stroke="#F2B705" stroke-opacity=".35" stroke-width="2"/>
+    <g class="seal-rot"><text font-family="Alexandria" font-weight="700" font-size="21" letter-spacing="2" fill="#F2B705"><textPath href="#sc" startOffset="50%" text-anchor="middle">✦ صناعة مصرية ✦</textPath></text><text font-family="Alexandria" font-weight="700" font-size="21" letter-spacing="2" fill="#F2B705"><textPath href="#sc2" startOffset="50%" text-anchor="middle">فلاش أون</textPath></text></g>
+    <circle cx="150" cy="150" r="84" fill="#F6F3EC"/>
+    <svg x="88" y="100" width="124" height="100" viewBox="0 0 1042 840" overflow="visible"><use href="#logo" width="1042" height="840"/></svg>
+   </svg>
+  </div>
+ </div>
+</section>
 
-      <article class="prod flip rv">
-        <div class="ph"><span class="no">02</span><img src="assets/img/pvc.svg" width="310" height="360" loading="lazy" alt="لفات مواسير PVC"></div>
-        <div>
-          <span class="eyebrow">تأسيس</span>
-          <h3>مواسير PVC</h3>
-          <p class="desc">مواسير ناعمة ومتينة تُورَّد في لفات، بألوان متعددة للتفريق بين خطوط التمديدات داخل المشروع الواحد.</p>
-          <dl class="spec">
-            <div><dt>الخامة</dt><dd>PVC</dd></div>
-            <div><dt>التعبئة</dt><dd>لفات</dd></div>
-            <div><dt>الألوان</dt><dd><span class="dots"><i style="background:#F5D90A"></i><i style="background:#F2541B"></i></span></dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن مقاسات وأسعار مواسير PVC" href="#contact">اطلب المقاسات والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
 
-      <article class="prod rv">
-        <div class="ph"><span class="no">03</span><img src="assets/img/magic.svg" width="260" height="330" loading="lazy" alt="علبة ماجيك"></div>
-        <div>
-          <span class="eyebrow">تشطيب</span>
-          <h3>علب ماجيك</h3>
-          <p class="desc">علب مخصّصة للمفاتيح والبرايز، مزوّدة بمسامير معدنية للتثبيت، وتُركَّب مفردة أو متجاورة أو فوق بعضها حسب التصميم.</p>
-          <dl class="spec">
-            <div><dt>التركيب</dt><dd>مفردة · متجاورة · فوق بعضها</dd></div>
-            <div><dt>التثبيت</dt><dd>مسامير معدنية</dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن أنواع وأسعار علب الماجيك" href="#contact">اطلب الأنواع والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
+<!-- ===== الاعتمادات (مخفي حتى يرسل المالك أسماء الجهات) ===== -->
+<section class="sec approvals" id="approvals" hidden>
+ <div class="frame">
+  <div class="head reveal"><div><span class="tag">الاعتمادات</span><h2>جهات نتعامل معها</h2></div></div>
+  <ul class="appr" id="apprList"></ul>
+ </div>
+</section>
 
-      <article class="prod flip rv" id="cables">
-        <div class="ph"><span class="no">04</span><img src="assets/img/cables.svg" width="560" height="430" loading="lazy" alt="كابلات فلاش أون الكهربائية"></div>
-        <div>
-          <span class="eyebrow">كابلات</span>
-          <h3>الكابلات الكهربائية</h3>
-          <p class="desc">نورّد جميع أنواع الكابلات والأسلاك الكهربائية بمختلف المقاطع والألوان، لتلبية احتياجات المشروعات السكنية والتجارية.</p>
-          <dl class="spec">
-            <div><dt>النطاق</dt><dd>جميع الكابلات الكهربائية</dd></div>
-            <div><dt>الاستخدام</dt><dd>المشروعات السكنية والتجارية</dd></div>
-          </dl>
-          <div class="acts"><a class="link" data-ask="أرغب في الاستفسار عن الكابلات الكهربائية وأسعارها" href="#contact">اطلب الأنواع والأسعار <svg><use href="#icArrow"/></svg></a></div>
-        </div>
-      </article>
+<!-- ===== تواصل ===== -->
+<section class="sec contact-sec" id="contact">
+ <div class="frame">
+  <div class="contact reveal">
+   <div class="cl">
+    <span class="tag">تواصل معنا</span>
+    <h2>اطلب عرض سعر</h2>
+    <p class="lead">زوّدنا بالصنف والمقاس والكمية، وسنرسل إليك عرض سعر مكتوباً.</p>
+    <form class="qb" id="qb" hidden>
+     <label>الصنف<select id="qProd"><option>خراطيم كهربائية</option><option>سوستة فلكسبل</option><option>مواسير PVC</option><option>علب ماجيك</option><option>الكابلات الكهربائية</option></select></label>
+     <label>المقاس<input id="qSize" placeholder="مثال: المقاس المطلوب"></label>
+     <label>الكمية<input id="qQty" placeholder="مثال: عدد اللفات أو القطع"></label>
+     <button class="btn wa" type="submit"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg>أرسل الطلب على واتساب</button>
+    </form>
+    <div class="cbtns">
+     <a class="btn dk2" id="callBtn" href="#" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>اتصل بنا</a>
+     <a class="btn wa" id="waBtn" href="#" hidden target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg>واتساب</a>
     </div>
-  </section>
-
-  <!-- ===== من نحن ===== -->
-  <section class="frame rv" id="about">
-    <div class="statement">
-      <p class="big">نصنّع في مصر، <span>ونورّد مباشرة</span> إلى موقع العمل.</p>
-      <div class="pillars">
-        <div><b>صناعة مصرية</b><span>منتجات تُصنَّع في مصر وتحمل اسم فلاش أون.</span></div>
-        <div><b>مواصفات قياسية</b><span>جودة مطابقة للمواصفات القياسية في كل منتج.</span></div>
-        <div><b>تعامل واضح</b><span>عرض سعر مكتوب وإذن تسليم مع كل شحنة.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== طريقة الطلب ===== -->
-  <section class="sec" id="order">
-    <div class="frame">
-      <div class="sec-head rv">
-        <div><span class="eyebrow">طريقة الطلب</span><h2>ثلاث خطوات<br>وتصلك الشحنة</h2></div>
-        <p class="lead">بدون تعقيد: تواصل معنا، استلم عرض السعر، ثم استلم الشحنة.</p>
-      </div>
-      <ol class="steps">
-        <li class="rv"><b>أرسل طلبك</b><span>حدّد الصنف والمقاس والكمية وأرسلها عبر واتساب أو الهاتف.</span></li>
-        <li class="rv d1"><b>عرض سعر مكتوب</b><span>نرسل لك عرض سعر بصيغة PDF بالأصناف والأسعار.</span></li>
-        <li class="rv d2"><b>استلام بإذن تسليم</b><span>تصل الشحنة ومعها إذن تسليم بالأصناف والكميات.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ===== التواصل ===== -->
-  <section id="contact">
-    <div class="frame">
-      <div class="contact rv">
-        <div>
-          <span class="eyebrow">تواصل معنا</span>
-          <h2>اطلب عرض سعر</h2>
-          <p class="lead">أرسل لنا الصنف والمقاس والكمية، وسنرد عليك بالسعر في أقرب وقت.</p>
-          <div class="ctas">
-            <a class="btn wa" id="waBtm" href="#" hidden><svg><use href="#icWa"/></svg>راسلنا على واتساب</a>
-            <a class="btn ghost" id="callBtm" href="#" hidden>اتصل بنا</a>
-            <a class="pin" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener" aria-label="الموقع على الخريطة" title="الموقع على الخريطة"><svg><use href="#icPin"/></svg></a>
-          </div>
-          <p class="pending" id="pending" hidden>سيتم إضافة رقم التواصل قريباً.</p>
-        </div>
-        <div class="rows">
-          <div id="rowPhone" hidden><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><p><small>الهاتف</small><strong class="num" id="nums"></strong></p></div>
-          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><p><small>عرض السعر</small><strong>مكتوب بصيغة PDF</strong></p></div>
-          <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><p><small>التسليم</small><strong>بإذن تسليم مع كل شحنة</strong></p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== الشعار ===== -->
-  <section class="motto frame rv">
-    <svg class="mark" viewBox="0 0 1022 820" aria-hidden="true"><use href="#logo"/></svg>
-    <p>معاً لعالم متكامل <span>من احتياجاتك الكهربائية</span></p>
-    <div class="rule"></div>
-  </section>
-
+    <p class="pending" id="pending" hidden>أرقام التواصل تُضاف قريباً.</p>
+   </div>
+   <div class="cmap">
+    <div class="pinbig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+    <h3>موقع المصنع</h3>
+    <p>يمكنكم الوصول إلى المصنع عبر خرائط جوجل.</p>
+    <a class="btn y" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener">عرض الموقع على الخريطة<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+   </div>
+  </div>
+ </div>
+</section>
 </main>
 
-<footer>
-  <div class="frame">
-    <div class="foot">
-      <div>
-        <a class="brand" href="#" aria-label="فلاش أون"><svg class="mark" viewBox="0 0 1022 820" aria-hidden="true"><use href="#logo"/></svg><span class="sep"></span><span><b>فلاش أون</b><small>Flash on</small></span></a>
-        <p>شركة مصرية لصناعة وتوريد الأدوات الكهربائية.</p>
-      </div>
-      <div>
-        <h4>المنتجات</h4>
-        <ul><li><a href="#products">خراطيم كهربائية</a></li><li><a href="#products">مواسير PVC</a></li><li><a href="#products">علب ماجيك</a></li><li><a href="#cables">الكابلات الكهربائية</a></li></ul>
-      </div>
-      <div>
-        <h4>تواصل</h4>
-        <ul><li><a href="#contact">اطلب عرض سعر</a></li><li><a class="pin" href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener" aria-label="الموقع على الخريطة" title="الموقع على الخريطة"><svg><use href="#icPin"/></svg></a></li></ul>
-      </div>
-    </div>
-    <div class="copy"><span>© <span id="yr">2026</span> فلاش أون. جميع الحقوق محفوظة.</span><span>صُنع في مصر</span></div>
+<footer class="foot">
+ <div class="frame">
+  <div class="fg">
+   <div>
+    <a class="fbrand" href="#top" aria-label="فلاش أون"><span class="fplate"><svg class="lg-i" viewBox="0 0 1042 840" overflow="visible"><use href="#logo" width="1042" height="840"/></svg></span><span><b>فلاش أون</b><small dir="ltr"><em>F</em>LASH <i>O</i>N</small></span></a>
+    <p>شركة مصرية لصناعة وتوريد الأدوات الكهربائية.</p>
+    <p class="fsl">فلاش أون… كل احتياجاتك الكهربائية في مكان واحد</p>
+   </div>
+   <div><h4>منتجاتنا</h4><ul><li><a href="#products">خراطيم كهربائية</a></li><li><a href="#products">سوستة فلكسبل</a></li><li><a href="#products">مواسير PVC</a></li><li><a href="#products">علب ماجيك</a></li><li><a href="#products">الكابلات الكهربائية</a></li></ul></div>
+   <div><h4>الشركة</h4><ul><li><a href="#about">من نحن</a></li><li><a href="#why">لماذا فلاش أون؟</a></li><li><a href="#contact">اطلب عرض سعر</a></li><li><a href="https://maps.app.goo.gl/vbUYCvFpYyoybS6L6" target="_blank" rel="noopener">موقع المصنع</a></li></ul></div>
   </div>
+  <div class="copy"><span>© <span id="yr">2026</span> فلاش أون. جميع الحقوق محفوظة.</span><span>صناعة مصرية</span></div>
+ </div>
 </footer>
-
-<a class="fab" id="fab" href="#" hidden aria-label="راسلنا على واتساب"><svg><use href="#icWa"/></svg>واتساب</a>
+<a class="fab" id="fab" href="#" hidden target="_blank" rel="noopener" aria-label="راسلنا على واتساب"><svg viewBox="0 0 24 24"><use href="#icWa"/></svg></a>
 
 <script>
-/* بيانات التواصل: غيّر الرقم هنا بس. الصيغة الدولية من غير + ولا أصفار (مثال: 201012345678) */
-var SITE = {
-  whatsapp: "",   /* رقم الواتساب */
-  phone: ""       /* رقم المكالمات، ولو هو نفسه الواتساب سيبه فاضي */
-};
+(function(){var p=document.getElementById('hp'),g=document.getElementById('ribs')||document.createElementNS('http://www.w3.org/2000/svg','g'),L=p.getTotalLength(),o='',NS='http://www.w3.org/2000/svg';
+ for(var d=4;d<L-2;d+=10){var a=p.getPointAtLength(d),b=p.getPointAtLength(d+.5),tx=b.x-a.x,ty=b.y-a.y,m=Math.hypot(tx,ty)||1,nx=-ty/m*25,ny=tx/m*25;
+  o+='<line x1="'+(a.x-nx).toFixed(1)+'" y1="'+(a.y-ny).toFixed(1)+'" x2="'+(a.x+nx).toFixed(1)+'" y2="'+(a.y+ny).toFixed(1)+'" stroke="#8A6200" stroke-opacity=".55" stroke-width="3.2" stroke-linecap="round"/>';
+  var c=p.getPointAtLength(d+3.6);o+='<line x1="'+(c.x-nx*.82).toFixed(1)+'" y1="'+(c.y-ny*.82).toFixed(1)+'" x2="'+(c.x+nx*.82).toFixed(1)+'" y2="'+(c.y+ny*.82).toFixed(1)+'" stroke="#FFE68A" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/>';}
+ g.innerHTML=o;})();
+(function(){var hr=document.getElementById('hero'),r0=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(r0){hr.classList.add('on')}else{requestAnimationFrame(function(){hr.classList.add('go')});setTimeout(function(){hr.classList.add('on')},1650)}})();
 (function(){
-  function $(id){ return document.getElementById(id); }
-  var wa = (SITE.whatsapp||"").replace(/\D/g,"");
-  var ph = (SITE.phone||SITE.whatsapp||"").replace(/\D/g,"");
-  function link(text){ return "https://wa.me/"+wa+"?text="+encodeURIComponent(text); }
-
-  if(wa){
-    var def = "السلام عليكم، أرغب في الحصول على عرض سعر من فلاش أون";
-    [$("waTop"),$("waBtm"),$("fab")].forEach(function(a){ a.href = link(def); a.target = "_blank"; a.rel = "noopener"; a.hidden = false; });
-    document.querySelectorAll("[data-ask]").forEach(function(a){
-      a.href = link("السلام عليكم، " + a.getAttribute("data-ask")); a.target = "_blank"; a.rel = "noopener";
-    });
-  }
-  if(ph){
-    $("callBtm").href = "tel:+"+ph; $("callBtm").hidden = false;
-    $("nums").textContent = "+"+ph; $("rowPhone").hidden = false;
-  }
-  if(!wa && !ph) $("pending").hidden = false;
-  $("yr").textContent = new Date().getFullYear();
-
-  var hdr = $("hdr");
-  function onScroll(){ hdr.classList.toggle("on", window.scrollY > 40); }
-  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
-
-  if("IntersectionObserver" in window){
-    var io = new IntersectionObserver(function(es){
-      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
-    }, {threshold:.1, rootMargin:"0px 0px -40px 0px"});
-    document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
-  } else {
-    document.querySelectorAll(".rv").forEach(function(el){ el.classList.add("in"); });
-  }
+ var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var h=document.querySelector('.hero h1'),i=0;
+ if(!rm){h.classList.remove('rv');h.querySelectorAll('*').length;
+  [h.childNodes[0],h.querySelector('.s')].forEach(function(n){
+   var el=n.nodeType===3?null:n,t=n.textContent.trim().split(/ +/);
+   var frag=t.map(function(w){return '<span class="w" style="animation-delay:'+(.25+.07*(i++))+'s">'+w+'</span>'}).join(' ');
+   if(el){el.innerHTML=frag}else{var sp=document.createElement('span');sp.innerHTML=frag+' ';h.replaceChild(sp,n)}
+  });}
+ if(rm||matchMedia('(hover:none)').matches)return;
+ var px=document.querySelectorAll('.px'),hero=document.querySelector('.hero'),raf;
+ hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){px.forEach(function(g){var d=+g.dataset.d;g.style.transform='translate('+(-x*d)+'px,'+(-y*d)+'px)'})})});
 })();
 </script>
-</body>
-</html>
+<script>
+/* بيانات التواصل: أضف الأرقام هنا بالصيغة الدولية بدون + (مثال: 2010XXXXXXXX). تظهر الأزرار تلقائياً عند إضافتها */
+var SITE={whatsapp:"",phone:""};
+/* الاعتمادات: تُضاف أسماء الجهات هنا عند توفرها من الإدارة، ويظهر القسم تلقائياً */
+var APPROVALS=[];
+(function(){
+ var $=function(i){return document.getElementById(i)};
+ var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var wa=(SITE.whatsapp||"").replace(/\D/g,""),ph=(SITE.phone||SITE.whatsapp||"").replace(/\D/g,"");
+ function wl(t){return "https://wa.me/"+wa+"?text="+encodeURIComponent(t)}
+ if(wa){var d="السلام عليكم، أرغب في الحصول على عرض سعر من فلاش أون.";$("waBtn").href=wl(d);$("waBtn").hidden=false;$("fab").href=wl(d);$("fab").hidden=false;$("qb").hidden=false;
+  document.querySelectorAll("[data-ask]").forEach(function(a){a.href=wl("السلام عليكم، أرغب في الاستفسار عن "+a.dataset.ask+" من فلاش أون.");a.target="_blank";a.rel="noopener"});
+  $("qb").addEventListener("submit",function(e){e.preventDefault();var m="السلام عليكم، أرغب في الحصول على عرض سعر من فلاش أون:\nالصنف: "+$("qProd").value+"\nالمقاس: "+($("qSize").value||"—")+"\nالكمية: "+($("qQty").value||"—");window.open(wl(m),"_blank","noopener")});}
+ if(ph){$("callBtn").href="tel:+"+ph;$("callBtn").hidden=false}
+ if(!wa&&!ph)$("pending").hidden=false;
+ if(APPROVALS.length){APPROVALS.forEach(function(n){var li=document.createElement("li");li.textContent=n;$("apprList").appendChild(li)});$("approvals").hidden=false}
+ $("yr").textContent=new Date().getFullYear();
+ /* reveal */
+ var rv=document.querySelectorAll(".reveal");
+ if(rm||!("IntersectionObserver" in window)){rv.forEach(function(e){e.classList.add("in")})}
+ else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});rv.forEach(function(e){io.observe(e)})}
+ /* bricks */
+ (function(){var g=document.getElementById("bricks");if(!g)return;var o="",seed=7;function r(){seed=(seed*9301+49297)%233280;return seed/233280}
+  var cols=["#A94E2E","#B5583A","#9C4429","#B9603F","#A5492C","#C06844","#934026"];
+  for(var y=46,row=0;y<606;y+=28,row++){for(var x=(row%2?-46:0);x<600;x+=92){var c=cols[Math.floor(r()*cols.length)];
+   o+='<rect x="'+(x+3)+'" y="'+(y+3)+'" width="86" height="22" rx="2" fill="'+c+'"/>';
+   o+='<rect x="'+(x+3)+'" y="'+(y+3)+'" width="86" height="4" fill="#fff" opacity=".08"/><rect x="'+(x+3)+'" y="'+(y+21)+'" width="86" height="4" fill="#000" opacity=".14"/>'}}
+  g.insertAdjacentHTML("beforeend",o)})();
+ /* wall hose ribs */
+ document.querySelectorAll(".wribs").forEach(function(g){var p=document.getElementById(g.dataset.path),L=p.getTotalLength(),o="";
+  for(var d=3;d<L-2;d+=7){var a=p.getPointAtLength(d),b=p.getPointAtLength(d+.5),tx=b.x-a.x,ty=b.y-a.y,m=Math.hypot(tx,ty)||1,nx=-ty/m*12.5,ny=tx/m*12.5;
+   o+='<line x1="'+(a.x-nx).toFixed(1)+'" y1="'+(a.y-ny).toFixed(1)+'" x2="'+(a.x+nx).toFixed(1)+'" y2="'+(a.y+ny).toFixed(1)+'" stroke="#8A6200" stroke-opacity=".55" stroke-width="2.4"/>';var c=p.getPointAtLength(d+3);o+='<line x1="'+(c.x-nx*.8).toFixed(1)+'" y1="'+(c.y-ny*.8).toFixed(1)+'" x2="'+(c.x+nx*.8).toFixed(1)+'" y2="'+(c.y+ny*.8).toFixed(1)+'" stroke="#FFE88A" stroke-opacity=".7" stroke-width="1.2"/>'}
+  g.innerHTML=o});
+ /* build scroll */
+ var B=$("build"),parts=[".p1",".p2",".p3",".p4"].map(function(s){return B.querySelector(s)}),lbls=B.querySelectorAll(".lbl"),steps=$("bsteps").children,chase=B.querySelectorAll(".chase");
+ function setP(p){
+  var seg=function(i){return Math.min(1,Math.max(0,(p*4-i)/0.85))};
+  var t1=seg(0),t2=seg(1),t3=seg(2),t4=seg(3);
+  parts[0].style.setProperty("--o",1-t1);parts[0].style.setProperty("--r",t1>.98?1:0);
+  parts[1].style.setProperty("--o",1-t2);
+  parts[2].style.setProperty("--b",t3);
+  B.querySelectorAll(".p4").forEach(function(e){e.style.setProperty("--o",1-t4)});
+  chase.forEach(function(c){c.style.opacity=p>0.02?1:0});
+  var act=Math.min(3,Math.floor(p*4));
+  [t1,t2,t3,t4].forEach(function(t,i){lbls[i].classList.toggle("on",t>.6);steps[i].classList.toggle("on",i===act)});
+  B.style.setProperty("--bp",p);
+ }
+ if(rm){document.documentElement.classList.add("static");setP(1)}
+ else{
+  var tick=false;function onS(){if(tick)return;tick=true;requestAnimationFrame(function(){tick=false;
+   var r=B.getBoundingClientRect(),h=B.offsetHeight-innerHeight;setP(Math.min(1,Math.max(0,-r.top/(h||1))));
+   var dh=document.documentElement.scrollHeight-innerHeight;document.documentElement.style.setProperty("--p",dh>0?scrollY/dh:0)})}
+  addEventListener("scroll",onS,{passive:true});addEventListener("resize",onS);onS();
+ }
+})();
+</script>
+
+<script>document.querySelectorAll(".wc").forEach(function(c){c.addEventListener("pointermove",function(e){var r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px")})})</script>
+<script>document.querySelectorAll(".card").forEach(function(c){var b=c.querySelectorAll(".tbtn"),im=c.querySelectorAll(".mv");if(!b.length)return;b.forEach(function(x){x.addEventListener("click",function(){var i=x.dataset.i;b.forEach(function(y){var on=y===x;y.classList.toggle("on",on);y.setAttribute("aria-pressed",on)});im.forEach(function(m){m.classList.toggle("on",m.dataset.i===i)})})})})</script>
+</body></html>
