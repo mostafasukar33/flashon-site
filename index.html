@@ -413,7 +413,7 @@ img.wall{display:block;width:100%;height:auto;border-radius:inherit}
      <filter id="spk" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
      <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
      <clipPath id="plc"><circle cx="400" cy="400" r="300"/></clipPath>
-     <path id="hp" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206"/>
+     <path id="hp" d="M330 640 C 260 690 190 690 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206"/>
     </defs>
     <circle class="glw" cx="400" cy="420" r="420" fill="url(#glow)"/>
     <g class="px" data-d="8">
@@ -444,7 +444,8 @@ img.wall{display:block;width:100%;height:auto;border-radius:inherit}
       </svg>
            </g>
     </g>
-    <g class="px" data-d="18">
+    <defs><mask id="tuck" maskUnits="userSpaceOnUse" x="-400" y="-400" width="1600" height="1600"><rect x="-400" y="-400" width="1600" height="1600" fill="#fff"/><circle cx="400" cy="400" r="297" fill="#000"/></mask></defs>
+    <g class="px" data-d="18" mask="url(#tuck)">
      <!-- hose -->
      <g class="hoseg">
       <use href="#hp" fill="none" stroke="#000" stroke-opacity=".5" stroke-width="54" filter="url(#sh2)" transform="translate(0 14)"/>
@@ -453,9 +454,8 @@ img.wall{display:block;width:100%;height:auto;border-radius:inherit}
       <use href="#hp" fill="none" stroke="#FF9A78" stroke-opacity=".55" stroke-width="16"/>
       <use href="#hp" fill="none" stroke="#FFE6DC" stroke-opacity=".8" stroke-width="4"/>
      </g>
-     <g transform="translate(218 730) rotate(143)"><ellipse rx="26" ry="10" fill="#C99400"/><ellipse rx="21" ry="7" fill="#14171C"/></g>
-     <path class="cur cur1" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFD84D" stroke-width="26" stroke-linecap="round" filter="url(#spk)"/>
-     <path class="cur cur2" d="M218 730 C 198 702 176 668 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFFBEA" stroke-width="8" stroke-linecap="round"/>
+     <path class="cur cur1" d="M330 640 C 260 690 190 690 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFD84D" stroke-width="26" stroke-linecap="round" filter="url(#spk)"/>
+     <path class="cur cur2" d="M330 640 C 260 690 190 690 156 644 A345 345 0 0 1 76 282 C 140 108 250 -206 376 -206" pathLength="1" fill="none" stroke="#FFFBEA" stroke-width="8" stroke-linecap="round"/>
     </g>
     <g class="px wmg" data-d="8">
      <defs><radialGradient id="fglow"><stop offset="0" stop-color="#FFF3CC" stop-opacity=".55"/><stop offset="1" stop-color="#FFF3CC" stop-opacity="0"/></radialGradient></defs>
