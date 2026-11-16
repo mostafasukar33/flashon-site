@@ -5,7 +5,7 @@
   --run:#E8421A; --y:#F2B705; --y-d:#D9A300; --red:#D7220A; --wa:#1F9D55;
   --max:1200px; --pad:clamp(24px,4.5vw,56px); --secpad:clamp(64px,8vw,112px);
   --runx:calc(var(--pad)*.32); --runw:5px; --r:6px;
-  --font:'Readex Pro',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;
+  --font:'Cairo',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
