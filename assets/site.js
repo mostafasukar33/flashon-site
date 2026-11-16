@@ -103,6 +103,7 @@
     var h = a.getAttribute("href") || "";
     if (h.indexOf("wa.me") > -1) track("whatsapp-click");
     else if (h.indexOf("tel:") === 0) track("phone-click");
+    else if (h.indexOf("mailto:") === 0) track("email-click");
     else if (h.indexOf("maps.app") > -1) track("map-click");
   }, true);
 })();

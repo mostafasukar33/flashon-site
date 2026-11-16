@@ -5,7 +5,7 @@ import { createHash } from "node:crypto";
 import { dirname } from "node:path";
 
 const ORIGIN = "https://flashoneg.com";
-const WA = "201157070087", TEL = "+201157070087", TEL_SHOW = "01157070087";
+const WA = "201157070087", TEL = "+201157070087", TEL_SHOW = "01157070087", EMAIL = "info@flashoneg.com";
 const MAP = "https://maps.app.goo.gl/vbUYCvFpYyoybS6L6";
 const TODAY = new Date().toISOString().slice(0, 10);
 const ver = (f) => createHash("md5").update(readFileSync(f)).digest("hex").slice(0, 8);
@@ -61,7 +61,7 @@ const S = {
     f: { items: "الأصناف المطلوبة", prod: "الصنف", size: "المقاس", sizePh: "مثال: 20 مم", qty: "الكمية", unit: "الوحدة", remove: "احذف الصنف", add: "أضف صنفاً آخر",
       name: "الاسم أو اسم الشركة", gov: "المحافظة", notes: "ملاحظات (اختياري)", send: "أرسل الطلب عبر واتساب", hint: "يفتح الطلب في واتساب جاهزاً للإرسال." },
     units: ["لفة", "متر", "قطعة", "كرتونة"],
-    ways: { call: "اتصل بنا", wa: "واتساب", waGo: "ابدأ محادثة", addr: "المصنع", map: "افتح الموقع على خرائط جوجل" },
+    ways: { call: "اتصل بنا", wa: "واتساب", waGo: "ابدأ محادثة", mail: "البريد الإلكتروني", addr: "المصنع", map: "افتح الموقع على خرائط جوجل" },
     address: "أمام محطة المياه، باسوس، القناطر الخيرية، القليوبية",
     footP: "شركة مصرية لتصنيع الأدوات الكهربائية.", footCo: "الشركة", rights: "جميع الحقوق محفوظة.", made: "صناعة مصرية",
     waAria: "راسلنا على واتساب",
@@ -118,7 +118,7 @@ const S = {
     f: { items: "Items", prod: "Product", size: "Size", sizePh: "e.g. 20 mm", qty: "Quantity", unit: "Unit", remove: "Remove item", add: "Add another item",
       name: "Your name or company", gov: "Governorate / city", notes: "Notes (optional)", send: "Send request on WhatsApp", hint: "Your request opens in WhatsApp, ready to send." },
     units: ["Roll", "Metre", "Piece", "Carton"],
-    ways: { call: "Call us", wa: "WhatsApp", waGo: "Start a chat", addr: "Factory", map: "Open in Google Maps" },
+    ways: { call: "Call us", wa: "WhatsApp", waGo: "Start a chat", mail: "Email", addr: "Factory", map: "Open in Google Maps" },
     address: "Opposite the water station, Basous, Al Qanater Al Khayreyah, Qalyubia, Egypt",
     footP: "Egyptian manufacturer of electrical installation supplies.", footCo: "Company", rights: "All rights reserved.", made: "Made in Egypt",
     waAria: "Message us on WhatsApp",
@@ -256,6 +256,7 @@ function footer(s) {
 <li><a href="${s.home}#about">${s.nav.about}</a></li>
 <li><a href="${s.home}#contact">${s.quote}</a></li>
 <li><a href="tel:${TEL}"><span class="ltr">${TEL_SHOW}</span></a></li>
+<li><a href="mailto:${EMAIL}"><span class="ltr">${EMAIL}</span></a></li>
 <li><a href="https://wa.me/${WA}" data-wa target="_blank" rel="noopener">${s.ways.wa}</a></li>
 <li><a href="${MAP}" target="_blank" rel="noopener">${s.factory}</a></li>
 </ul></div>
@@ -277,9 +278,9 @@ const resTable = (s) => `<table class="res"><caption>${s.resCap}</caption><tbody
 const ORG = (s) => ({
   "@context": "https://schema.org", "@type": ["Organization", "LocalBusiness"], "@id": ORIGIN + "/#org",
   name: "فلاش أون", alternateName: "Flash On", url: ORIGIN + "/", logo: ORIGIN + "/assets/icon-512.png", image: ORIGIN + "/assets/og.jpg",
-  telephone: TEL, foundingDate: "2013", description: s.tagline, hasMap: MAP, areaServed: "EG",
+  telephone: TEL, email: EMAIL, foundingDate: "2013", description: s.tagline, hasMap: MAP, areaServed: "EG",
   address: { "@type": "PostalAddress", streetAddress: "أمام محطة المياه، باسوس", addressLocality: "القناطر الخيرية", addressRegion: "القليوبية", addressCountry: "EG" },
-  contactPoint: { "@type": "ContactPoint", telephone: TEL, contactType: "sales", availableLanguage: ["ar", "en"] },
+  contactPoint: { "@type": "ContactPoint", telephone: TEL, email: EMAIL, contactType: "sales", availableLanguage: ["ar", "en"] },
 });
 
 /* ---------- pages ---------- */
@@ -343,6 +344,7 @@ ${P.map((p, i) => `<article class="pt" id="${p.slug}"><a class="pt-img" href="${
 <ul class="ways">
 <li><span>${s.ways.call}</span><a href="tel:${TEL}"><span class="ltr">${TEL_SHOW}</span></a></li>
 <li><span>${s.ways.wa}</span><a href="https://wa.me/${WA}" data-wa target="_blank" rel="noopener">${s.ways.waGo}</a></li>
+<li><span>${s.ways.mail}</span><a href="mailto:${EMAIL}"><span class="ltr">${EMAIL}</span></a></li>
 <li><span>${s.ways.addr}</span><b>${s.address}</b><br><a class="sm" href="${MAP}" target="_blank" rel="noopener">${s.ways.map}</a></li>
 </ul>
 </div>
