@@ -117,7 +117,8 @@ h3{font-size:19px;font-weight:600;line-height:1.6}
 .pt-ask{margin-top:auto;padding-top:14px;display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:.35em;min-height:44px;align-self:flex-start}
 .pt-ask:hover{text-decoration-color:var(--wa)}
 .pt-ask svg{width:17px;height:17px;fill:var(--wa);flex:none}
-@media(max-width:1000px){.pt,.pt:nth-child(-n+3){grid-column:span 6}.pt:last-child:nth-child(odd){grid-column:1/-1}.pt:last-child:nth-child(odd) .pt-img img{aspect-ratio:16/9}}
+@media(max-width:1000px){.pt,.pt:nth-child(-n+3){grid-column:span 6}.pt:last-child:nth-child(odd){grid-column:1/-1}}
+@media(min-width:561px) and (max-width:1000px){.pt:last-child:nth-child(odd){display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(16px,2.2vw,28px);align-content:start}.pt:last-child:nth-child(odd) .pt-img{grid-row:1/span 6}.pt:last-child:nth-child(odd) h3{margin-top:0}.pt:last-child:nth-child(odd)>:not(.pt-img){grid-column:2;justify-self:start}}
 @media(max-width:560px){
   .cat{gap:30px 14px}
   .pt h3{font-size:16.5px;margin-top:12px}
