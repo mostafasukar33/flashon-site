@@ -163,11 +163,11 @@ const P = [
       pts: ["مسامير تثبيت معدنية.", "ثلاثة أنواع: مفرد، مجوّز أفقي، مجوّز رأسي.", "تُركَّب منفردة أو متجاورة أو فوق بعضها."] },
     en: { name: "Magic boxes", short: "Switch and socket boxes with metal fixing screws, installed singly, side by side or stacked.", alt: "Yellow switch box",
       pts: ["Metal fixing screws.", "Three types: single, horizontal double, vertical double.", "Install singly, side by side or stacked."] } },
-  { slug: "cable", img: "cable",
-    ar: { name: "الكابلات الكهربائية", short: "نصنّع جميع أنواع الكابلات الكهربائية لتلبية احتياجات مشروعك.", alt: "كابلات كهربائية متعددة الألوان بموصلات نحاسية",
-      pts: ["موصلات نحاسية.", "أنواع ومقاطع متعددة بحسب احتياج المشروع."] },
-    en: { name: "Electrical cables", short: "We manufacture all types of electrical cables to meet your project's needs.", alt: "Multi-coloured electrical cables with copper conductors",
-      pts: ["Copper conductors.", "A range of types and cross-sections to suit the project."] } },
+  { slug: "cable", img: "cable-spool", vars: [["cable-spool", { ar: "البكرة", en: "Spool" }], ["cable-label", { ar: "الملصق", en: "Label" }]],
+    ar: { name: "الكابلات الكهربائية", short: "أسلاك نحاس معزولة CU/PVC بجهد 450/750 فولت، بمقاسات من 1 إلى 6 مم².", tag: "1 – 6 مم²", alt: "بكرة سلك فلاش أون للكابلات، مقاس 3 مم² وطول 100 متر",
+      pts: ["نحاس بنقاوة 99.9%.", "عزل PVC، جهد 450/750 فولت.", "مقاسات من 1 مم² إلى 6 مم².", "بكرة 100 متر."] },
+    en: { name: "Electrical cables", short: "Insulated copper wire, CU/PVC rated 450/750 V, in sizes from 1 to 6 mm².", tag: "1 – 6 mm²", alt: "Flash On cable spool, 3 mm², 100 metres",
+      pts: ["99.9% pure copper.", "PVC insulation, rated 450/750 V.", "Sizes from 1 mm² to 6 mm².", "100-metre spool."] } },
 ];
 const REPORTS = [["p12", "erc"], ["p13", "erc"], ["p2", "hbrc"], ["p6", "hbrc"]];
 
