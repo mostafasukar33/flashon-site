@@ -185,7 +185,7 @@ const purl = (s, p) => `${s.home}products/${p.slug}/`;
 const pimg = (p, s, sizes, eager) => `<img src="/assets/products/${p.img}-720.webp" srcset="/assets/products/${p.img}-720.webp 720w, /assets/products/${p.img}.webp 1200w" sizes="${sizes}" width="720" height="540" alt="${esc(p[s.lang].alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">`;
 
 function head(s, { title, desc, path, altPath, ld, image }) {
-  const fonts = s.lang === "ar" ? ["readex-ar-400", "readex-ar-700"] : ["readex-la-400", "readex-la-700"];
+  const fonts = s.lang === "ar" ? ["cairo-ar-400", "cairo-ar-700"] : ["cairo-la-400", "cairo-la-700"];
   const arUrl = ORIGIN + (s.lang === "ar" ? path : altPath), enUrl = ORIGIN + (s.lang === "en" ? path : altPath);
   return `<!doctype html>
 <html lang="${s.lang}" dir="${s.dir}">
@@ -214,7 +214,7 @@ function head(s, { title, desc, path, altPath, ld, image }) {
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 ${fonts.map((f) => `<link rel="preload" href="/assets/fonts/${f}.woff2" as="font" type="font/woff2" crossorigin>`).join("\n")}
-<link rel="stylesheet" href="/assets/fonts/fonts.css?v=7">
+<link rel="stylesheet" href="/assets/fonts/fonts.css?v=8">
 <link rel="stylesheet" href="/assets/site.css?v=${CSS_V}">
 ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n")}
 </head>
